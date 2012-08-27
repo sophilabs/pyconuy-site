@@ -1,0 +1,5 @@
+.idea
+*.pyc
+*.sqlite
+*.db
+pyconuy2012/media
