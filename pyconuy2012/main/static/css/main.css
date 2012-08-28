@@ -63,8 +63,8 @@ header {
     color: #094ba4;
 }
 .box-text {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 28px;
     padding: 10px 0;
 }
 .box-text.back {
@@ -99,6 +99,9 @@ header {
     font-weight: bold;
     border-radius: 2px;
     display: inline-block;
+}
+.button.common {
+    clear: both;
 }
 .button.over {
     margin-right: 15px;
@@ -368,4 +371,8 @@ a:hover {
 }
 .no-slider .container {
     margin-top: -40px;
+}
+.list-text {
+    font-size: 16px;
+    margin-top: 10px;
 }
