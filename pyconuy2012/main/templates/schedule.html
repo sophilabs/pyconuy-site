@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+
+{% load i18n %}
+{% load background_tags  %}
+{% load url from future %}
+
+{% block meta_title %}{% trans 'Schedule' %} - {{ block.super }}{% endblock %}
+{% block meta_description %}{% trans 'About PyCon 2012 Uruguay' %}{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block slider %}
+<div class="header-back">
+
+</div>
+{% endblock %}
+{% block class %}no-slider about{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="span12 pull-left">
+            <h1 class="box-title">{% trans 'Schedule' %}<small class="small"></small></h1>
+            <p class="box-text">
+                {% blocktrans %}
+                To Be Defined
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+{{ block.super }}
+{% endblock %}
