@@ -150,6 +150,7 @@ INSTALLED_APPS = (
 APPEND_SLASH = False
 CMS_TEMPLATES = (
     ('main.html', 'Main'),
+    ('index.html', 'Index')
 )
 
 LANGUAGES = (

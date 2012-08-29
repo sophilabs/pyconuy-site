@@ -2,7 +2,6 @@ from cms.sitemaps.cms_sitemap import CMSSitemap
 from cmsplugin_blog.sitemaps import BlogSitemap
 from django.conf.urls import patterns, include, url
 from django.conf.urls.static import static
-from django.views.generic.simple import redirect_to
 
 from django.conf import settings
 

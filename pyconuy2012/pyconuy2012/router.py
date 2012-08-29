@@ -14,6 +14,9 @@ class Router(object):
     def allow_syncdb(self, db, model):
         if db == 'users':
             return False
-        elif model._meta.app_label == 'auth':
-            return False
+        #elif model._meta.app_label == 'auth':
+        #    return False
         return None
+
+    def allow_relation(self, obj1, obj2, **hints):
+        return True
