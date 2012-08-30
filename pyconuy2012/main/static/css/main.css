@@ -26,6 +26,7 @@ body {
 h1 {
     font-weight: normal;
     margin: 20px 0 10px 0;
+    color: #094BA4;
 }
 .logo > .text {
     display: none;
@@ -59,9 +60,6 @@ header {
     background-color: #e5eef8;
 }
 
-.box-title {
-    color: #094ba4;
-}
 .box-text {
     font-size: 16px;
     line-height: 28px;

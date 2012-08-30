@@ -204,3 +204,5 @@ try:
     from settings_local import *
 except ImportError:
     pass
+
+LOCALE_PATHS = ( rel('conf/locale/'),)
