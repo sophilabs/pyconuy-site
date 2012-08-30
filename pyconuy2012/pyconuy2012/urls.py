@@ -20,12 +20,5 @@ urlpatterns = static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) +pat
     url(r'^schedule', include('symposion.schedule.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-
-    url(r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap', {
-        'sitemaps': {
-            'cmspages': CMSSitemap,
-            'blogentries': BlogSitemap
-        }
-    }),
     url(r'^', include('cms.urls')),
 )
