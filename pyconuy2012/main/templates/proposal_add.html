@@ -16,12 +16,12 @@
     <div class="span8">
         <form method="post" class="well form-horizontal">
             {% csrf_token %}
-            {% if formS %}
+            {% if form_speaker %}
                 <h3>About you:</h3>
                 {{ formS }}
             {% endif %}
             <h3>Your proposal:</h3>
-            {{ formP }}
+            {{ form_proposal }}
             <div class="form-actions">
                 <button type="submit" class="btn btn-primary">Send</button>
             </div>

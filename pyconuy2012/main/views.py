@@ -7,6 +7,7 @@ from symposion.speakers.models import Speaker
 from symposion.proposals.models import Proposal
 from django.template import RequestContext
 from symposion.sponsors_pro.models import Sponsor
+from symposion.proposals.models import PresentationCategory
 from main.forms import SpeakerForm, ProposalForm
 
 def index(request):
@@ -21,52 +22,49 @@ def about(request):
 @login_required
 def proposal_add(request):
     if request.method == 'POST': # If the form has been submitted...
-        formP = ProposalForm(request.POST) # A form bound to the POST data
-        formS = SpeakerForm(request.POST)
+        form_proposal = ProposalForm(request.POST) # A form bound to the POST data
+        form_speaker = SpeakerForm(request.POST)
         try:
             Speaker.objects.get(user=request.user)
             speaker = Speaker.objects.get(user=request.user)
         except Speaker.DoesNotExist:
-            if formS.is_valid():
-                    biography = formS.cleaned_data['biography']
-                    annotation = formS.cleaned_data['annotation']
-
-                    speaker = Speaker.objects.create(user=request.user, name=request.user.first_name+' '+request.user.last_name, biography=biography, annotation=annotation, invite_email=request.user.email, invite_token="")
-                    speaker.save()
+            if form_speaker.is_valid():
+                    speaker = Speaker.objects.create(
+                        user=request.user,
+                        name='{0} {1}'.format(request.user.first_name, request.user.last_name),
+                        biography=form_speaker.cleaned_data['biography'],
+                        annotation=form_speaker.cleaned_data['annotation'],
+                        invite_email=request.user.email,
+                        invite_token="")
             else:
                 return render_to_response('proposal_add.html', {
-                    'formP':formP, 'formS':formS
+                    'form_proposal':form_proposal, 'form_speaker':form_speaker
                 }, context_instance=RequestContext(request))
 
-        if formP.is_valid():
-            title = formP.cleaned_data['title']
-            description = formP.cleaned_data['description']
-            kind =  formP.cleaned_data['kind']
-            category =  formP.cleaned_data['category']
-            abstract = formP.cleaned_data['abstract']
-            audience_level = formP.cleaned_data['audience_level']
-            additional_notes = formP.cleaned_data['additional_notes']
-            extreme =  formP.cleaned_data['extreme']
-            duration =  formP.cleaned_data['duration']
-            #additional_speakers = formP.cleaned_data['additional_speakers']
-            submitted = datetime.datetime.now()
-
-            proposal = Proposal.objects.create(title=title, description=description, kind=kind, category=category, abstract=abstract, audience_level=audience_level, additional_notes=additional_notes, extreme=extreme, duration=duration, speaker=speaker, submitted=submitted, cancelled=False)
-            if additional_speakers is not None:
-                proposal.additional_speakers.add(additional_speakers)
-
-            proposal.save()
+        if form_proposal.is_valid():
+            Proposal.objects.create(
+                title=form_proposal.cleaned_data['title'],
+                description=form_proposal.cleaned_data['description'],
+                kind=form_proposal.cleaned_data['kind'],
+                category=PresentationCategory.objects.get(slug='general'),
+                abstract=form_proposal.cleaned_data['abstract'],
+                audience_level=form_proposal.cleaned_data['audience_level'],
+                additional_notes=form_proposal.cleaned_data['additional_notes'],
+                duration=form_proposal.cleaned_data['duration'],
+                speaker=speaker,
+                submitted=datetime.datetime.now(),
+                cancelled=False)
             return HttpResponseRedirect('/proposal_sent') # Redirect after POST
     else:
         try:
             Speaker.objects.get(user=request.user)
-            formS = ""
+            form_speaker = ""
         except Speaker.DoesNotExist:
-            formS = SpeakerForm()
-        formP = ProposalForm()
+            form_speaker = SpeakerForm()
+        form_proposal = ProposalForm()
 
     return render_to_response('proposal_add.html', {
-        'formP':formP, 'formS':formS
+        'form_proposal':form_proposal, 'form_speaker':form_speaker
         }, context_instance=RequestContext(request))
 
 def proposal_info(request):
