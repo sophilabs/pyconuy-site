@@ -374,3 +374,15 @@ a:hover {
     font-size: 16px;
     margin-top: 10px;
 }
+
+.news-title {
+    font-family: Merienda One;
+    color: #198e93;
+}
+
+.date {
+    margin: 10px;
+    padding-bottom: 10px;
+    font-family: Merienda One;
+    color: #7A7A7A;
+}
