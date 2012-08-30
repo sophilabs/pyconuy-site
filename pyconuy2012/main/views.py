@@ -16,8 +16,6 @@ def index(request):
         'sponsor_list':Sponsor.objects.order_by('level'),
     }, context_instance=RequestContext(request))
 
-def about(request):
-    return render_to_response('about.html', context_instance=RequestContext(request))
 
 @login_required
 def proposal_add(request):
@@ -66,9 +64,6 @@ def proposal_add(request):
     return render_to_response('proposal_add.html', {
         'form_proposal':form_proposal, 'form_speaker':form_speaker
         }, context_instance=RequestContext(request))
-
-def proposal_info(request):
-    return render_to_response('proposal_info.html', context_instance=RequestContext(request))
 
 def proposal_sent(request):
     return render_to_response('proposal_sent.html', context_instance=RequestContext(request))

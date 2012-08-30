@@ -51,7 +51,7 @@
                 <div class="span8 pull-right">
                     <ul class="menu-list">
                         <li class="menu-normal pull-left">
-                            <a href="{% url 'main:about' %}">{% trans 'About' %}</a>
+                            <a href="{% page_id_url 'about' %}">{% trans 'About' %}</a>
                         </li>
                         <li class="menu pull-left">
                             <a href="{% url 'account:sign_up' %}">{% trans 'Registration' %}</a>
@@ -69,7 +69,7 @@
                             <a href="#">{% trans 'Schedule' %}</a>
                             <ul>
                                 <li><a class="sub_menu" href="{% url 'main:schedule' %}">{% trans 'Conference Schedule' %}</a></li>
-                                <li><a class="sub_menu" href="{% url 'main:proposal_info' %}">{% trans 'Send Proposal' %}</a></li>
+                                <li><a class="sub_menu" href="{% page_id_url 'proposal-info' %}">{% trans 'Send Proposal' %}</a></li>
                             </ul>
                         </li>
                         </li>

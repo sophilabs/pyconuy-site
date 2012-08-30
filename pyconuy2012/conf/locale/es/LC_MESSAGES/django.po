@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-30 12:28-0500\n"
+"POT-Creation-Date: 2012-08-30 14:44-0500\n"
 "PO-Revision-Date: 2012-03-13 19:44+0000\n"
 "Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -213,52 +213,6 @@ msgstr "Mostrar siempre"
 msgid "User must not be authenticated"
 msgstr "El usuario no debe estar autenticado"
 
-#: main/templates/about.html:6 main/templates/index.html:44
-#: main/templates/main.html:54 main/templates/main.html.py:98
-msgid "About"
-msgstr "Acerca de"
-
-#: main/templates/about.html:7 main/templates/proposal_info.html:8
-#: main/templates/schedule.html:8
-msgid "About PyCon 2012 Uruguay"
-msgstr "Acerca de PyCon 2012 Uruguay"
-
-#: main/templates/about.html:29 main/templates/index.html:54
-msgid ""
-"We have been already conquered by python and are now committed to bringing "
-"it to the edge. It is time that you also meet it and start building "
-"beautiful software together."
-msgstr ""
-"Ya hemos sido conquistados por python y ahora estamos comprometidos a "
-"traerlo a la orilla. Es tiempo de que tu lo conozcas y comiences a contruir "
-"hermoso software juntos."
-
-#: main/templates/about.html:33
-msgid "Contact Us"
-msgstr "Contáctenos"
-
-#: main/templates/about.html:35
-msgid ""
-"\n"
-"                Please, don't hesitate to contact us if you have any "
-"inquiry:\n"
-"                "
-msgstr ""
-"\n"
-"                Por favor, no dude en contactarnos si tiene alguna "
-"interrogante:\n"
-"                "
-
-#: main/templates/about.html:41
-msgid ""
-"\n"
-"                    Meet the entire staff team.\n"
-"                "
-msgstr ""
-"\n"
-"                    Conozca a todos los miembros del equipo.\n"
-"                "
-
 #: main/templates/index.html:7
 msgid "Home"
 msgstr "Inicio"
@@ -270,6 +224,11 @@ msgstr "PyCon Inicio"
 #: main/templates/index.html:31
 msgid "by"
 msgstr "por"
+
+#: main/templates/index.html:44 main/templates/main.html:54
+#: main/templates/main.html.py:98 main/templates/oldabout.html:6
+msgid "About"
+msgstr "Acerca de"
 
 #: main/templates/index.html:44
 msgid "What is PyCon Uruguay?"
@@ -298,6 +257,16 @@ msgstr ""
 "y sus herramientas relacionadas, asi es que mantenemos el registro GRATIS, "
 "gracias  a muchos trabajadores voluntarios y sponsors.\n"
 "                "
+
+#: main/templates/index.html:54 main/templates/oldabout.html:29
+msgid ""
+"We have been already conquered by python and are now committed to bringing "
+"it to the edge. It is time that you also meet it and start building "
+"beautiful software together."
+msgstr ""
+"Ya hemos sido conquistados por python y ahora estamos comprometidos a "
+"traerlo a la orilla. Es tiempo de que tu lo conozcas y comiences a contruir "
+"hermoso software juntos."
 
 #: main/templates/index.html:56
 msgid "> Read more"
@@ -376,6 +345,37 @@ msgstr "Pycon UY 2012 es una producción de"
 msgid "Site built and hosted by"
 msgstr "Sitio construido y alojado por"
 
+#: main/templates/oldabout.html:7 main/templates/proposal_info.html:8
+#: main/templates/schedule.html:8
+msgid "About PyCon 2012 Uruguay"
+msgstr "Acerca de PyCon 2012 Uruguay"
+
+#: main/templates/oldabout.html:33
+msgid "Contact Us"
+msgstr "Contáctenos"
+
+#: main/templates/oldabout.html:35
+msgid ""
+"\n"
+"                Please, don't hesitate to contact us if you have any "
+"inquiry:\n"
+"                "
+msgstr ""
+"\n"
+"                Por favor, no dude en contactarnos si tiene alguna "
+"interrogante:\n"
+"                "
+
+#: main/templates/oldabout.html:41
+msgid ""
+"\n"
+"                    Meet the entire staff team.\n"
+"                "
+msgstr ""
+"\n"
+"                    Conozca a todos los miembros del equipo.\n"
+"                "
+
 #: main/templates/proposal_add.html:8 main/templates/proposal_add.html.py:9
 #: main/templates/proposal_add.html:13
 msgid "Send a proposal"
@@ -400,12 +400,12 @@ msgstr ""
 "\n"
 "                ¿Desea compartir su experiencia y habilidad? PyCon Uruguay "
 "2012 esta en busca de propuestas para llenar la pista de conferencias.  Esta "
-"reunión esta agendada para el Sabado 10 y Domingo 11 de Noviembre en centro "
-"de conferencias del LATU en Montevideo, Uruguay.\n"
+"reunión esta agendada para el Sabado 10 y Domingo 11 de Noviembre en el "
+"centro de conferencias del LATU en Montevideo, Uruguay.\n"
 "                Las propuestas pueden ser de dos tipos, charlas "
 "tradicionales o sprints de desarrollo. Esta planeado que todas "
 "presentaciones se lleven a cabo el Sabado 10 y solo un sprint de desarrollo "
-"(hackathon) el Domingo 11 of November.\n"
+"(hackathon) el Domingo 11 de Noviembre.\n"
 "                "
 
 #: main/templates/proposal_info.html:31
@@ -423,15 +423,15 @@ msgid ""
 "below or contact the PyCon Uruguay Program Committee at "
 msgstr ""
 "\n"
-"                 El tema de la presentación debe mantenerse en el rango del "
-"código-abierto, proyectos academicos o comerciales hasta tutoriales y casos "
+"                 El tema de la presentación debe mantenerse en el rango de "
+"código-abierto, proyectos académicos o comerciales hasta tutoriales y casos "
 "de estudio. Mientras la presentación sea interesante y potencialmente útil "
-"para la  comunidad Python, sera considerado para la inclusion en el "
+"para la comunidad Python, sera considerado para la inclusión en el "
 "programa .\n"
 "                Estamos especialmente interesados en presentaciones cortas "
-"que  enseñen al público algo nuevo y útil. ¿Tu puedes mostrar a los "
-"asistentes como usar un modulo? ¿Explorar una innovación del lenguaje "
-"Python? ¿Empaquetar una  aplicación? ¡Nos encataria escucharte!\n"
+"que enseñen al público algo nuevo y útil. ¿Tu puedes mostrar a la audiencia "
+"como usar un modulo? ¿Explorar una innovación del lenguaje Python? "
+"¿Empaquetar una aplicación? ¡Nos encataria escucharte!\n"
 "                Si tienes alguna pregunta, por favor examina la información "
 "de aquí debajo o contacta al comité del programa PyCon Uruguay en"
 
@@ -500,11 +500,11 @@ msgstr "Embebiend"
 
 #: main/templates/proposal_info.html:58
 msgid "Game programming"
-msgstr ""
+msgstr "Programación para juegos"
 
 #: main/templates/proposal_info.html:59
 msgid "GUI programming"
-msgstr ""
+msgstr "Programación para GUI"
 
 #: main/templates/proposal_info.html:60
 msgid "Network programming"
@@ -555,6 +555,18 @@ msgid ""
 "talk will be 25 minutes of presentation and 5 minutes of questions.\n"
 "                "
 msgstr ""
+"\n"
+"                    Preferentemente el largo de las charlas es de 30 "
+"minutos. Puedes solicitar una extensión del espacio a 45 minutos, pero las "
+"propuestas que soliciten 45 minutos seran analizadas más estrictamente. Los "
+"espacios de 45 minutos son, como una regla de oro(rule of thumb) reservados "
+"para quien vas a hablarle en vez de hablar sobre cosas que creaste, viste o "
+"hiciste.\n"
+"                    El tiempo de la sesión incluye las preguntas de la "
+"audiencia. Así que reserva como minímo cinco minutos para preguntas; por "
+"ejemplo, una charla de 30 minutos sera de 25 minutos de presentación y 5 "
+"minutos de preguntas.\n"
+"                "
 
 #: main/templates/proposal_info.html:81
 msgid ""
@@ -566,12 +578,21 @@ msgid ""
 "in any way.\n"
 "                "
 msgstr ""
+"\n"
+"                Esperamos grabar las presentaciones, pero esto depende del "
+"soporte del sponsor y no ha sido confirmado aun.\n"
+"                Si no deseas que tu charla sea grabada por favor anota esto "
+"en tu propuesta. Haciendo esto no tiene influencia en la selección de "
+"ninguna manera.\n"
+"                "
 
 #: main/templates/proposal_info.html:94
 msgid ""
 "\n"
 "                Use the PyCon Uruguay "
 msgstr ""
+"\n"
+"                Usa PyCon Uruguay "
 
 #: main/templates/proposal_info.html:95
 msgid ""
@@ -582,15 +603,21 @@ msgid ""
 "too).\n"
 "                "
 msgstr ""
+" para enviarnos una propuesta. Primero debes crearte una cuenta en el sitio "
+"web (y estar logueado) en ordén de enviar una propuesta.\n"
+"                El autor principal debe enviar la propuesta. Autores  "
+"adicionales pueden agregarse a la propuesta por pedido(tambien deben de "
+"tener cuenta).\n"
+"                "
 
 #: main/templates/proposal_info.html:99
 msgid "Send a Proposal"
-msgstr ""
+msgstr "Enviar Propuesta"
 
 #: main/templates/proposal_sent.html:8 main/templates/proposal_sent.html:9
 #: main/templates/proposal_sent.html:13
 msgid "Proposal sent correctly"
-msgstr ""
+msgstr "Propuesta enviada correctamente"
 
 #: main/templates/schedule.html:25
 msgid ""
@@ -603,13 +630,14 @@ msgstr ""
 msgid "See entries by"
 msgstr ""
 
-#: main/templates/cmsplugin_blog/entry_archive.html:7
-msgid "Latest entries"
-msgstr ""
-
+#: main/templates/cmsplugin_blog/cmsplugin_blog_base.html:9
 #: main/templates/cmsplugin_blog/entry_archive.html:13
 #: main/templates/cmsplugin_blog/latest_entries.html:5
 msgid "No entries"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_archive.html:7
+msgid "Latest entries"
 msgstr ""
 
 #: main/templates/cmsplugin_blog/entry_archive_day.html:7
@@ -654,11 +682,11 @@ msgstr ""
 msgid "See entries tagged"
 msgstr ""
 
-#: pyconuy2012/settings.py:157
+#: pyconuy2012/settings.py:158
 msgid "English"
 msgstr "inglés"
 
-#: pyconuy2012/settings.py:158
+#: pyconuy2012/settings.py:159
 msgid "Spanish"
 msgstr "español"
 

@@ -87,9 +87,9 @@ header {
     font-size: 18pt;
 }
 
-.small {
+h1 small {
     margin-left: 10px;
-    color: #6fa8e7;
+    color: #6fa8e7;!important
 }
 
 .button {
