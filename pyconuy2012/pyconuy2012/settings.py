@@ -84,6 +84,7 @@ WSGI_APPLICATION = 'pyconuy2012.wsgi.application'
 
 TEMPLATE_DIRS = (
     rel('templates'),
+    rel('main/templates')
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -105,6 +106,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'django.contrib.sitemaps',
 
     #symposion
     'pinax.apps.account',
@@ -150,7 +152,6 @@ INSTALLED_APPS = (
 APPEND_SLASH = False
 CMS_TEMPLATES = (
     ('main.html', 'Main'),
-    ('index.html', 'Index')
 )
 
 LANGUAGES = (
