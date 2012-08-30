@@ -1,6 +1,8 @@
 
-class Router(object):
 
+class Router(object):
+    pass
+    """
     def db_for_read(self, model, **hints):
         if model._meta.app_label == 'auth':
             return 'users'
@@ -25,3 +27,4 @@ class Router(object):
         if obj1._meta.app_label == 'auth' or obj2._meta.app_label == 'auth':
             return True
         return None
+        """
