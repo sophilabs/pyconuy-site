@@ -38,16 +38,20 @@
 {% endblock %}
 
 {% block content %}
+
     <div class="row">
         <div class="span12 pull-left">
-            <h1 class="box-title">{% trans 'About' %}<small class="small">{% trans 'What is PyCon Uruguay?' %}</small></h1>
+            <h1 class="box-title">{% trans "About" %}<small class="small">{% trans 'What is PyCon Uruguay?' %}</small></h1>
             <p class="box-text">
+
+                {% blocktrans %}
                 PyCon is the annual conference for the community using and developing the open-source Python programming language.
                 PyCon is an event organized by the Uruguayan Python community that mainly seeks to introduce and promote this wonderful language in Uruguay and the region.
                 Our objective is to offer universal access to Python and related tools, that's why we keep the registration at FREE cost, thanks to many voluntary workers and sponsors.
+                {% endblocktrans %}
             </p>
             <p>
-                We were already conquered by python and are now committed to bring it to the edge. It is time that you also meet it and start building beautiful software together.
+                {% blocktrans %}We have been already conquered by python and are now committed to bringing it to the edge. It is time that you also meet it and start building beautiful software together.{% endblocktrans %}
             </p>
             <a href="{% url 'main:about' %}" class="link">{% trans '> Read more' %}</a>
         </div>

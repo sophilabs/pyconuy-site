@@ -1,0 +1,1602 @@
+# This file is distributed under the same license as the Django package.
+#
+# Translators:
+# Antoni Aloy <antoni.aloy@trespams.com>, 2011, 2012.
+# Diego Schulz <dschulz@gmail.com>, 2012.
+# franchukelly <fcocuadrado@gmail.com>, 2011.
+# Jannis Leidel <jannis@leidel.info>, 2011.
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2011.
+# Marc Garcia <garcia.marc@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: Django\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-30 12:28-0500\n"
+"PO-Revision-Date: 2012-03-13 19:44+0000\n"
+"Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
+"Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
+"django/language/es/)\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: account/templates/password_change_done.html:6
+#: account/templates/password_change_done.html:7
+#: account/templates/password_change_done.html:13
+msgid "Password change successful"
+msgstr "Contraseña satisfactoriamente cambiada"
+
+#: account/templates/password_change_done.html:17
+msgid "Your password was changed."
+msgstr "Su contraseña fue cambiada."
+
+#: account/templates/password_change_form.html:6
+#: account/templates/password_change_form.html:7
+#: account/templates/password_change_form.html:13
+msgid "Password change"
+msgstr "Cambio de contraseña"
+
+#: account/templates/password_change_form.html:17
+#: account/templates/password_reset_form.html:17
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll e-mail "
+"instructions for setting a new one."
+msgstr ""
+"¿Olvido su contraseña? Ingrese su dirección de e-mail por debajo, y le  "
+"enviaremos las instrucciones para fijar una nueva."
+
+#: account/templates/password_change_form.html:23
+#: account/templates/password_reset_confirm.html:23
+msgid "Change my password"
+msgstr "Cambiar mi contraseña"
+
+#: account/templates/password_reset_complete.html:6
+#: account/templates/password_reset_complete.html:7
+#: account/templates/password_reset_complete.html:12
+msgid "Password reset complete"
+msgstr "Reinicio de contraseña completado"
+
+#: account/templates/password_reset_complete.html:16
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "Su contraseña se ha  fijado. Quizás ahora deba ir a loguearse"
+
+#: account/templates/password_reset_complete.html:17
+msgid "Log in"
+msgstr "Loguearse"
+
+#: account/templates/password_reset_confirm.html:6
+#: account/templates/password_reset_confirm.html:7
+#: account/templates/password_reset_form.html:6
+#: account/templates/password_reset_form.html:7
+#: account/templates/password_reset_form.html:13
+msgid "Password reset"
+msgstr "Reinicio de contraseña"
+
+#: account/templates/password_reset_confirm.html:13
+msgid "Enter new password"
+msgstr "Ingrese su contraseña"
+
+#: account/templates/password_reset_confirm.html:17
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Por favor ingrese su nueva contraseña dos veces, asi podemos verificar que "
+"las escribió correctamente."
+
+#: account/templates/password_reset_confirm.html:32
+msgid "Password reset unsuccessful"
+msgstr "Reinicio de contraseña insatisfactorio"
+
+#: account/templates/password_reset_confirm.html:36
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"El enlace al reinicio de contraseña fue inválido, posiblemente porque ha "
+"sido usado. Por favor solicite un nuevo reinicio de contraseña."
+
+#: account/templates/password_reset_done.html:6
+#: account/templates/password_reset_done.html:7
+#: account/templates/password_reset_done.html:12
+msgid "Password reset successful"
+msgstr "Reinicio de contraseña satisfactorio"
+
+#: account/templates/password_reset_done.html:16
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted. You should be receiving it shortly."
+msgstr ""
+"Le enviamos un e-mail con las instrucciones para fijar su contraseña a la "
+"dirección de e-mail que usted ingreso. Deberia recibirlo en un momento"
+
+#: account/templates/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"Usted recibe este e-mail porque solicitó un reinicio de contraseña para su "
+"cuenta de usuario %(site_name)s."
+
+#: account/templates/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "Por favor diríjase a siguiente página y elija una nueva contraseña"
+
+#: account/templates/password_reset_email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr "Su nombre de usuario, en caso de que lo olvide"
+
+#: account/templates/password_reset_email.html:10
+msgid "Thanks for using our site!"
+msgstr "¡Gracias por usar nuestro sitio!"
+
+#: account/templates/password_reset_email.html:12
+msgid "The Python.org.uy team"
+msgstr "El equipo Python.org.uy"
+
+#: account/templates/password_reset_form.html:23
+msgid "Reset my password"
+msgstr "Reiniciar mi contraseña"
+
+#: account/templates/password_reset_subject.txt:2
+#, python-format
+msgid "Password reset on %(site_name)s"
+msgstr "Reinicio de contraseña en %(site_name)s"
+
+#: account/templates/profile.html:6 account/templates/profile.html.py:7
+#: main/templates/main.html:61
+msgid "Profile"
+msgstr "Pefil"
+
+#: account/templates/profile.html:23
+msgid "Save"
+msgstr "Guardar"
+
+#: account/templates/profile.html:24
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: account/templates/sign_in.html:7 account/templates/sign_in.html.py:8
+#: account/templates/sign_in.html:14 main/templates/main.html:64
+msgid "Sign In"
+msgstr "Loguearse"
+
+#: account/templates/sign_up.html:7 account/templates/sign_up.html.py:8
+#: account/templates/sign_up.html:14 main/templates/main.html:63
+msgid "Sign Up"
+msgstr "Registrarse"
+
+#: main/cms_plugins.py:8
+msgid "Menu"
+msgstr "Menu"
+
+#: main/models.py:9
+msgid "page"
+msgstr "página"
+
+#: main/models.py:9
+msgid "A link to a page has priority over a text link."
+msgstr "Un enlace a una página tiene prioridad sobre un enlace de texto."
+
+#: main/models.py:10
+msgid "target"
+msgstr "destino"
+
+#: main/models.py:11
+msgid "same window"
+msgstr "misma ventana"
+
+#: main/models.py:12
+msgid "new window"
+msgstr "nueva ventana"
+
+#: main/models.py:13
+msgid "parent window"
+msgstr "ventana padre"
+
+#: main/models.py:14
+msgid "topmost frame"
+msgstr "cuadro superior"
+
+#: main/models.py:18
+msgid "User must be authenticated"
+msgstr "El usuario debe estar autenticado"
+
+#: main/models.py:19
+msgid "Show always"
+msgstr "Mostrar siempre"
+
+#: main/models.py:20
+msgid "User must not be authenticated"
+msgstr "El usuario no debe estar autenticado"
+
+#: main/templates/about.html:6 main/templates/index.html:44
+#: main/templates/main.html:54 main/templates/main.html.py:98
+msgid "About"
+msgstr "Acerca de"
+
+#: main/templates/about.html:7 main/templates/proposal_info.html:8
+#: main/templates/schedule.html:8
+msgid "About PyCon 2012 Uruguay"
+msgstr "Acerca de PyCon 2012 Uruguay"
+
+#: main/templates/about.html:29 main/templates/index.html:54
+msgid ""
+"We have been already conquered by python and are now committed to bringing "
+"it to the edge. It is time that you also meet it and start building "
+"beautiful software together."
+msgstr ""
+"Ya hemos sido conquistados por python y ahora estamos comprometidos a "
+"traerlo a la orilla. Es tiempo de que tu lo conozcas y comiences a contruir "
+"hermoso software juntos."
+
+#: main/templates/about.html:33
+msgid "Contact Us"
+msgstr "Contáctenos"
+
+#: main/templates/about.html:35
+msgid ""
+"\n"
+"                Please, don't hesitate to contact us if you have any "
+"inquiry:\n"
+"                "
+msgstr ""
+"\n"
+"                Por favor, no dude en contactarnos si tiene alguna "
+"interrogante:\n"
+"                "
+
+#: main/templates/about.html:41
+msgid ""
+"\n"
+"                    Meet the entire staff team.\n"
+"                "
+msgstr ""
+"\n"
+"                    Conozca a todos los miembros del equipo.\n"
+"                "
+
+#: main/templates/index.html:7
+msgid "Home"
+msgstr "Inicio"
+
+#: main/templates/index.html:8
+msgid "PyCon Home"
+msgstr "PyCon Inicio"
+
+#: main/templates/index.html:31
+msgid "by"
+msgstr "por"
+
+#: main/templates/index.html:44
+msgid "What is PyCon Uruguay?"
+msgstr "¿Que es PyCon Uruguay?"
+
+#: main/templates/index.html:47
+msgid ""
+"\n"
+"                PyCon is the annual conference for the community using and "
+"developing the open-source Python programming language.\n"
+"                PyCon is an event organized by the Uruguayan Python "
+"community that mainly seeks to introduce and promote this wonderful language "
+"in Uruguay and the region.\n"
+"                Our objective is to offer universal access to Python and "
+"related tools, that's why we keep the registration at FREE cost, thanks to "
+"many voluntary workers and sponsors.\n"
+"                "
+msgstr ""
+"\n"
+"                PyCon es la conferencia anual para la comunidad usando y "
+"desarrollando el lenguaje de programación de codigo-abierto Python.\n"
+"                PyCon es un evento organizado por la comunidad Uruguaya de "
+"Python que principalmente busca introducir y promover este hermoso lenguaje "
+"en Uruguay y la región.\n"
+"                Nuestro objetivo es el de ofrecer acceso universal a Python "
+"y sus herramientas relacionadas, asi es que mantenemos el registro GRATIS, "
+"gracias  a muchos trabajadores voluntarios y sponsors.\n"
+"                "
+
+#: main/templates/index.html:56
+msgid "> Read more"
+msgstr "Leer más"
+
+#: main/templates/index.html:61
+msgid "When"
+msgstr "Cuando"
+
+#: main/templates/index.html:61
+msgid "What appointments should I cancel?"
+msgstr "¿Que citas cancelar?"
+
+#: main/templates/index.html:67
+msgid "Schedule it"
+msgstr "Agéndalo"
+
+#: main/templates/index.html:70
+msgid "Where"
+msgstr "Donde"
+
+#: main/templates/index.html:70
+msgid "Take me there!"
+msgstr "Llevame ahi!"
+
+#: main/templates/index.html:77
+msgid "See Map"
+msgstr "Ver mapa"
+
+#: main/templates/index.html:82 main/templates/main.html:95
+msgid "Sponsors"
+msgstr "Sponsors"
+
+#: main/templates/index.html:82
+msgid "What important companies are behind this?"
+msgstr "¿Que empresas importantes están detras de todo esto?"
+
+#: main/templates/main.html:57 main/templates/main.html.py:97
+msgid "Registration"
+msgstr "Inscripción"
+
+#: main/templates/main.html:60
+msgid "Sign Out"
+msgstr "Cerrar sesión"
+
+#: main/templates/main.html:69 main/templates/main.html.py:96
+#: main/templates/schedule.html:7 main/templates/schedule.html.py:23
+msgid "Schedule"
+msgstr "Calendario"
+
+#: main/templates/main.html:71
+msgid "Conference Schedule"
+msgstr "Calendario de conferencias"
+
+#: main/templates/main.html:72
+msgid "Send Proposal"
+msgstr "Enviar propuesta"
+
+#: main/templates/main.html:77 main/templates/main.html.py:94
+msgid "Venue"
+msgstr "Lugar de reunión "
+
+#: main/templates/main.html:79
+msgid "The Place"
+msgstr "El Lugar"
+
+#: main/templates/main.html:93
+msgid "Back to top"
+msgstr "Volver arriba"
+
+#: main/templates/main.html:101
+msgid "PyCon UY 2012 is a production of the"
+msgstr "Pycon UY 2012 es una producción de"
+
+#: main/templates/main.html:101
+msgid "Site built and hosted by"
+msgstr "Sitio construido y alojado por"
+
+#: main/templates/proposal_add.html:8 main/templates/proposal_add.html.py:9
+#: main/templates/proposal_add.html:13
+msgid "Send a proposal"
+msgstr "Enviar propuesta"
+
+#: main/templates/proposal_info.html:7 main/templates/proposal_info.html:23
+msgid "Call for Proposals"
+msgstr "Presentar una propuesta"
+
+#: main/templates/proposal_info.html:25
+msgid ""
+"\n"
+"                Do you want to share your experience and expertise? PyCon "
+"Uruguay 2012 is looking for proposals to fill the conference presentation "
+"tracks. This meeting is scheduled for Saturday 10 and Sunday 11 of November "
+"at the LATU Conference Center in Montevideo, Uruguay.\n"
+"                Proposals can be one of two kinds, traditional talks or "
+"sprints. It's planned that all presentations will take place on Saturday 10 "
+"and only one coding sprint (hackathon) on Sunday 11 of November.\n"
+"                "
+msgstr ""
+"\n"
+"                ¿Desea compartir su experiencia y habilidad? PyCon Uruguay "
+"2012 esta en busca de propuestas para llenar la pista de conferencias.  Esta "
+"reunión esta agendada para el Sabado 10 y Domingo 11 de Noviembre en centro "
+"de conferencias del LATU en Montevideo, Uruguay.\n"
+"                Las propuestas pueden ser de dos tipos, charlas "
+"tradicionales o sprints de desarrollo. Esta planeado que todas "
+"presentaciones se lleven a cabo el Sabado 10 y solo un sprint de desarrollo "
+"(hackathon) el Domingo 11 of November.\n"
+"                "
+
+#: main/templates/proposal_info.html:31
+msgid ""
+"\n"
+"                Presentation subjects may range from reports on open source, "
+"academic or commercial projects to tutorials and case studies. As long as a "
+"presentation is interesting and potentially useful to the Python community, "
+"it will be considered for inclusion in the program.\n"
+"                We're especially interested in short presentations that will "
+"teach conference-goers something new and useful. Can you show attendees how "
+"to use a module? Explore a Python language feature? Package an application? "
+"We'd love to hear from you!\n"
+"                If you have any questions, please review the information "
+"below or contact the PyCon Uruguay Program Committee at "
+msgstr ""
+"\n"
+"                 El tema de la presentación debe mantenerse en el rango del "
+"código-abierto, proyectos academicos o comerciales hasta tutoriales y casos "
+"de estudio. Mientras la presentación sea interesante y potencialmente útil "
+"para la  comunidad Python, sera considerado para la inclusion en el "
+"programa .\n"
+"                Estamos especialmente interesados en presentaciones cortas "
+"que  enseñen al público algo nuevo y útil. ¿Tu puedes mostrar a los "
+"asistentes como usar un modulo? ¿Explorar una innovación del lenguaje "
+"Python? ¿Empaquetar una  aplicación? ¡Nos encataria escucharte!\n"
+"                Si tienes alguna pregunta, por favor examina la información "
+"de aquí debajo o contacta al comité del programa PyCon Uruguay en"
+
+#: main/templates/proposal_info.html:39
+msgid "Call for Proposals opens: <strong>August 29, 2012</strong>"
+msgstr ""
+"Presentar una propuesta comienza el: <strong>29 de Agosto, 2012</strong>"
+
+#: main/templates/proposal_info.html:40
+msgid "Proposal submission deadline: <strong>October 1, 2012</strong>"
+msgstr ""
+"Plazo máximo para entregar una propuesta: <strong>1 de Octubre, 2012</strong>"
+
+#: main/templates/proposal_info.html:41
+msgid "Proposal acceptance: <strong>October 10, 2012</strong>"
+msgstr "Aceptación de la propuesta:<strong>10 de Octubre, 2012</strong>"
+
+#: main/templates/proposal_info.html:46
+msgid ""
+"Suitable topics for PyCon presentations include, but are not limited to:"
+msgstr "Temas adecuados para la PyCon incluyen, pero no estan limitados a:"
+
+#: main/templates/proposal_info.html:48
+msgid "Core Python, including Python 3000"
+msgstr "Núcleo Python, incluyendo Python 3000"
+
+#: main/templates/proposal_info.html:49
+msgid "Other implementations: IronPython, Jython, PyPy, and Stackless."
+msgstr "Otras implementaciones: IronPython, Jython, PyPy, y Stackless."
+
+#: main/templates/proposal_info.html:50
+msgid ""
+"Web programming (Django, Pylons, Zope, TurboGears, WSGI, Google App "
+"Engine, ...)"
+msgstr ""
+"Programación Web (Django, Pylons, Zope, TurboGears, WSGI, Google App "
+"Engine, ...)"
+
+#: main/templates/proposal_info.html:51
+msgid "Python libraries and extensions"
+msgstr "Librerias Python y extensiones"
+
+#: main/templates/proposal_info.html:52
+msgid "Business applications"
+msgstr "Aplicaciones de negocios"
+
+#: main/templates/proposal_info.html:53
+msgid "Concurrency"
+msgstr "Concurrency"
+
+#: main/templates/proposal_info.html:54
+msgid "Databases"
+msgstr "Bases de datos"
+
+#: main/templates/proposal_info.html:55
+msgid "Documentation"
+msgstr "Documentación"
+
+#: main/templates/proposal_info.html:56
+msgid "Education"
+msgstr "Educación"
+
+#: main/templates/proposal_info.html:57
+msgid "Embedding and extending Python"
+msgstr "Embebiend"
+
+#: main/templates/proposal_info.html:58
+msgid "Game programming"
+msgstr ""
+
+#: main/templates/proposal_info.html:59
+msgid "GUI programming"
+msgstr ""
+
+#: main/templates/proposal_info.html:60
+msgid "Network programming"
+msgstr ""
+
+#: main/templates/proposal_info.html:61
+msgid "Open source Python projects"
+msgstr ""
+
+#: main/templates/proposal_info.html:62
+msgid "Packaging issues"
+msgstr ""
+
+#: main/templates/proposal_info.html:63
+msgid "Programming tools"
+msgstr ""
+
+#: main/templates/proposal_info.html:64
+msgid "Project best practices"
+msgstr ""
+
+#: main/templates/proposal_info.html:65
+msgid "Science and maths"
+msgstr ""
+
+#: main/templates/proposal_info.html:66
+msgid "Social issues"
+msgstr ""
+
+#: main/templates/proposal_info.html:67
+msgid "System administration with Python"
+msgstr ""
+
+#: main/templates/proposal_info.html:68
+msgid "Testing"
+msgstr ""
+
+#: main/templates/proposal_info.html:73
+msgid ""
+"\n"
+"                    The preferred length for talks is 30 minutes. You can "
+"request a 45-minute extended slot, but proposals requiring 45 minutes will "
+"be reviewed more stringently. 45-minute slots are, as a rule of thumb, "
+"reserved for how-to talks rather than talks about things you made, saw, or "
+"did.\n"
+"                    Session lengths include time for audience questions. You "
+"should budget at least five minutes for questions; for example, a 30-minute "
+"talk will be 25 minutes of presentation and 5 minutes of questions.\n"
+"                "
+msgstr ""
+
+#: main/templates/proposal_info.html:81
+msgid ""
+"\n"
+"                We hope to record presentations, though this is pending "
+"sponsorship support and not confirmed.\n"
+"                If you do not wish to have your talk recorded please note "
+"this in your submission. Doing so will not influence the selection process "
+"in any way.\n"
+"                "
+msgstr ""
+
+#: main/templates/proposal_info.html:94
+msgid ""
+"\n"
+"                Use the PyCon Uruguay "
+msgstr ""
+
+#: main/templates/proposal_info.html:95
+msgid ""
+" to send us your proposals. You must first create an account on the website "
+"(and be logged in) in order to submit a proposal.\n"
+"                The primary author should submit the proposal. Additional "
+"authors can be added to a proposal on request (they must have accounts "
+"too).\n"
+"                "
+msgstr ""
+
+#: main/templates/proposal_info.html:99
+msgid "Send a Proposal"
+msgstr ""
+
+#: main/templates/proposal_sent.html:8 main/templates/proposal_sent.html:9
+#: main/templates/proposal_sent.html:13
+msgid "Proposal sent correctly"
+msgstr ""
+
+#: main/templates/schedule.html:25
+msgid ""
+"\n"
+"                To Be Defined\n"
+"                "
+msgstr ""
+
+#: main/templates/cmsplugin_blog/author_links_snippet.html:3
+msgid "See entries by"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_archive.html:7
+msgid "Latest entries"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_archive.html:13
+#: main/templates/cmsplugin_blog/latest_entries.html:5
+msgid "No entries"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_archive_day.html:7
+#: main/templates/cmsplugin_blog/entry_archive_month.html:7
+#: main/templates/cmsplugin_blog/entry_archive_year.html:8
+msgid "Entries for"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_archive_day.html:12
+msgid "No entries for this day"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_archive_month.html:12
+msgid "No entries for this month"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_archive_year.html:13
+msgid "No entries for this year"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_author_list.html:13
+msgid "Entries by"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_author_list.html:18
+msgid "No entries by"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_list.html:13
+msgid "Entries tagged"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/entry_list.html:18
+msgid "No entries tagged"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/month_links_snippet.html:3
+msgid "See entries for"
+msgstr ""
+
+#: main/templates/cmsplugin_blog/tag_links_snippet.html:3
+msgid "See entries tagged"
+msgstr ""
+
+#: pyconuy2012/settings.py:157
+msgid "English"
+msgstr "inglés"
+
+#: pyconuy2012/settings.py:158
+msgid "Spanish"
+msgstr "español"
+
+#~ msgid ""
+#~ "We were already conquered by python and are now committed to bring it to "
+#~ "the edge. It is time that you also meet it and start building beautiful "
+#~ "software together."
+#~ msgstr ""
+#~ "Ya hemos sido conquistados por python y ahora estamos comprometidos a "
+#~ "traerlo a la orilla. Es tiempo de que tu lo conozcas y comiences a "
+#~ "contruir hermoso software juntos."
+
+#~ msgid ""
+#~ "\n"
+#~ "                We were already conquered by python and are now committed "
+#~ "to bring it to the edge. It is time that you also meet it and start "
+#~ "building beautiful software together.\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "              Ya hemos sido conquistados por python y ahora estamos "
+#~ "comprometidos a traerlo a la orilla. Es tiempo de que tu lo conozcas y "
+#~ "comiences a contruir hermoso software juntos.\n"
+#~ "                "
+
+#~ msgid ""
+#~ "PyCon is the annual conference for the community using and developing the "
+#~ "open-source Python programming language.\n"
+#~ "                <strong>PyConUy 2012 is the first edition</strong> of the "
+#~ "PyCon event organized by the Uruguayan Python community that mainly seeks "
+#~ "to introduce and promote this wonderful language in Uruguay and the "
+#~ "region.\n"
+#~ "                Our goal is to offer universal access to Python and "
+#~ "related tools, that's why we keep the registration at FREE cost, thanks "
+#~ "to many volunteers and sponsors.\n"
+#~ "                "
+#~ msgstr ""
+#~ "Pycon es la confrencia anual para la comunidad usando y desarrollando el "
+#~ "lenguaje de programación de código-abierto Python. \n"
+#~ "\t\t\t\t<strong>PyConUy 2012 es la primera edición</strong> del evento "
+#~ "PyCon organizado por la comunidad Uruguaya de Python que sobretodo busca "
+#~ "introducir y promover este hermoso lenguaje en Uruguay y la región.\n"
+#~ "\t\t\t\tNuestra meta es ofrecer acceso universal hacia Python y sus "
+#~ "herramientas relacionadas, por eso es que mantenemos el registro GRATIS "
+#~ "gracias a muchos voluntarios y sponsors.\n"
+#~ "                "
+
+#~ msgid "Arabic"
+#~ msgstr "árabe"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "Azerbaiyán"
+
+#~ msgid "Bulgarian"
+#~ msgstr "búlgaro"
+
+#~ msgid "Bengali"
+#~ msgstr "bengalí"
+
+#~ msgid "Bosnian"
+#~ msgstr "bosnio"
+
+#~ msgid "Catalan"
+#~ msgstr "catalán"
+
+#~ msgid "Czech"
+#~ msgstr "checo"
+
+#~ msgid "Welsh"
+#~ msgstr "galés"
+
+#~ msgid "Danish"
+#~ msgstr "danés"
+
+#~ msgid "German"
+#~ msgstr "alemán"
+
+#~ msgid "Greek"
+#~ msgstr "griego"
+
+#~ msgid "British English"
+#~ msgstr "inglés británico"
+
+#~ msgid "Argentinian Spanish"
+#~ msgstr "español de Argentina"
+
+#~ msgid "Mexican Spanish"
+#~ msgstr "Español (México)"
+
+#~ msgid "Nicaraguan Spanish"
+#~ msgstr "Español (Nicaragua)"
+
+#~ msgid "Estonian"
+#~ msgstr "estonio"
+
+#~ msgid "Basque"
+#~ msgstr "vasco"
+
+#~ msgid "Persian"
+#~ msgstr "persa"
+
+#~ msgid "Finnish"
+#~ msgstr "finés"
+
+#~ msgid "French"
+#~ msgstr "francés"
+
+#~ msgid "Frisian"
+#~ msgstr "frisón"
+
+#~ msgid "Irish"
+#~ msgstr "irlandés"
+
+#~ msgid "Galician"
+#~ msgstr "gallego"
+
+#~ msgid "Hebrew"
+#~ msgstr "hebreo"
+
+#~ msgid "Hindi"
+#~ msgstr "hindi"
+
+#~ msgid "Croatian"
+#~ msgstr "croata"
+
+#~ msgid "Hungarian"
+#~ msgstr "húngaro"
+
+#~ msgid "Indonesian"
+#~ msgstr "indonesio"
+
+#~ msgid "Icelandic"
+#~ msgstr "islandés"
+
+#~ msgid "Italian"
+#~ msgstr "italiano"
+
+#~ msgid "Japanese"
+#~ msgstr "japonés"
+
+#~ msgid "Georgian"
+#~ msgstr "georgiano"
+
+#~ msgid "Khmer"
+#~ msgstr "khmer"
+
+#~ msgid "Kannada"
+#~ msgstr "kannada"
+
+#~ msgid "Korean"
+#~ msgstr "koreano"
+
+#~ msgid "Lithuanian"
+#~ msgstr "lituano"
+
+#~ msgid "Latvian"
+#~ msgstr "letón"
+
+#~ msgid "Macedonian"
+#~ msgstr "macedonio"
+
+#~ msgid "Malayalam"
+#~ msgstr "malayalam"
+
+#~ msgid "Mongolian"
+#~ msgstr "mongol"
+
+#~ msgid "Norwegian Bokmal"
+#~ msgstr "bokmål"
+
+#~ msgid "Dutch"
+#~ msgstr "holandés"
+
+#~ msgid "Norwegian Nynorsk"
+#~ msgstr "nynorsk"
+
+#~ msgid "Punjabi"
+#~ msgstr "panyabí"
+
+#~ msgid "Polish"
+#~ msgstr "polaco"
+
+#~ msgid "Portuguese"
+#~ msgstr "portugués"
+
+#~ msgid "Brazilian Portuguese"
+#~ msgstr "portugués de Brasil"
+
+#~ msgid "Romanian"
+#~ msgstr "rumano"
+
+#~ msgid "Russian"
+#~ msgstr "ruso"
+
+#~ msgid "Slovak"
+#~ msgstr "eslovaco"
+
+#~ msgid "Slovenian"
+#~ msgstr "esloveno"
+
+#~ msgid "Albanian"
+#~ msgstr "albanés"
+
+#~ msgid "Serbian"
+#~ msgstr "serbio"
+
+#~ msgid "Serbian Latin"
+#~ msgstr "serbio latino"
+
+#~ msgid "Swedish"
+#~ msgstr "sueco"
+
+#~ msgid "Tamil"
+#~ msgstr "tamil"
+
+#~ msgid "Telugu"
+#~ msgstr "telugu"
+
+#~ msgid "Thai"
+#~ msgstr "tailandés"
+
+#~ msgid "Turkish"
+#~ msgstr "turco"
+
+#~ msgid "Ukrainian"
+#~ msgstr "ucraniano"
+
+#~ msgid "Urdu"
+#~ msgstr "Urdu"
+
+#~ msgid "Vietnamese"
+#~ msgstr "vietnamita"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "chino simplificado"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "chino tradicional"
+
+#~ msgid "Enter a valid value."
+#~ msgstr "Introduzca un valor correcto."
+
+#~ msgid "This URL appears to be a broken link."
+#~ msgstr "La URL parece ser un enlace roto."
+
+#~ msgid "Enter a valid URL."
+#~ msgstr "Introduzca una URL válida."
+
+#~ msgid "Enter a valid e-mail address."
+#~ msgstr "Introduzca una dirección de correo electrónico válida."
+
+#~ msgid ""
+#~ "Enter a valid 'slug' consisting of letters, numbers, underscores or "
+#~ "hyphens."
+#~ msgstr ""
+#~ "Introduzca un 'slug' válido, consistente en letras, números, guiones "
+#~ "bajos o medios."
+
+#~ msgid "Enter a valid IPv4 address."
+#~ msgstr "Introduzca una dirección IPv4 válida."
+
+#~ msgid "Enter a valid IPv6 address."
+#~ msgstr "Introduzca una dirección IPv6 válida."
+
+#~ msgid "Enter a valid IPv4 or IPv6 address."
+#~ msgstr "Introduzca una dirección IPv4 o IPv6 válida."
+
+#~ msgid "Enter only digits separated by commas."
+#~ msgstr "Introduzca sólo dígitos separados por comas."
+
+#~ msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+#~ msgstr ""
+#~ "Asegúrese de que este valor es %(limit_value)s (actualmente es "
+#~ "%(show_value)s)."
+
+#~ msgid "Ensure this value is less than or equal to %(limit_value)s."
+#~ msgstr "Asegúrese de que este valor es menor o igual a %(limit_value)s."
+
+#~ msgid "Ensure this value is greater than or equal to %(limit_value)s."
+#~ msgstr "Asegúrese de que este valor es mayor o igual a %(limit_value)s."
+
+#~ msgid ""
+#~ "Ensure this value has at least %(limit_value)d characters (it has "
+#~ "%(show_value)d)."
+#~ msgstr ""
+#~ "Asegúrese de que este valor tiene al menos %(limit_value)d caracteres "
+#~ "(actualmente tiene %(show_value)d)."
+
+#~ msgid ""
+#~ "Ensure this value has at most %(limit_value)d characters (it has "
+#~ "%(show_value)d)."
+#~ msgstr ""
+#~ "Asegúrese de que este valor tiene a lo más %(limit_value)d caracteres "
+#~ "(actualmente tiene %(show_value)d)."
+
+#~ msgid "%(field_name)s must be unique for %(date_field)s %(lookup)s."
+#~ msgstr ""
+#~ "El campo %(field_name)s debe ser único para %(lookup)s %(date_field)s"
+
+#~ msgid "and"
+#~ msgstr "y"
+
+#~ msgid "%(model_name)s with this %(field_label)s already exists."
+#~ msgstr "Ya existe %(model_name)s con este %(field_label)s."
+
+#~ msgid "Value %r is not a valid choice."
+#~ msgstr "El valor %r no es una opción válida."
+
+#~ msgid "This field cannot be null."
+#~ msgstr "Este campo no puede estar vacío."
+
+#~ msgid "This field cannot be blank."
+#~ msgstr "Este campo no puede estar vacío."
+
+#~ msgid "Field of type: %(field_type)s"
+#~ msgstr "Campo de tipo: %(field_type)s"
+
+#~ msgid "Integer"
+#~ msgstr "Entero"
+
+#~ msgid "'%s' value must be an integer."
+#~ msgstr "El valor '%s' debe ser un entero."
+
+#~ msgid "'%s' value must be either True or False."
+#~ msgstr "El valor '%s' debe ser True o False."
+
+#~ msgid "Boolean (Either True or False)"
+#~ msgstr "Booleano (Verdadero o Falso)"
+
+#~ msgid "String (up to %(max_length)s)"
+#~ msgstr "Cadena (máximo %(max_length)s)"
+
+#~ msgid "Comma-separated integers"
+#~ msgstr "Enteros separados por comas"
+
+#~ msgid ""
+#~ "'%s' value has an invalid date format. It must be in YYYY-MM-DD format."
+#~ msgstr ""
+#~ "El valor '%s' tiene formato de fecha inválido. Debe ser de la forma YYYY-"
+#~ "MM-DD."
+
+#~ msgid ""
+#~ "'%s' value has the correct format (YYYY-MM-DD) but it is an invalid date."
+#~ msgstr ""
+#~ "El valor '%s' tiene el formato correcto (YYYY-MM-DD) pero es una fecha no "
+#~ "válida"
+
+#~ msgid "Date (without time)"
+#~ msgstr "Fecha (sin hora)"
+
+#~ msgid ""
+#~ "'%s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+#~ "uuuuuu]][TZ] format."
+#~ msgstr ""
+#~ "'%s' tiene un formato incorrecto. Debe ser del tipo YYYY-MM-DD HH:MM[:ss[."
+#~ "uuuuuu]][TZ]."
+
+#~ msgid ""
+#~ "'%s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) "
+#~ "but it is an invalid date/time."
+#~ msgstr ""
+#~ "El valor '%s' tiene el formato correcto (YYYY-MM-DD HH: MM [:ss [."
+#~ "uuuuuu]] [TZ]), pero no es una fecha/hora válida."
+
+#~ msgid "Date (with time)"
+#~ msgstr "Fecha (con hora)"
+
+#~ msgid "'%s' value must be a decimal number."
+#~ msgstr "El valor '%s' debe ser un número decimal."
+
+#~ msgid "Decimal number"
+#~ msgstr "Número decimal"
+
+#~ msgid "E-mail address"
+#~ msgstr "Dirección de correo electrónico"
+
+#~ msgid "File path"
+#~ msgstr "Ruta de fichero"
+
+#~ msgid "'%s' value must be a float."
+#~ msgstr "El valor '%s' debe ser un número decimal."
+
+#~ msgid "Floating point number"
+#~ msgstr "Número en coma flotante"
+
+#~ msgid "Big (8 byte) integer"
+#~ msgstr "Entero grande (8 bytes)"
+
+#~ msgid "IPv4 address"
+#~ msgstr "Dirección IPv4"
+
+#~ msgid "IP address"
+#~ msgstr "Dirección IP"
+
+#~ msgid "'%s' value must be either None, True or False."
+#~ msgstr "El valor '%s' debe ser None, True o False."
+
+#~ msgid "Boolean (Either True, False or None)"
+#~ msgstr "Booleano (Verdadero, Falso o Nulo)"
+
+#~ msgid "Positive integer"
+#~ msgstr "Entero positivo"
+
+#~ msgid "Positive small integer"
+#~ msgstr "Entero positivo corto"
+
+#~ msgid "Slug (up to %(max_length)s)"
+#~ msgstr "Slug (hasta %(max_length)s)"
+
+#~ msgid "Small integer"
+#~ msgstr "Entero corto"
+
+#~ msgid "Text"
+#~ msgstr "Texto"
+
+#~ msgid ""
+#~ "'%s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+#~ "format."
+#~ msgstr ""
+#~ "El valor '%s' tiene un formato inválido. Debe ser de la forma HH:MM[:ss[."
+#~ "uuuuuu]]."
+
+#~ msgid ""
+#~ "'%s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+#~ "invalid time."
+#~ msgstr ""
+#~ "El valor '%s' tiene el formato correcto (HH:MM[:ss[.uuuuuu]]) pero no "
+#~ "representa una tiempo válido."
+
+#~ msgid "Time"
+#~ msgstr "Hora"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "File"
+#~ msgstr "Archivo"
+
+#~ msgid "Image"
+#~ msgstr "Imagen"
+
+#~ msgid "Model %(model)s with pk %(pk)r does not exist."
+#~ msgstr "No existe ningún objeto %(model)s con la clave primaria %(pk)r."
+
+#~ msgid "Foreign Key (type determined by related field)"
+#~ msgstr "Llave foránea (tipo determinado por el campo relacionado)"
+
+#~ msgid "One-to-one relationship"
+#~ msgstr "Relación uno-a-uno"
+
+#~ msgid "Many-to-many relationship"
+#~ msgstr "Relación muchos-a-muchos"
+
+#~ msgid ""
+#~ "Hold down \"Control\", or \"Command\" on a Mac, to select more than one."
+#~ msgstr ""
+#~ "Mantenga presionado \"Control\", o \"Command\" en un Mac, para "
+#~ "seleccionar más de una opción."
+
+#~ msgid "This field is required."
+#~ msgstr "Este campo es obligatorio."
+
+#~ msgid "Enter a whole number."
+#~ msgstr "Introduzca un número entero."
+
+#~ msgid "Enter a number."
+#~ msgstr "Introduzca un número."
+
+#~ msgid "Ensure that there are no more than %s digits in total."
+#~ msgstr "Asegúrese de que no hay más de %s dígitos en total."
+
+#~ msgid "Ensure that there are no more than %s decimal places."
+#~ msgstr "Asegúrese de que no hay más de %s decimales."
+
+#~ msgid ""
+#~ "Ensure that there are no more than %s digits before the decimal point."
+#~ msgstr "Asegúrese de que no hay más de %s dígitos antes de la coma decimal."
+
+#~ msgid "Enter a valid date."
+#~ msgstr "Introduzca una fecha válida."
+
+#~ msgid "Enter a valid time."
+#~ msgstr "Introduzca una hora válida."
+
+#~ msgid "Enter a valid date/time."
+#~ msgstr "Introduzca una fecha/hora válida."
+
+#~ msgid "No file was submitted. Check the encoding type on the form."
+#~ msgstr ""
+#~ "No se ha enviado ningún fichero. Compruebe el tipo de codificación en el "
+#~ "formulario."
+
+#~ msgid "No file was submitted."
+#~ msgstr "No se ha enviado ningún fichero"
+
+#~ msgid "The submitted file is empty."
+#~ msgstr "El fichero enviado está vacío."
+
+#~ msgid ""
+#~ "Ensure this filename has at most %(max)d characters (it has %(length)d)."
+#~ msgstr ""
+#~ "Asegúrese de que su texto tiene no más de %(max)d caracteres (actualmente "
+#~ "tiene %(length)d)."
+
+#~ msgid "Please either submit a file or check the clear checkbox, not both."
+#~ msgstr ""
+#~ "Por favor envíe un fichero o marque la casilla de limpiar, pero no ambos."
+
+#~ msgid ""
+#~ "Upload a valid image. The file you uploaded was either not an image or a "
+#~ "corrupted image."
+#~ msgstr ""
+#~ "Envíe una imagen válida. El fichero que ha enviado no era una imagen o se "
+#~ "trataba de una imagen corrupta."
+
+#~ msgid ""
+#~ "Select a valid choice. %(value)s is not one of the available choices."
+#~ msgstr ""
+#~ "Escoja una opción válida. %(value)s no es una de las opciones disponibles."
+
+#~ msgid "Enter a list of values."
+#~ msgstr "Introduzca una lista de valores."
+
+#~ msgid "Order"
+#~ msgstr "Orden"
+
+#~ msgid "Delete"
+#~ msgstr "Eliminar"
+
+#~ msgid "Please correct the duplicate data for %(field)s."
+#~ msgstr "Por favor, corrija el dato duplicado para %(field)s."
+
+#~ msgid ""
+#~ "Please correct the duplicate data for %(field)s, which must be unique."
+#~ msgstr ""
+#~ "Por favor corriga el dato duplicado para %(field)s, el cual debe ser "
+#~ "único."
+
+#~ msgid ""
+#~ "Please correct the duplicate data for %(field_name)s which must be unique "
+#~ "for the %(lookup)s in %(date_field)s."
+#~ msgstr ""
+#~ "Por favor corriga los datos duplicados para %(field_name)s el cual debe "
+#~ "ser único para %(lookup)s en %(date_field)s."
+
+#~ msgid "Please correct the duplicate values below."
+#~ msgstr "Por favor, corrija los valores duplicados abajo."
+
+#~ msgid ""
+#~ "The inline foreign key did not match the parent instance primary key."
+#~ msgstr ""
+#~ "La clave foránea en linea no coincide con la clave primaria de la "
+#~ "instancia padre."
+
+#~ msgid ""
+#~ "Select a valid choice. That choice is not one of the available choices."
+#~ msgstr "Escoja una opción válida. Esa opción no está entre las disponibles."
+
+#~ msgid "Select a valid choice. %s is not one of the available choices."
+#~ msgstr ""
+#~ "Escoja una opción válida; '%s' no es una de las opciones disponibles."
+
+#~ msgid "\"%s\" is not a valid value for a primary key."
+#~ msgstr "\"%s\" no es un valor válido para una clave primaria."
+
+#~ msgid ""
+#~ "%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; "
+#~ "it may be ambiguous or it may not exist."
+#~ msgstr ""
+#~ "%(datetime)s no puede interpretarse en la zona temporal "
+#~ "%(current_timezone)s; puede ser ambiguo o puede no existir."
+
+#~ msgid "Change"
+#~ msgstr "Modificar"
+
+#~ msgid "Clear"
+#~ msgstr "Limpiar"
+
+#~ msgid "Unknown"
+#~ msgstr "Desconocido"
+
+#~ msgid "Yes"
+#~ msgstr "Sí"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "yes,no,maybe"
+#~ msgstr "sí,no,tal vez"
+
+#~ msgid "%(size)d byte"
+#~ msgid_plural "%(size)d bytes"
+#~ msgstr[0] "%(size)d byte"
+#~ msgstr[1] "%(size)d bytes"
+
+#~ msgid "%s KB"
+#~ msgstr "%s KB"
+
+#~ msgid "%s MB"
+#~ msgstr "%s MB"
+
+#~ msgid "%s GB"
+#~ msgstr "%s GB"
+
+#~ msgid "%s TB"
+#~ msgstr "%s TB"
+
+#~ msgid "%s PB"
+#~ msgstr "%s PB"
+
+#~ msgid "p.m."
+#~ msgstr "p.m."
+
+#~ msgid "a.m."
+#~ msgstr "a.m."
+
+#~ msgid "PM"
+#~ msgstr "PM"
+
+#~ msgid "AM"
+#~ msgstr "AM"
+
+#~ msgid "midnight"
+#~ msgstr "media noche"
+
+#~ msgid "noon"
+#~ msgstr "medio día"
+
+#~ msgid "Monday"
+#~ msgstr "lunes"
+
+#~ msgid "Tuesday"
+#~ msgstr "martes"
+
+#~ msgid "Wednesday"
+#~ msgstr "miércoles"
+
+#~ msgid "Thursday"
+#~ msgstr "jueves"
+
+#~ msgid "Friday"
+#~ msgstr "viernes"
+
+#~ msgid "Saturday"
+#~ msgstr "sábado"
+
+#~ msgid "Sunday"
+#~ msgstr "domingo"
+
+#~ msgid "Mon"
+#~ msgstr "lun"
+
+#~ msgid "Tue"
+#~ msgstr "mar"
+
+#~ msgid "Wed"
+#~ msgstr "mié"
+
+#~ msgid "Thu"
+#~ msgstr "jue"
+
+#~ msgid "Fri"
+#~ msgstr "vie"
+
+#~ msgid "Sat"
+#~ msgstr "sáb"
+
+#~ msgid "Sun"
+#~ msgstr "dom"
+
+#~ msgid "January"
+#~ msgstr "enero"
+
+#~ msgid "February"
+#~ msgstr "febrero"
+
+#~ msgid "March"
+#~ msgstr "marzo"
+
+#~ msgid "April"
+#~ msgstr "abril"
+
+#~ msgid "May"
+#~ msgstr "mayo"
+
+#~ msgid "June"
+#~ msgstr "junio"
+
+#~ msgid "July"
+#~ msgstr "julio"
+
+#~ msgid "August"
+#~ msgstr "agosto"
+
+#~ msgid "September"
+#~ msgstr "septiembre"
+
+#~ msgid "October"
+#~ msgstr "octubre"
+
+#~ msgid "November"
+#~ msgstr "noviembre"
+
+#~ msgid "December"
+#~ msgstr "diciembre"
+
+#~ msgid "jan"
+#~ msgstr "ene"
+
+#~ msgid "feb"
+#~ msgstr "feb"
+
+#~ msgid "mar"
+#~ msgstr "mar"
+
+#~ msgid "apr"
+#~ msgstr "abr"
+
+#~ msgid "may"
+#~ msgstr "may"
+
+#~ msgid "jun"
+#~ msgstr "jun"
+
+#~ msgid "jul"
+#~ msgstr "jul"
+
+#~ msgid "aug"
+#~ msgstr "ago"
+
+#~ msgid "sep"
+#~ msgstr "sep"
+
+#~ msgid "oct"
+#~ msgstr "oct"
+
+#~ msgid "nov"
+#~ msgstr "nov"
+
+#~ msgid "dec"
+#~ msgstr "dic"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Jan."
+#~ msgstr "ene."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Feb."
+#~ msgstr "feb."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "March"
+#~ msgstr "mar."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "April"
+#~ msgstr "abr."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "May"
+#~ msgstr "mayo"
+
+#~ msgctxt "abbrev. month"
+#~ msgid "June"
+#~ msgstr "jun."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "July"
+#~ msgstr "jul."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Aug."
+#~ msgstr "ago."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Sept."
+#~ msgstr "sept."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Oct."
+#~ msgstr "oct."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Nov."
+#~ msgstr "nov."
+
+#~ msgctxt "abbrev. month"
+#~ msgid "Dec."
+#~ msgstr "dic."
+
+#~ msgctxt "alt. month"
+#~ msgid "January"
+#~ msgstr "enero"
+
+#~ msgctxt "alt. month"
+#~ msgid "February"
+#~ msgstr "febrero"
+
+#~ msgctxt "alt. month"
+#~ msgid "March"
+#~ msgstr "marzo"
+
+#~ msgctxt "alt. month"
+#~ msgid "April"
+#~ msgstr "abril"
+
+#~ msgctxt "alt. month"
+#~ msgid "May"
+#~ msgstr "mayo"
+
+#~ msgctxt "alt. month"
+#~ msgid "June"
+#~ msgstr "junio"
+
+#~ msgctxt "alt. month"
+#~ msgid "July"
+#~ msgstr "julio"
+
+#~ msgctxt "alt. month"
+#~ msgid "August"
+#~ msgstr "agosto"
+
+#~ msgctxt "alt. month"
+#~ msgid "September"
+#~ msgstr "septiembre"
+
+#~ msgctxt "alt. month"
+#~ msgid "October"
+#~ msgstr "octubre"
+
+#~ msgctxt "alt. month"
+#~ msgid "November"
+#~ msgstr "noviembre"
+
+#~ msgctxt "alt. month"
+#~ msgid "December"
+#~ msgstr "diciembre"
+
+#~ msgctxt "String to return when truncating text"
+#~ msgid "%(truncated_text)s..."
+#~ msgstr "%(truncated_text)s..."
+
+#~ msgid "or"
+#~ msgstr "o"
+
+#~ msgid ", "
+#~ msgstr ", "
+
+#~ msgid "year"
+#~ msgid_plural "years"
+#~ msgstr[0] "año"
+#~ msgstr[1] "años"
+
+#~ msgid "month"
+#~ msgid_plural "months"
+#~ msgstr[0] "mes"
+#~ msgstr[1] "meses"
+
+#~ msgid "week"
+#~ msgid_plural "weeks"
+#~ msgstr[0] "semana"
+#~ msgstr[1] "semanas"
+
+#~ msgid "day"
+#~ msgid_plural "days"
+#~ msgstr[0] "día"
+#~ msgstr[1] "días"
+
+#~ msgid "hour"
+#~ msgid_plural "hours"
+#~ msgstr[0] "hora"
+#~ msgstr[1] "horas"
+
+#~ msgid "minute"
+#~ msgid_plural "minutes"
+#~ msgstr[0] "minuto"
+#~ msgstr[1] "minutos"
+
+#~ msgid "minutes"
+#~ msgstr "minutos"
+
+#~ msgid "%(number)d %(type)s"
+#~ msgstr "%(number)d %(type)s"
+
+#~ msgid ", %(number)d %(type)s"
+#~ msgstr ", %(number)d %(type)s"
+
+#~ msgid "Directory indexes are not allowed here."
+#~ msgstr "Los índices de directorio no están permitidos."
+
+#~ msgid "\"%(path)s\" does not exist"
+#~ msgstr "\"%(path)s\" no existe"
+
+#~ msgid "Index of %(directory)s"
+#~ msgstr "Índice de %(directory)s"
+
+#~ msgid "The %(verbose_name)s was created successfully."
+#~ msgstr "El/La %(verbose_name)s se ha creado exitosamente."
+
+#~ msgid "The %(verbose_name)s was updated successfully."
+#~ msgstr "Se actualizó con éxito el %(verbose_name)s."
+
+#~ msgid "The %(verbose_name)s was deleted."
+#~ msgstr "El/La %(verbose_name)s ha sido borrado."
+
+#~ msgid "No year specified"
+#~ msgstr "No se ha indicado el año"
+
+#~ msgid "No month specified"
+#~ msgstr "No se ha indicado el mes"
+
+#~ msgid "No day specified"
+#~ msgstr "No se ha indicado el día"
+
+#~ msgid "No week specified"
+#~ msgstr "No se ha indicado la semana"
+
+#~ msgid "No %(verbose_name_plural)s available"
+#~ msgstr "No %(verbose_name_plural)s disponibles"
+
+#~ msgid ""
+#~ "Future %(verbose_name_plural)s not available because %(class_name)s."
+#~ "allow_future is False."
+#~ msgstr ""
+#~ "Futuro %(verbose_name_plural)s no esta disponible porque %(class_name)s."
+#~ "allow_future es Falso."
+
+#~ msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+#~ msgstr "Fecha '%(datestr)s' no válida, el formato válido es '%(format)s'"
+
+#~ msgid "No %(verbose_name)s found matching the query"
+#~ msgstr "No %(verbose_name)s encontrado coincide con la consulta"
+
+#~ msgid "Page is not 'last', nor can it be converted to an int."
+#~ msgstr "La página no es \"ultimo\", ni puede ser convertido a un entero."
+
+#~ msgid "Invalid page (%(page_number)s)"
+#~ msgstr "Página no válida (%(page_number)s)"
+
+#~ msgid "Empty list and '%(class_name)s.allow_empty' is False."
+#~ msgstr "Lista vacía y '%(class_name)s.allow_empty' es Falso."
