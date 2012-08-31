@@ -50,7 +50,7 @@
                 <div class="span8 pull-right">
                     <ul class="menu-list">
                         <li class="menu-normal pull-left">
-                            <a href="{% page_id_url 'about' %}">{% trans 'About' %}</a>
+                            <a href="">{% trans 'About' %}</a>
                         </li>
                         <li class="menu pull-left">
                             <a href="{% url 'account:sign_up' %}">{% trans 'Registration' %}</a>
@@ -68,16 +68,16 @@
                             <a href="#">{% trans 'Schedule' %}</a>
                             <ul>
                                 <li><a class="sub_menu" href="{% url 'main:schedule' %}">{% trans 'Conference Schedule' %}</a></li>
-                                <li><a class="sub_menu" href="{% page_id_url 'proposal-info' %}">{% trans 'Send Proposal' %}</a></li>
+                                <li><a class="sub_menu" href="">{% trans 'Send Proposal' %}</a></li>
                             </ul>
-                        </li>
                         </li>
                         <li class="menu pull-left">
                             <a href="#">{% trans 'Venue' %}</a>
                             <ul>
-                                <li><a class="sub_menu" href="{% page_id_url 'place' %}">{% trans 'The Place' %}</a></li>
+                                <li><a class="sub_menu" href="">{% trans 'The Place' %}</a></li>
                             </ul>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -90,10 +90,10 @@
     <footer>
         <ul>
             <li><a href="#">{% trans 'Back to top' %}</a></li>
-            <li><a href="{% page_id_url 'place' %}">{% trans 'Venue' %}</a></li>
+            <li><a href="">{% trans 'Venue' %}</a></li>
             <li><a href="{% url 'main:schedule' %}">{% trans 'Schedule' %}</a></li>
             <li><a href="{% url 'account:sign_up' %}">{% trans 'Registration' %}</a></li>
-            <li><a href="{% page_id_url 'about' %}">{% trans 'About' %}</a></li>
+            <li><a href="">{% trans 'About' %}</a></li>
         </ul>
         {% block footer %}
         <span class="rights">{% trans 'PyCon UY 2012 is a production of the' %} <a href="/">PyUy</a>. {% trans 'Site built and hosted by' %} <a class="builder" href="http://sophilabs.com">Sophilabs</a>.</span>
