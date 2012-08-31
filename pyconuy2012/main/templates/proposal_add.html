@@ -1,4 +1,4 @@
-{% extends 'main.html' %}
+{% extends 'base.html' %}
 
 {% load cms_tags %}
 
@@ -14,7 +14,7 @@
 </div>
 <div class="row">
     <div class="span8">
-        <form method="post" class="well form-horizontal">
+        <form method="post" class="form-horizontal">
             {% csrf_token %}
             {% if form_speaker %}
                 <h3>About you:</h3>
@@ -23,7 +23,7 @@
             <h3>Your proposal:</h3>
             {{ form_proposal }}
             <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="submit" class="button button-blue">Send</button>
             </div>
         </form>
     </div>

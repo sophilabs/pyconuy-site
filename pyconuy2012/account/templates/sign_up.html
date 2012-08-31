@@ -1,4 +1,4 @@
-{% extends 'main.html' %}
+{% extends 'base.html' %}
 
 {% load i18n %}
 {% load url from future %}
@@ -15,12 +15,12 @@
 </div>
 <div class="row">
     <div class="span8">
-        <form method="post" class="well form-horizontal">
+        <form method="post" class="form-horizontal">
             <fieldset>
                 {% csrf_token %}
                 {{ form }}
                 <div class="form-actions">
-                    <input type="submit" value="Sign Up" class="btn btn-primary" />
+                    <input type="submit" value="Sign Up" class="button button-blue" />
                 </div>
             </fieldset>
         </form>

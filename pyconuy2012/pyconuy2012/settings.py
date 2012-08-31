@@ -27,14 +27,6 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '',
     },
-    'users': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '../../pyuy/pyuy/sqlite.db',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
-        }
 }
 
 TIME_ZONE = 'America/Chicago'
@@ -79,7 +71,6 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'pyconuy2012.urls'
-DATABASE_ROUTERS = ['pyconuy2012.router.Router']
 WSGI_APPLICATION = 'pyconuy2012.wsgi.application'
 
 TEMPLATE_DIRS = (
@@ -150,7 +141,7 @@ INSTALLED_APPS = (
 
 APPEND_SLASH = False
 CMS_TEMPLATES = (
-    ('main.html', 'Main'),
+    ('base.html', 'Base'),
 )
 
 LANGUAGES = (

@@ -17,9 +17,8 @@
     {% block css %}
     <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
     <link href="{% static 'jquery/css/jquery-ui.css' %}" rel="stylesheet">
-    <link href="{% static 'css/background.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css">
-    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
     {% endblock %}
     {% render_block "css" %}
 </head>
@@ -76,7 +75,7 @@
                         <li class="menu pull-left">
                             <a href="#">{% trans 'Venue' %}</a>
                             <ul>
-                                <li><a class="sub_menu" href="{% url 'main:index' %}">{% trans 'The Place' %}</a></li>
+                                <li><a class="sub_menu" href="{% page_id_url 'place' %}">{% trans 'The Place' %}</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -91,14 +90,13 @@
     <footer>
         <ul>
             <li><a href="#">{% trans 'Back to top' %}</a></li>
-            <li><a href="#">{% trans 'Venue' %}</a></li>
-            <li><a href="#">{% trans 'Sponsors' %}</a></li>
-            <li><a href="index">{% trans 'Schedule' %}</a></li>
-            <li><a href="sign_up">{% trans 'Registration' %}</a></li>
-            <li><a href="index">{% trans 'About' %}</a></li>
+            <li><a href="{% page_id_url 'place' %}">{% trans 'Venue' %}</a></li>
+            <li><a href="{% url 'main:schedule' %}">{% trans 'Schedule' %}</a></li>
+            <li><a href="{% url 'account:sign_up' %}">{% trans 'Registration' %}</a></li>
+            <li><a href="{% page_id_url 'about' %}">{% trans 'About' %}</a></li>
         </ul>
         {% block footer %}
-        <span class="rights">{% trans 'PyCon UY 2012 is a production of the' %} <a href="/">PyUy</a>.{% trans 'Site built and hosted by' %}<a class="builder" href="http://sophilabs.com">Sophilabs</a>.</span>
+        <span class="rights">{% trans 'PyCon UY 2012 is a production of the' %} <a href="/">PyUy</a>. {% trans 'Site built and hosted by' %} <a class="builder" href="http://sophilabs.com">Sophilabs</a>.</span>
         {% endblock %}
     </footer>
     {% block js %}

@@ -1,6 +1,7 @@
-{% extends 'main.html' %}
+{% extends 'base.html' %}
 
 {% load i18n %}
+{% load cms_tags %}
 {% load background_tags  %}
 {% load url from future %}
 
@@ -11,11 +12,6 @@
 {{ block.super }}
 {% endblock %}
 
-{% block slider %}
-<div class="header-back">
-
-</div>
-{% endblock %}
 {% block class %}no-slider about{% endblock %}
 {% block content %}
     <div class="row">
@@ -23,9 +19,10 @@
             <h1 class="box-title">{% trans 'Schedule' %}<small class="small"></small></h1>
             <p class="box-text">
                 {% blocktrans %}
-                To Be Defined
+                Comming soon...
                 {% endblocktrans %}
             </p>
+            <a class="button button-blue" href="{% page_id_url 'proposal-info' %}">{% trans 'Send a Proposal' %}</a>
         </div>
     </div>
 {% endblock %}
