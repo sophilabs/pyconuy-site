@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-31 09:26-0500\n"
+"POT-Creation-Date: 2012-08-31 10:17-0500\n"
 "PO-Revision-Date: 2012-03-13 19:44+0000\n"
 "Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -149,7 +149,7 @@ msgstr "Reinicio de contraseña en %(site_name)s"
 #: account/templates/profile.html:6 account/templates/profile.html.py:7
 #: templates/base.html:60
 msgid "Profile"
-msgstr "Pefil"
+msgstr "Perfil"
 
 #: account/templates/profile.html:23
 msgid "Save"
@@ -270,7 +270,7 @@ msgstr ""
 
 #: main/templates/index.html:56
 msgid "> Read more"
-msgstr "Leer más"
+msgstr ">Leer más"
 
 #: main/templates/index.html:59
 msgid "Call for Proposals"
@@ -279,6 +279,30 @@ msgstr "LLamado a propuestas"
 #: main/templates/index.html:59
 msgid "Open!"
 msgstr "¡Abierto!"
+
+#: main/templates/index.html:61
+msgid "Opens"
+msgstr "Abren"
+
+#: main/templates/index.html:61
+msgid " August 29, 2012"
+msgstr " 29 de agosto, 2012"
+
+#: main/templates/index.html:62
+msgid "Deadline"
+msgstr "Fin"
+
+#: main/templates/index.html:62
+msgid " October 1, 2012"
+msgstr " 1 de octubre, 2012"
+
+#: main/templates/index.html:63
+msgid "Acceptance"
+msgstr "Aceptación"
+
+#: main/templates/index.html:63
+msgid " October 10, 2012"
+msgstr " 10 de octubre, 2012"
 
 #: main/templates/index.html:65 main/templates/schedule.html:25
 msgid "Send a Proposal"
@@ -291,6 +315,26 @@ msgstr "Cuándo"
 #: main/templates/index.html:70
 msgid "What appointments should I cancel?"
 msgstr "¿Qué citas cancelar?"
+
+#: main/templates/index.html:72
+msgid " Saturday 10th & Sunday 11th November"
+msgstr " sabado 10 & domingo 11 de noviembre"
+
+#: main/templates/index.html:73
+msgid "Talks"
+msgstr "Charlas"
+
+#: main/templates/index.html:73
+msgid " Saturday from 9:00 to 21:00"
+msgstr " sabado de 9:00 a 21:00"
+
+#: main/templates/index.html:74
+msgid "Sprints"
+msgstr "Sprints"
+
+#: main/templates/index.html:74
+msgid " Sunday from 10:00 to 18:00"
+msgstr " domingo de 10:00 a 18:00"
 
 #: main/templates/index.html:76
 msgid "Schedule it"
@@ -430,7 +474,7 @@ msgstr "Enviar propuesta"
 
 #: templates/base.html:76 templates/base.html.py:93
 msgid "Venue"
-msgstr "Punto de encuentro"
+msgstr "Lugar"
 
 #: templates/base.html:78
 msgid "The Place"
@@ -1326,9 +1370,6 @@ msgstr "Sitio construido y alojado por"
 
 #~ msgid "September"
 #~ msgstr "septiembre"
-
-#~ msgid "October"
-#~ msgstr "octubre"
 
 #~ msgid "November"
 #~ msgstr "noviembre"
