@@ -11,6 +11,7 @@ from symposion.proposals.models import PresentationCategory
 from main.forms import SpeakerForm, ProposalForm
 
 def index(request):
+
     return render_to_response('index.html',
     {
         'sponsor_list':Sponsor.objects.order_by('level'),
