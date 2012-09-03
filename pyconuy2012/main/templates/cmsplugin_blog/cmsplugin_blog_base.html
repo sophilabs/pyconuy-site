@@ -6,6 +6,8 @@
     {% if object_list %}
         {% include "cmsplugin_blog/entry_detail_include.html" %}
     {% else %}
-        <p>{% trans "No news added" %}</p>
+        {% block left-col %}
+        {{ block.super }}
+        {% endblock %}
     {% endif %}
 {% endblock %}

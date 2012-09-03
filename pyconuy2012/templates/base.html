@@ -39,7 +39,7 @@
         {% endblock %}
         <div class="menu-box">
             <div class="row">
-                <div class="span4">
+                <div class="span3">
                     {% block logo %}
                     <a class="logo" href="{% url 'main:index' %}">
                         <img src="{% static 'img/pycon-logo.png' %}" />
@@ -47,7 +47,7 @@
                     </a>
                     {% endblock %}
                 </div>
-                <div class="span8 pull-right">
+                <div class="span9 pull-right">
                     <ul class="menu-list">
                         <li class="menu-normal pull-left">
                             <a href="{% page_id_url 'about' %}">{% trans 'About' %}</a>
@@ -68,14 +68,20 @@
                             <a href="#">{% trans 'Schedule' %}</a>
                             <ul>
                                 <li><a class="sub_menu" href="{% url 'main:schedule' %}">{% trans 'Conference Schedule' %}</a></li>
-                                <li><a class="sub_menu" href="{% page_id_url 'proposal-info' %}">{% trans 'Send Proposal' %}</a></li>
+                                <li><a class="sub_menu" href="{% page_id_url 'about' %}">{% trans 'Send Proposal' %}</a></li>
                             </ul>
-                        </li>
                         </li>
                         <li class="menu pull-left">
                             <a href="#">{% trans 'Venue' %}</a>
                             <ul>
                                 <li><a class="sub_menu" href="{% page_id_url 'place' %}">{% trans 'The Place' %}</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu pull-left">
+                            <a href="#">{% trans 'Languages' %}</a>
+                            <ul>
+                                <li><a class="sub_menu" href="/es/">{% trans 'Spanish' %}</a></li>
+                                <li><a class="sub_menu" href="/en/">{% trans 'English' %}</a></li>
                             </ul>
                         </li>
                     </ul>
