@@ -429,6 +429,12 @@ footer .rights a:hover {
     color: #dcdcdc;
 
 }
+.langs a:hover {
+    background: #ffffff;
+    color: #094ba4;
+
+}
+
 .flags {
     padding-bottom: 3px;
     padding-right: 2px;
