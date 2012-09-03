@@ -78,11 +78,11 @@
                             </ul>
                         </li>
                     </ul>
-                    <div align="right" >
+                    <div class="langs" >
                         {% if LANGUAGE_CODE == 'es' %}
-                        <a style="color: #dcdcdc; margin:50px"  href="/en/">English</a>
+                        <a  href="/en/"><img class="flags" src="{% static 'img/gb.png' %}" /> English</a>
                         {% else %}
-                        <a style="color: #dcdcdc; margin:50px" href="/es/">Español</a>
+                        <a href="/es/"><img class="flags" src="{% static 'img/es.png' %}" /> Español</a>
                         {% endif %}
                     </div>
                 </div>

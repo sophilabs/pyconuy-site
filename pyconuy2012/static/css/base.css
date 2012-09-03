@@ -296,6 +296,7 @@ footer .rights a:hover {
 }
 .menu-list {
     margin-top: 20px;
+    float: left;
 }
 .sponsor-logo {
     width: 215px;
@@ -412,4 +413,23 @@ footer .rights a:hover {
     margin-top: 0;
     margin-bottom: 0;
     border-top: 0;
+}
+.langs {
+    float: right;
+    margin-top: 20px;
+    line-height: 18px;
+}
+.langs a{
+    color: #dcdcdc;
+    padding: 5px 15px 5px 15px;
+
+    display: block;
+}
+.langs a, a:visited {
+    color: #dcdcdc;
+
+}
+.flags {
+    padding-bottom: 3px;
+    padding-right: 2px;
 }
