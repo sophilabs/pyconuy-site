@@ -77,15 +77,16 @@
                                 <li><a class="sub_menu" href="{% page_id_url 'place' %}">{% trans 'The Place' %}</a></li>
                             </ul>
                         </li>
-                        <li class="menu pull-left">
-                            <a href="#">{% trans 'Languages' %}</a>
-                            <ul>
-                                <li><a class="sub_menu" href="/es/">{% trans 'Spanish' %}</a></li>
-                                <li><a class="sub_menu" href="/en/">{% trans 'English' %}</a></li>
-                            </ul>
-                        </li>
                     </ul>
+                    <div class="span1">
+                        {% if LANGUAGE_CODE == 'es' %}
+                            <a style="color: #ffffff;" href="/en/">English</a>
+                        {% else %}
+                            <a style="color: #ffffff;" href="/es/">Spanish </a>
+                        {% endif %}
+                    </div>
                 </div>
+
             </div>
         </div>
     </header>

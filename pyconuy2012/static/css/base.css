@@ -66,6 +66,7 @@ header {
     line-height: 28px;
     padding: 10px 0;
 }
+
 .box-text.back {
     padding: 20px;
     height: 120px;
@@ -147,6 +148,11 @@ footer {
     background-color: #094ba4;
     color: white;
     margin: 30px 0 0 0;
+}
+
+.list-text li{
+    margin-bottom: 7px;
+
 }
 
 footer ul {
