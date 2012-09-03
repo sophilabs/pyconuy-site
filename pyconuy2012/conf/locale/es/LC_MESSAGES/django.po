@@ -391,62 +391,62 @@ msgstr ""
 
 #: main/templates/cmsplugin_blog/author_links_snippet.html:3
 msgid "See entries by"
-msgstr ""
+msgstr "Ver entradas por"
 
 #: main/templates/cmsplugin_blog/cmsplugin_blog_base.html:9
 msgid "No news added"
-msgstr ""
+msgstr "Ninguna noticia agregada"
 
 #: main/templates/cmsplugin_blog/entry_archive.html:7
 msgid "Latest entries"
-msgstr ""
+msgstr "Ultimas entradas"
 
 #: main/templates/cmsplugin_blog/entry_archive.html:13
 #: main/templates/cmsplugin_blog/latest_entries.html:5
 msgid "No entries"
-msgstr ""
+msgstr "Sin entradas"
 
 #: main/templates/cmsplugin_blog/entry_archive_day.html:7
 #: main/templates/cmsplugin_blog/entry_archive_month.html:7
 #: main/templates/cmsplugin_blog/entry_archive_year.html:8
 msgid "Entries for"
-msgstr ""
+msgstr "Entradas para"
 
 #: main/templates/cmsplugin_blog/entry_archive_day.html:12
 msgid "No entries for this day"
-msgstr ""
+msgstr "Ninguna entrada para este día"
 
 #: main/templates/cmsplugin_blog/entry_archive_month.html:12
 msgid "No entries for this month"
-msgstr ""
+msgstr "Ninguna entrada para este mes"
 
 #: main/templates/cmsplugin_blog/entry_archive_year.html:13
 msgid "No entries for this year"
-msgstr ""
+msgstr "Ninguna entrada para este año"
 
 #: main/templates/cmsplugin_blog/entry_author_list.html:13
 msgid "Entries by"
-msgstr ""
+msgstr "Entradas por"
 
 #: main/templates/cmsplugin_blog/entry_author_list.html:18
 msgid "No entries by"
-msgstr ""
+msgstr "Ninguna entrada por"
 
 #: main/templates/cmsplugin_blog/entry_list.html:13
 msgid "Entries tagged"
-msgstr ""
+msgstr "Entradas etiquetadas"
 
 #: main/templates/cmsplugin_blog/entry_list.html:18
 msgid "No entries tagged"
-msgstr ""
+msgstr "Ninguna entrada etiquetada"
 
 #: main/templates/cmsplugin_blog/month_links_snippet.html:3
 msgid "See entries for"
-msgstr ""
+msgstr "Ver entradas para"
 
 #: main/templates/cmsplugin_blog/tag_links_snippet.html:3
 msgid "See entries tagged"
-msgstr ""
+msgstr "Ver entradas etiquetadas"
 
 #: pyconuy2012/settings.py:148
 msgid "English"
