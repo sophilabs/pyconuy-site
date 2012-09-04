@@ -254,7 +254,7 @@ msgstr ""
 "Python que principalmente busca introducir y promover este hermoso lenguaje "
 "en Uruguay y la región.\n"
 "                Nuestro objetivo es el de ofrecer acceso universal a Python "
-"y sus herramientas relacionadas, asi es que mantenemos el registro GRATIS, "
+"y sus herramientas relacionadas, así es que mantenemos el registro GRATIS, "
 "gracias  a muchos trabajadores voluntarios y sponsors.\n"
 "                "
 
@@ -265,7 +265,7 @@ msgid ""
 "beautiful software together."
 msgstr ""
 "Ya hemos sido conquistados por python y ahora estamos comprometidos a "
-"traerlo a la orilla. Es tiempo de que tu lo conozcas y comiences a contruir "
+"traerlo a la orilla. Es tiempo de que tú lo conozcas y comiences a contruir "
 "hermoso software juntos."
 
 #: main/templates/index.html:56
@@ -318,7 +318,7 @@ msgstr "¿Qué citas cancelar?"
 
 #: main/templates/index.html:72
 msgid " Saturday 10th & Sunday 11th November"
-msgstr " sabado 10 & domingo 11 de noviembre"
+msgstr " sábado 10 & domingo 11 de noviembre"
 
 #: main/templates/index.html:73
 msgid "Talks"
@@ -326,7 +326,7 @@ msgstr "Charlas"
 
 #: main/templates/index.html:73
 msgid " Saturday from 9:00 to 21:00"
-msgstr " sabado de 9:00 a 21:00"
+msgstr " sábado de 9:00 a 21:00"
 
 #: main/templates/index.html:74
 msgid "Sprints"
@@ -358,7 +358,7 @@ msgstr "Sponsors"
 
 #: main/templates/index.html:91
 msgid "What important companies are behind this?"
-msgstr "¿Qué empresas importantes están detras de todo esto?"
+msgstr "¿Qué empresas importantes están detrás de todo esto?"
 
 #: main/templates/proposal_add.html:8 main/templates/proposal_add.html.py:9
 #: main/templates/proposal_add.html:13

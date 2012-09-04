@@ -425,7 +425,7 @@ footer .rights a:hover {
 
     display: block;
 }
-.langs a, a:visited {
+.langs  a:visited {
     color: #dcdcdc;
 
 }
