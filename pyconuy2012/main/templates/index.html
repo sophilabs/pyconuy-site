@@ -63,6 +63,16 @@
                 <p class="text-bottom"><strong>{% trans 'Acceptance' %}</strong> >{% trans  ' October 10, 2012' %}</p>
             </div>
             <a href="{% page_id_url 'proposal-info' %}" class="button button-yellow over pull-right">{% trans 'Send a Proposal' %}</a>
+            <div class="row box-social">
+                <div class="span4">
+                    <div class="fb-like-box" data-href="http://www.facebook.com/PyConUy" data-width="300" data-height="63" data-show-faces="false" data-stream="false" data-header="false"></div>
+                </div>
+                <div class="span2">
+                    <a href="https://twitter.com/intent/tweet?button_hashtag=PyConUy" class="twitter-hashtag-button" data-size="large" data-related="PyConUy">Tweet #PyConUy</a>
+                    <a href="https://twitter.com/PyConUy" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @PyConUy</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -108,15 +118,6 @@
             </div>
         </div>
     </div>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="fb-like-box" data-href="http://www.facebook.com/PyConUy" data-width="292" data-show-faces="true" data-stream="false" data-header="false"></div>
 {% endblock %}
 
 {% block js %}
