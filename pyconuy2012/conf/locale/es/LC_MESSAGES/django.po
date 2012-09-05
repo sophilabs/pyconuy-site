@@ -45,7 +45,7 @@ msgid ""
 "instructions for setting a new one."
 msgstr ""
 "¿Olvido su contraseña? Ingrese su dirección de e-mail por debajo, y le  "
-"enviaremos las instrucciones para fijar una nueva."
+"enviaremos las instrucciones para crear una nueva."
 
 #: account/templates/password_change_form.html:23
 #: account/templates/password_reset_confirm.html:23
