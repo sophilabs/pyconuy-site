@@ -20,7 +20,7 @@
                 {% csrf_token %}
                 {{ form }}
                 <div class="form-actions">
-                    <input type="submit" value="Sign In" class="button button-blue" />
+                    <input type="submit" value="{% trans 'Sign In' %}" class="button button-blue" />
                     <a href="{% url 'account:password_reset' %}">{% trans "Forgot Password?" %}</a>
                 </div>
             </fieldset>
