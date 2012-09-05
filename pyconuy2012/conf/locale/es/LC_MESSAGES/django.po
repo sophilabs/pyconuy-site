@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-31 10:17-0500\n"
+"POT-Creation-Date: 2012-09-05 08:45-0500\n"
 "PO-Revision-Date: 2012-03-13 19:44+0000\n"
 "Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -85,6 +85,10 @@ msgid ""
 msgstr ""
 "Por favor ingrese su nueva contraseña dos veces, así podemos verificar que "
 "las escribió correctamente."
+
+#: account/templates/password_reset_confirm.html:24
+msgid "Cancel"
+msgstr "Cancelar"
 
 #: account/templates/password_reset_confirm.html:32
 msgid "Password reset unsuccessful"
@@ -164,6 +168,10 @@ msgstr "Cambiar contraseña"
 msgid "Sign In"
 msgstr "Loguearse"
 
+#: account/templates/sign_in.html:24
+msgid "Forgot Password?"
+msgstr "¿Olvido su contraseña?"
+
 #: account/templates/sign_up.html:7 account/templates/sign_up.html.py:8
 #: account/templates/sign_up.html:14 templates/base.html:62
 msgid "Sign Up"
@@ -226,7 +234,7 @@ msgid "by"
 msgstr "por"
 
 #: main/templates/index.html:45 templates/base.html:53
-#: templates/base.html.py:96
+#: templates/base.html.py:104
 msgid "About"
 msgstr "Acerca de"
 
@@ -248,14 +256,18 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                PyCon es la conferencia anual para la comunidad usando y "
-"desarrollando el lenguaje de programación de codigo-abierto Python.\n"
-"                PyCon es un evento organizado por la comunidad Uruguaya de "
-"Python que principalmente busca introducir y promover este hermoso lenguaje "
-"en Uruguay y la región.\n"
-"                Nuestro objetivo es el de ofrecer acceso universal a Python "
-"y sus herramientas relacionadas, así es que mantenemos el registro GRATIS, "
-"gracias  a muchos trabajadores voluntarios y sponsors.\n"
+"                PyCon es una conferencia anual orientada a la comunidad de "
+"usuarios y desarrolladores del lenguaje de programación de código-abierto "
+"Python.\n"
+"PyConUy 2012 es la primera edición de eventos PyCon, organizado por la "
+"comunidad uruguaya de Python. El éxito obtenido en el PyDay 2011, animó a "
+"los integrantes del Grupo de Usuarios Python en Uruguay PyUy, a emprender "
+"esta primera PyCon. <br />Los objetivos se centran en acelerar la "
+"introducción y promover el uso de este hermoso lenguaje en Uruguay y la "
+"región.\n"
+"Nuestra meta es ofrecer acceso universal al lenguaje Python y sus "
+"herramientas relacionadas, por ello el registro a la PyCon ,será GRATIS "
+"gracias al trabajo de muchos voluntarios y sponsors.\n"
 "                "
 
 #: main/templates/index.html:54
@@ -265,8 +277,8 @@ msgid ""
 "beautiful software together."
 msgstr ""
 "Ya hemos sido conquistados por python y ahora estamos comprometidos a "
-"traerlo a la orilla. Es tiempo de que tú lo conozcas y comiences a contruir "
-"hermoso software juntos."
+"traerlo a la orilla. Es tiempo de que tú lo conozcas y comiences a construir "
+"el mejor software y a divertirnos juntos."
 
 #: main/templates/index.html:56
 msgid "> Read more"
@@ -371,7 +383,7 @@ msgid "Proposal sent correctly"
 msgstr "Propuesta enviada correctamente"
 
 #: main/templates/schedule.html:8 main/templates/schedule.html.py:19
-#: templates/base.html:68 templates/base.html.py:94
+#: templates/base.html:68 templates/base.html.py:102
 msgid "Schedule"
 msgstr "Calendario"
 
@@ -392,10 +404,6 @@ msgstr ""
 #: main/templates/cmsplugin_blog/author_links_snippet.html:3
 msgid "See entries by"
 msgstr "Ver entradas por"
-
-#: main/templates/cmsplugin_blog/cmsplugin_blog_base.html:9
-msgid "No news added"
-msgstr "Ninguna noticia agregada"
 
 #: main/templates/cmsplugin_blog/entry_archive.html:7
 msgid "Latest entries"
@@ -456,7 +464,7 @@ msgstr "inglés"
 msgid "Spanish"
 msgstr "español"
 
-#: templates/base.html:56 templates/base.html.py:95
+#: templates/base.html:56 templates/base.html.py:103
 msgid "Registration"
 msgstr "Inscripción"
 
@@ -472,25 +480,28 @@ msgstr "Calendario de conferencias"
 msgid "Send Proposal"
 msgstr "Enviar propuesta"
 
-#: templates/base.html:76 templates/base.html.py:93
+#: templates/base.html:75 templates/base.html.py:101
 msgid "Venue"
 msgstr "Lugar"
 
-#: templates/base.html:78
+#: templates/base.html:77
 msgid "The Place"
-msgstr "El Lugar"
+msgstr "El lugar"
 
-#: templates/base.html:92
+#: templates/base.html:100
 msgid "Back to top"
 msgstr "Volver arriba"
 
-#: templates/base.html:99
+#: templates/base.html:107
 msgid "PyCon UY 2012 is a production of the"
 msgstr "Pycon UY 2012 es una producción de"
 
-#: templates/base.html:99
+#: templates/base.html:107
 msgid "Site built and hosted by"
 msgstr "Sitio construido y alojado por"
+
+#~ msgid "No news added"
+#~ msgstr "Ninguna noticia agregada"
 
 #~ msgid "Contact Us"
 #~ msgstr "Contáctenos"
