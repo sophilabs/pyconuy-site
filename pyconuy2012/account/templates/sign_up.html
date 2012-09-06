@@ -20,7 +20,7 @@
                 {% csrf_token %}
                 {{ form }}
                 <div class="form-actions">
-                    <input type="submit" value="Sign Up" class="button button-blue" />
+                    <input type="submit" value="{% trans 'Sign Up' %}" class="button button-blue" />
                 </div>
             </fieldset>
         </form>

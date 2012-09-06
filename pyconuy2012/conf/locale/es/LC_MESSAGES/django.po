@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-31 10:17-0500\n"
+"POT-Creation-Date: 2012-09-06 10:53-0500\n"
 "PO-Revision-Date: 2012-03-13 19:44+0000\n"
 "Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -45,12 +45,18 @@ msgid ""
 "instructions for setting a new one."
 msgstr ""
 "¿Olvido su contraseña? Ingrese su dirección de e-mail por debajo, y le  "
-"enviaremos las instrucciones para fijar una nueva."
+"enviaremos las instrucciones para crear una nueva."
 
 #: account/templates/password_change_form.html:23
 #: account/templates/password_reset_confirm.html:23
 msgid "Change my password"
 msgstr "Cambiar mi contraseña"
+
+#: account/templates/password_change_form.html:24
+#: account/templates/password_reset_confirm.html:24
+#: account/templates/password_reset_form.html:24
+msgid "Cancel"
+msgstr "Cancelar"
 
 #: account/templates/password_reset_complete.html:6
 #: account/templates/password_reset_complete.html:7
@@ -95,14 +101,14 @@ msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
 msgstr ""
-"El enlace al reinicio de contraseña fue inválido, posiblemente porque ha "
-"sido usado. Por favor solicite un nuevo reinicio de contraseña."
+"El enlace al reinicio de contraseña fue inválido, posiblemente porque la "
+"misma ya este en uso. Por favor solicite un nuevo reinicio de contraseña."
 
 #: account/templates/password_reset_done.html:6
 #: account/templates/password_reset_done.html:7
 #: account/templates/password_reset_done.html:12
 msgid "Password reset successful"
-msgstr "Reinicio de contraseña satisfactorio"
+msgstr "Reinicio de contraseña exitoso"
 
 #: account/templates/password_reset_done.html:16
 msgid ""
@@ -127,7 +133,7 @@ msgstr "Por favor diríjase a siguiente página y elija una nueva contraseña"
 
 #: account/templates/password_reset_email.html:8
 msgid "Your username, in case you've forgotten:"
-msgstr "Su nombre de usuario, en caso de que lo olvide"
+msgstr "Su nombre de usuario, en caso de que lo haya olvidado"
 
 #: account/templates/password_reset_email.html:10
 msgid "Thanks for using our site!"
@@ -147,7 +153,7 @@ msgid "Password reset on %(site_name)s"
 msgstr "Reinicio de contraseña en %(site_name)s"
 
 #: account/templates/profile.html:6 account/templates/profile.html.py:7
-#: templates/base.html:60
+#: templates/base.html:83
 msgid "Profile"
 msgstr "Perfil"
 
@@ -160,12 +166,18 @@ msgid "Change password"
 msgstr "Cambiar contraseña"
 
 #: account/templates/sign_in.html:7 account/templates/sign_in.html.py:8
-#: account/templates/sign_in.html:14 templates/base.html:63
+#: account/templates/sign_in.html:14 account/templates/sign_in.html.py:23
+#: templates/base.html:86
 msgid "Sign In"
 msgstr "Loguearse"
 
+#: account/templates/sign_in.html:24
+msgid "Forgot Password?"
+msgstr "¿Olvido su contraseña?"
+
 #: account/templates/sign_up.html:7 account/templates/sign_up.html.py:8
-#: account/templates/sign_up.html:14 templates/base.html:62
+#: account/templates/sign_up.html:14 account/templates/sign_up.html.py:23
+#: templates/base.html:85
 msgid "Sign Up"
 msgstr "Registrarse"
 
@@ -225,8 +237,8 @@ msgstr "PyCon Inicio"
 msgid "by"
 msgstr "por"
 
-#: main/templates/index.html:45 templates/base.html:53
-#: templates/base.html.py:96
+#: main/templates/index.html:45 templates/base.html:76
+#: templates/base.html.py:127
 msgid "About"
 msgstr "Acerca de"
 
@@ -237,8 +249,8 @@ msgstr "¿Qué es PyCon Uruguay?"
 #: main/templates/index.html:47
 msgid ""
 "\n"
-"                PyCon is the annual conference for the community using and "
-"developing the open-source Python programming language.\n"
+"                <strong>PyCon</strong> is the annual conference for the "
+"community using and developing the open-source Python programming language.\n"
 "                PyCon is an event organized by the Uruguayan Python "
 "community that mainly seeks to introduce and promote this wonderful language "
 "in Uruguay and the region.\n"
@@ -248,15 +260,13 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                PyCon es la conferencia anual para la comunidad usando y "
-"desarrollando el lenguaje de programación de codigo-abierto Python.\n"
-"                PyCon es un evento organizado por la comunidad Uruguaya de "
-"Python que principalmente busca introducir y promover este hermoso lenguaje "
-"en Uruguay y la región.\n"
-"                Nuestro objetivo es el de ofrecer acceso universal a Python "
-"y sus herramientas relacionadas, así es que mantenemos el registro GRATIS, "
-"gracias  a muchos trabajadores voluntarios y sponsors.\n"
-"                "
+"                <strong>PyCon</strong> es una conferencia anual orientada a la comunidad de "
+"usuarios y desarrolladores del lenguaje de programación de código-abierto "
+"Python.\n"
+"PyConUy 2012 es la primera edición de eventos PyCon, organizado por la "
+"comunidad uruguaya de Python. El éxito obtenido en el PyDay 2011, animó a "
+"los integrantes del Grupo de Usuarios Python en Uruguay PyUy, a emprender "
+"esta primera PyCon.                "
 
 #: main/templates/index.html:54
 msgid ""
@@ -265,8 +275,8 @@ msgid ""
 "beautiful software together."
 msgstr ""
 "Ya hemos sido conquistados por python y ahora estamos comprometidos a "
-"traerlo a la orilla. Es tiempo de que tú lo conozcas y comiences a contruir "
-"hermoso software juntos."
+"traerlo a la orilla. Es tiempo de que tú lo conozcas y comiences a construir "
+"el mejor software y a divertirnos juntos."
 
 #: main/templates/index.html:56
 msgid "> Read more"
@@ -308,55 +318,55 @@ msgstr " 10 de octubre, 2012"
 msgid "Send a Proposal"
 msgstr "Enviar Propuesta"
 
-#: main/templates/index.html:70
+#: main/templates/index.html:82
 msgid "When"
 msgstr "Cuándo"
 
-#: main/templates/index.html:70
+#: main/templates/index.html:82
 msgid "What appointments should I cancel?"
 msgstr "¿Qué citas cancelar?"
 
-#: main/templates/index.html:72
+#: main/templates/index.html:84
 msgid " Saturday 10th & Sunday 11th November"
 msgstr " sábado 10 & domingo 11 de noviembre"
 
-#: main/templates/index.html:73
+#: main/templates/index.html:85
 msgid "Talks"
 msgstr "Charlas"
 
-#: main/templates/index.html:73
+#: main/templates/index.html:85
 msgid " Saturday from 9:00 to 21:00"
 msgstr " sábado de 9:00 a 21:00"
 
-#: main/templates/index.html:74
+#: main/templates/index.html:86
 msgid "Sprints"
 msgstr "Sprints"
 
-#: main/templates/index.html:74
+#: main/templates/index.html:86
 msgid " Sunday from 10:00 to 18:00"
 msgstr " domingo de 10:00 a 18:00"
 
-#: main/templates/index.html:76
+#: main/templates/index.html:88
 msgid "Schedule it"
 msgstr "Agéndalo"
 
-#: main/templates/index.html:79
+#: main/templates/index.html:91
 msgid "Where"
 msgstr "Dónde"
 
-#: main/templates/index.html:79
+#: main/templates/index.html:91
 msgid "Take me there!"
 msgstr "¡Llévame ahí!"
 
-#: main/templates/index.html:86
+#: main/templates/index.html:98
 msgid "See Map"
 msgstr "Ver mapa"
 
-#: main/templates/index.html:91
+#: main/templates/index.html:103
 msgid "Sponsors"
 msgstr "Sponsors"
 
-#: main/templates/index.html:91
+#: main/templates/index.html:103
 msgid "What important companies are behind this?"
 msgstr "¿Qué empresas importantes están detrás de todo esto?"
 
@@ -371,7 +381,7 @@ msgid "Proposal sent correctly"
 msgstr "Propuesta enviada correctamente"
 
 #: main/templates/schedule.html:8 main/templates/schedule.html.py:19
-#: templates/base.html:68 templates/base.html.py:94
+#: templates/base.html:91 templates/base.html.py:125
 msgid "Schedule"
 msgstr "Calendario"
 
@@ -392,10 +402,6 @@ msgstr ""
 #: main/templates/cmsplugin_blog/author_links_snippet.html:3
 msgid "See entries by"
 msgstr "Ver entradas por"
-
-#: main/templates/cmsplugin_blog/cmsplugin_blog_base.html:9
-msgid "No news added"
-msgstr "Ninguna noticia agregada"
 
 #: main/templates/cmsplugin_blog/entry_archive.html:7
 msgid "Latest entries"
@@ -456,41 +462,44 @@ msgstr "inglés"
 msgid "Spanish"
 msgstr "español"
 
-#: templates/base.html:56 templates/base.html.py:95
+#: templates/base.html:79 templates/base.html.py:126
 msgid "Registration"
 msgstr "Inscripción"
 
-#: templates/base.html:59
+#: templates/base.html:82
 msgid "Sign Out"
 msgstr "Cerrar sesión"
 
-#: templates/base.html:70
+#: templates/base.html:93
 msgid "Conference Schedule"
 msgstr "Calendario de conferencias"
 
-#: templates/base.html:71
+#: templates/base.html:94
 msgid "Send Proposal"
 msgstr "Enviar propuesta"
 
-#: templates/base.html:76 templates/base.html.py:93
+#: templates/base.html:98 templates/base.html.py:124
 msgid "Venue"
 msgstr "Lugar"
 
-#: templates/base.html:78
+#: templates/base.html:100
 msgid "The Place"
-msgstr "El Lugar"
+msgstr "El lugar"
 
-#: templates/base.html:92
+#: templates/base.html:123
 msgid "Back to top"
 msgstr "Volver arriba"
 
-#: templates/base.html:99
+#: templates/base.html:130
 msgid "PyCon UY 2012 is a production of the"
 msgstr "Pycon UY 2012 es una producción de"
 
-#: templates/base.html:99
+#: templates/base.html:130
 msgid "Site built and hosted by"
 msgstr "Sitio construido y alojado por"
+
+#~ msgid "No news added"
+#~ msgstr "Ninguna noticia agregada"
 
 #~ msgid "Contact Us"
 #~ msgstr "Contáctenos"
