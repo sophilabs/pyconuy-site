@@ -56,9 +56,16 @@ header {
 .box-yellow {
     background-color: #ffeebb;
 }
+.box-yellow > .text-bottom {
+    font-size: 18px;
+}
 
 .box-blue {
     background-color: #e5eef8;
+}
+
+.box-blue > .text-bottom {
+    font-size: 18px;
 }
 
 .box-text {
@@ -78,7 +85,7 @@ header {
 }
 .box-yellow > .text-bottom {
     color: #c59919;
-    font-size: 18pt;
+    font-size: 18px;
 }
 .box-blue > .text-top {
     color: #094ba4;
@@ -86,7 +93,7 @@ header {
 }
 .box-blue > .text-bottom {
     color: #3389fe;
-    font-size: 18pt;
+    font-size: 18px;
 }
 
 .box-social {
@@ -272,7 +279,7 @@ footer .rights a:hover {
 }
 
 .flexslider {
-    height: 592px;
+    min-height: 590px;
     overflow: hidden;
     min-width: 940px;
     border: none;
@@ -288,6 +295,8 @@ footer .rights a:hover {
     margin: 0;
     border-bottom: 4px solid #FFBE00;
 }
+
+
 
 .flexslider .slides img {
     top: -50%;
@@ -382,6 +391,7 @@ footer .rights a:hover {
 }
 .slider-box section.white-box {
     background-color: rgba(255, 255, 255, 0.7);
+    opacity:0.9;
 }
 .slider-box section.white-box h1 {
     color: #333333;
@@ -452,4 +462,16 @@ footer .rights a:hover {
 .flags {
     padding-bottom: 3px;
     padding-right: 2px;
+}
+
+.about-small{
+    background-color: #F8F8F8;
+    padding: 10px;
+    line-height: 23px;
+
+}
+.twitter-link * {
+    float: right;
+    margin:2px;
+
 }

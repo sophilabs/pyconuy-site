@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-05 09:00-0500\n"
+"POT-Creation-Date: 2012-09-06 10:53-0500\n"
 "PO-Revision-Date: 2012-03-13 19:44+0000\n"
 "Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -249,8 +249,8 @@ msgstr "¿Qué es PyCon Uruguay?"
 #: main/templates/index.html:47
 msgid ""
 "\n"
-"                PyCon is the annual conference for the community using and "
-"developing the open-source Python programming language.\n"
+"                <strong>PyCon</strong> is the annual conference for the "
+"community using and developing the open-source Python programming language.\n"
 "                PyCon is an event organized by the Uruguayan Python "
 "community that mainly seeks to introduce and promote this wonderful language "
 "in Uruguay and the region.\n"
@@ -260,19 +260,13 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                PyCon es una conferencia anual orientada a la comunidad de "
+"                <strong>PyCon</strong> es una conferencia anual orientada a la comunidad de "
 "usuarios y desarrolladores del lenguaje de programación de código-abierto "
 "Python.\n"
 "PyConUy 2012 es la primera edición de eventos PyCon, organizado por la "
 "comunidad uruguaya de Python. El éxito obtenido en el PyDay 2011, animó a "
 "los integrantes del Grupo de Usuarios Python en Uruguay PyUy, a emprender "
-"esta primera PyCon. <br />Los objetivos se centran en acelerar la "
-"introducción y promover el uso de este hermoso lenguaje en Uruguay y la "
-"región.\n"
-"Nuestra meta es ofrecer acceso universal al lenguaje Python y sus "
-"herramientas relacionadas, por ello el registro a la PyCon ,será GRATIS "
-"gracias al trabajo de muchos voluntarios y sponsors.\n"
-"                "
+"esta primera PyCon.                "
 
 #: main/templates/index.html:54
 msgid ""
@@ -324,55 +318,55 @@ msgstr " 10 de octubre, 2012"
 msgid "Send a Proposal"
 msgstr "Enviar Propuesta"
 
-#: main/templates/index.html:80
+#: main/templates/index.html:82
 msgid "When"
 msgstr "Cuándo"
 
-#: main/templates/index.html:80
+#: main/templates/index.html:82
 msgid "What appointments should I cancel?"
 msgstr "¿Qué citas cancelar?"
 
-#: main/templates/index.html:82
+#: main/templates/index.html:84
 msgid " Saturday 10th & Sunday 11th November"
 msgstr " sábado 10 & domingo 11 de noviembre"
 
-#: main/templates/index.html:83
+#: main/templates/index.html:85
 msgid "Talks"
 msgstr "Charlas"
 
-#: main/templates/index.html:83
+#: main/templates/index.html:85
 msgid " Saturday from 9:00 to 21:00"
 msgstr " sábado de 9:00 a 21:00"
 
-#: main/templates/index.html:84
+#: main/templates/index.html:86
 msgid "Sprints"
 msgstr "Sprints"
 
-#: main/templates/index.html:84
+#: main/templates/index.html:86
 msgid " Sunday from 10:00 to 18:00"
 msgstr " domingo de 10:00 a 18:00"
 
-#: main/templates/index.html:86
+#: main/templates/index.html:88
 msgid "Schedule it"
 msgstr "Agéndalo"
 
-#: main/templates/index.html:89
+#: main/templates/index.html:91
 msgid "Where"
 msgstr "Dónde"
 
-#: main/templates/index.html:89
+#: main/templates/index.html:91
 msgid "Take me there!"
 msgstr "¡Llévame ahí!"
 
-#: main/templates/index.html:96
+#: main/templates/index.html:98
 msgid "See Map"
 msgstr "Ver mapa"
 
-#: main/templates/index.html:101
+#: main/templates/index.html:103
 msgid "Sponsors"
 msgstr "Sponsors"
 
-#: main/templates/index.html:101
+#: main/templates/index.html:103
 msgid "What important companies are behind this?"
 msgstr "¿Qué empresas importantes están detrás de todo esto?"
 
