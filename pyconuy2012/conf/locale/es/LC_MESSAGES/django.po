@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-07 14:26-0500\n"
+"POT-Creation-Date: 2012-09-07 14:44-0500\n"
 "PO-Revision-Date: 2012-03-13 19:44+0000\n"
 "Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -406,6 +406,10 @@ msgstr "¿Qué empresas importantes están detrás de todo esto?"
 #: main/templates/proposal_add.html:12
 msgid "Send a proposal"
 msgstr "Enviar propuesta"
+
+#: main/templates/proposal_add.html:17
+msgid "Your proposal:"
+msgstr "Tu propuesta:"
 
 #: main/templates/proposal_add.html:20
 msgid "Send"
