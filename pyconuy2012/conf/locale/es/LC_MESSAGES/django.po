@@ -306,9 +306,9 @@ msgid ""
 "it to the edge. It is time that you also meet it and start building "
 "beautiful software together."
 msgstr ""
-"Ya hemos sido conquistados por python y ahora estamos comprometidos a "
-"traerlo a la orilla. Es tiempo de que tú lo conozcas y comiences a construir "
-"el mejor software y a divertirnos juntos."
+"Ya hemos sido conquistados por python y ahora estamos comprometidos "
+"a aprovecharlo al máximo. Es tiempo de que tú lo conozcas y comiences a "
+"construir el mejor software y a divertirnos juntos."
 
 #: main/templates/index.html:58
 msgid "> Read more"
