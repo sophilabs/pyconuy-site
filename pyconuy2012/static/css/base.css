@@ -20,6 +20,12 @@ h1 {
     color: #094BA4;
 }
 
+h2 {
+    font-weight: normal;
+    margin: 12px 0;
+    color: #094BA4;
+}
+
 h1 small {
     margin-left: 10px;
     color: #6fa8e7;!important
