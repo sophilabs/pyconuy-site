@@ -14,7 +14,7 @@
     <div class="span8">
         <form method="post" class="form-horizontal">
             {% csrf_token %}
-            <h3>Your proposal:</h3>
+            <h3>{% trans 'Your proposal:' %}</h3>
             {{ form }}
             <div class="form-actions">
                 <button type="submit" class="button button-blue">{% trans "Send" %}</button>
