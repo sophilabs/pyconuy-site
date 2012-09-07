@@ -5,16 +5,20 @@
 {% load i18n %}
 {% load url from future %}
 
-{% block meta_title %}{% trans "Proposal sent correctly" %} - {{ block.super }}{% endblock %}
-{% block meta_description %}{% trans "Proposal sent correctly" %}{% endblock %}
+{% block meta_title %}{% trans "Proposal sent" %} - {{ block.super }}{% endblock %}
+{% block meta_description %}{% trans "Proposal sent" %}{% endblock %}
 
 {% block content %}
-<div class="page-header">
-    <h1>{% trans "Proposal sent correctly" %}</h1>
-</div>
+<h1>{% trans "Proposal sent" %}</h1>
 <div class="row">
-    <div class="span8">
-        <a href="main:proposal_add">Send another proposal.</a>
+    <div class="span12">
+        <p>
+        {% blocktrans with email="programa@python.org.uy" %}
+        Thanks for submitting your proposal. We'll review it and come back to you shortly.<br>
+        Please contact us at <a href="mailto:{{ email }}">{{ email }}</a> if you have any questions.
+        {% endblocktrans %}
+        </p>
+        <p><a class="button button-blue" href="{% url 'main:index' %}">{% trans 'Back to home' %}</a></p>
     </div>
 </div>
 {% endblock %}

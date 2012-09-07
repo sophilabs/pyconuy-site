@@ -9,21 +9,15 @@
 {% block meta_description %}{% trans "Send a proposal" %}{% endblock %}
 
 {% block content %}
-<div class="page-header">
-    <h1>{% trans "Send a proposal" %}</h1>
-</div>
+<h1>{% trans "Send a proposal" %}</h1>
 <div class="row">
     <div class="span8">
         <form method="post" class="form-horizontal">
             {% csrf_token %}
-            {% if form_speaker %}
-                <h3>About you:</h3>
-                {{ formS }}
-            {% endif %}
             <h3>Your proposal:</h3>
-            {{ form_proposal }}
+            {{ form }}
             <div class="form-actions">
-                <button type="submit" class="button button-blue">Send</button>
+                <button type="submit" class="button button-blue">{% trans "Send" %}</button>
             </div>
         </form>
     </div>

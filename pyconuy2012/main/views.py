@@ -8,7 +8,7 @@ from symposion.proposals.models import Proposal
 from django.template import RequestContext
 from symposion.sponsors_pro.models import Sponsor
 from symposion.proposals.models import PresentationCategory
-from main.forms import SpeakerForm, ProposalForm
+from main.forms import ProposalForm
 
 def index(request):
 
@@ -20,50 +20,45 @@ def index(request):
 
 @login_required
 def proposal_add(request):
-    if request.method == 'POST': # If the form has been submitted...
-        form_proposal = ProposalForm(request.POST) # A form bound to the POST data
-        form_speaker = SpeakerForm(request.POST)
-        try:
-            Speaker.objects.get(user=request.user)
-            speaker = Speaker.objects.get(user=request.user)
-        except Speaker.DoesNotExist:
-            if form_speaker.is_valid():
-                    speaker = Speaker.objects.create(
-                        user=request.user,
-                        name='{0} {1}'.format(request.user.first_name, request.user.last_name),
-                        biography=form_speaker.cleaned_data['biography'],
-                        annotation=form_speaker.cleaned_data['annotation'],
-                        invite_email=request.user.email,
-                        invite_token="")
-            else:
-                return render_to_response('proposal_add.html', {
-                    'form_proposal':form_proposal, 'form_speaker':form_speaker
-                }, context_instance=RequestContext(request))
 
-        if form_proposal.is_valid():
+    try:
+        speaker = Speaker.objects.get(user=request.user)
+    except Speaker.DoesNotExist:
+        speaker = Speaker(user=request.user,
+            name='{0} {1}'.format(request.user.first_name, request.user.last_name),
+            invite_email=request.user.email,
+            invite_token="")
+
+    if request.method == 'POST':
+        form = ProposalForm(request.POST)
+
+        if form.is_valid():
+
+            #save speaker
+            speaker.biography = form.cleaned_data['description']
+            speaker.annotation = speaker.annotation or ""
+            speaker.save()
+
+            #save proposal
             Proposal.objects.create(
-                title=form_proposal.cleaned_data['title'],
-                description=form_proposal.cleaned_data['description'],
-                kind=form_proposal.cleaned_data['kind'],
+                title=form.cleaned_data['title'],
+                description=form.cleaned_data['description'],
+                kind=form.cleaned_data['kind'],
                 category=PresentationCategory.objects.get(slug='general'),
-                abstract=form_proposal.cleaned_data['abstract'],
-                audience_level=form_proposal.cleaned_data['audience_level'],
-                additional_notes=form_proposal.cleaned_data['additional_notes'],
-                duration=form_proposal.cleaned_data['duration'],
+                abstract=form.cleaned_data['abstract'],
+                audience_level=form.cleaned_data['audience_level'],
+                additional_notes=form.cleaned_data['additional_notes'],
+                duration=form.cleaned_data['duration'],
                 speaker=speaker,
                 submitted=datetime.datetime.now(),
                 cancelled=False)
-            return HttpResponseRedirect('/proposal_sent') # Redirect after POST
+
+            return HttpResponseRedirect('/proposal-sent')
     else:
-        try:
-            Speaker.objects.get(user=request.user)
-            form_speaker = ""
-        except Speaker.DoesNotExist:
-            form_speaker = SpeakerForm()
-        form_proposal = ProposalForm()
+        form = ProposalForm()
 
     return render_to_response('proposal_add.html', {
-        'form_proposal':form_proposal, 'form_speaker':form_speaker
+        'form': form,
         }, context_instance=RequestContext(request))
 
 def proposal_sent(request):
