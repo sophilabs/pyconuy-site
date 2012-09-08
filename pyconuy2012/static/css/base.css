@@ -246,7 +246,7 @@ footer .rights a:hover {
 }
 
 .flexslider {
-    min-height: 590px;
+    min-height: 400px;
     overflow: hidden;
     min-width: 940px;
     border: none;
