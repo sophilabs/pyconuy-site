@@ -25,9 +25,9 @@ def proposal_add(request):
         speaker = Speaker.objects.get(user=request.user)
     except Speaker.DoesNotExist:
         speaker = Speaker(user=request.user,
-            name='{0} {1}'.format(request.user.first_name, request.user.last_name),
-            invite_email=request.user.email,
-            invite_token="")
+            name = u'{0} {1}'.format(request.user.first_name, request.user.last_name),
+            invite_email = request.user.email,
+            invite_token = '')
 
     if request.method == 'POST':
         form = ProposalForm(request.POST)
@@ -36,7 +36,7 @@ def proposal_add(request):
 
             #save speaker
             speaker.biography = form.cleaned_data['description']
-            speaker.annotation = speaker.annotation or ""
+            speaker.annotation = speaker.annotation or ''
             speaker.save()
 
             #save proposal
