@@ -2,11 +2,11 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect
 import forms
+from django.contrib.auth import authenticate
 from django.contrib.auth import views as aviews
 from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.conf import settings
 
 @login_required
 def profile(request):
@@ -33,7 +33,7 @@ def sign_up(request, next_page=None):
             form.instance.password = form.cleaned_data['password1']
             form.save()
             messages.add_message(request, messages.SUCCESS, 'Account created successfully.')
-            aviews.authenticate(username=form.instance.username, password=form.instance.password)
+            authenticate(username=form.instance.username, password=form.instance.password)
             return HttpResponseRedirect(next_page or reverse('account:profile'))
     else:
         form = forms.UserCreationForm()
