@@ -3,3 +3,4 @@
 *.sqlite
 *.db
 pyconuy2012/media
+settings_local.py
