@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load url from future %}
+{% load static from staticfiles %}
+
+{% block meta_title %}{% trans "Sign In or Sign Up" %} - {{ block.super }}{% endblock %}
+{% block meta_description %}{% trans "Sign In or Sign Up" %}{% endblock %}
+
+{% block class %}{{ block.super }} account{% endblock %}
+{% block content %}
+{{ block.super }}
+<div class="row">
+    <div class="span6">
+        <h1>{% trans "Sign In" %}</h1>
+        <form method="post" class="form-horizontal">
+            <fieldset>
+                {% csrf_token %}
+                {{ sign_in }}
+                <div class="form-actions">
+                    <input name="sign_in" type="submit" value="{% trans 'Sign In' %}" class="button button-blue" />
+                    <a href="{% url 'account:password_reset' %}">{% trans "Forgot Password?" %}</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="span6">
+        <h1>{% trans "Sign Up" %}</h1>
+        <form method="post" class="form-horizontal">
+            <fieldset>
+                {% csrf_token %}
+                {{ sign_up }}
+                <div class="form-actions">
+                    <input name="sign_up" type="submit" value="{% trans 'Sign Up' %}" class="button button-blue" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% endblock %}

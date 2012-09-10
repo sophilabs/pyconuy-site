@@ -2,7 +2,7 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect
 import forms
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
 from django.contrib.auth import views as aviews
 from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
@@ -25,14 +25,36 @@ def profile(request):
         'form' : form
     }, context_instance=RequestContext(request))
 
+def sign(request, next_page=None):
+    sign_up = forms.UserCreationForm()
+    sign_in = forms.AuthenticationForm()
+    if request.method == 'POST':
+        if 'sign_in' in request.POST:
+            sign_in = forms.AuthenticationForm(data=request.POST)
+            if sign_in.is_valid():
+                login(request, sign_in.get_user())
+                if request.session.test_cookie_worked():
+                    request.session.delete_test_cookie()
+                return HttpResponseRedirect(next_page or reverse('account:profile'))
+        else:
+            sign_up = forms.UserCreationForm(data=request.POST)
+            if sign_up.is_valid():
+                sign_up.instance.email = sign_up.cleaned_data['username']
+                sign_up.save()
+                authenticate(username=sign_up.instance.username, password=sign_up.instance.password)
+                return HttpResponseRedirect(next_page or reverse('account:profile'))
+    request.session.set_test_cookie()
+    return render_to_response('sign.html',{
+        'sign_up' : sign_up,
+        'sign_in': sign_in
+    }, context_instance=RequestContext(request))
+
 def sign_up(request, next_page=None):
     if request.method == 'POST':
         form = forms.UserCreationForm(request.POST)
         if form.is_valid():
-            form.instance.username = form.cleaned_data['username']
-            form.instance.password = form.cleaned_data['password1']
+            form.instance.email = form.cleaned_data['username']
             form.save()
-            messages.add_message(request, messages.SUCCESS, 'Account created successfully.')
             authenticate(username=form.instance.username, password=form.instance.password)
             return HttpResponseRedirect(next_page or reverse('account:profile'))
     else:

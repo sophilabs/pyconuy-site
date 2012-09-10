@@ -7,7 +7,7 @@ class AuthenticationForm(BootstrapMixin, aforms.AuthenticationForm):
 
     def __init__(self, *args, **kwargs):
         super(AuthenticationForm, self).__init__(*args, **kwargs)
-        self.fields['username'].label = "E-mail"
+        self.fields['username'].label = 'E-mail'
 
 class PasswordResetForm(BootstrapMixin, aforms.PasswordResetForm):
     pass
@@ -24,11 +24,11 @@ class UserCreationForm(BootstrapMixin, aforms.UserCreationForm):
 
     def __init__(self, *args, **kwargs):
         super(UserCreationForm, self).__init__(*args, **kwargs)
-        self.fields['username'].label = "E-mail"
+        self.fields['username'].label = 'E-mail'
 
     class Meta:
         model = User
-        fields = ("username", "password1", "password2")
+        fields = ('first_name', 'last_name', 'username', 'password1', 'password2')
 
 class ProfileForm(BootstrapModelForm):
 

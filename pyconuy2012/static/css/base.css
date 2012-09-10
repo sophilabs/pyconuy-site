@@ -399,22 +399,27 @@ footer .rights a:hover {
     margin-bottom: 0;
     border-top: 0;
 }
-.langs {
+
+ul.links {
     float: right;
     margin-top: 20px;
     line-height: 18px;
 }
-.langs a{
+
+ul.links li {
+    float: left;
+}
+
+ul.links li a {
     color: #dcdcdc;
     padding: 5px 15px 5px 15px;
-
     display: block;
 }
-.langs  a:visited {
+ul.links li  a:visited {
     color: #dcdcdc;
 
 }
-.langs a:hover {
+ul.links li a:hover {
     background: #ffffff;
     color: #094ba4;
 

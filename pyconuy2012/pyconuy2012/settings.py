@@ -187,7 +187,7 @@ LOGGING = {
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-LOGIN_URL = '/sign-in'
+LOGIN_URL = '/sign'
 LOGOUT_URL = '/sign-out'
 LOGIN_REDIRECT_URL = '/profile'
 LOGIN_ERROR_URL = '/'
