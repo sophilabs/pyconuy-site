@@ -305,7 +305,7 @@ footer .rights a:hover {
 .flexslider .notes {
     width: 940px;
     position: absolute;
-    top: 450px;
+    bottom: 127px;
     left: 50%;
     margin-left: -470px;
     color: white;
