@@ -95,12 +95,12 @@ def password_reset_confirm(request, uidb36, token, post_reset_redirect=None):
     return aviews.password_reset_confirm(request, uidb36, token,
         template_name='password_reset_confirm.html',
         set_password_form=forms.SetPasswordForm,
-        post_reset_redirect=post_reset_redirect or reverse('account:password_reset_confirm_done'),
+        post_reset_redirect=post_reset_redirect or reverse('account:password_reset_complete'),
         extra_context={})
 
-def password_reset_confirm_done(request):
+def password_reset_complete(request):
     return aviews.password_reset_complete(request,
-        template_name='password_reset_confirm_done.html')
+        template_name='password_reset_complete.html')
 
 def password_change(request):
     return aviews.password_change(request,
