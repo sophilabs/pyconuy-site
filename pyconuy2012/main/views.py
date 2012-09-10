@@ -59,7 +59,7 @@ def proposal_add(request):
 
             return HttpResponseRedirect('/proposal-sent')
     else:
-        form = ProposalForm(initial={'biography': speaker.biography or ''})
+        form = ProposalForm(initial={'biography': speaker.biography.raw})
 
     return render_to_response('proposal_add.html', {
         'form': form,
