@@ -322,7 +322,7 @@ footer .rights a:hover {
 .slider-box {
     width: 670px;
     position: absolute;
-    top: 250px;
+    bottom: 125px;
     left: 50%;
     margin-left: -470px;
     color: white;
