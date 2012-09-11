@@ -1,0 +1,54 @@
+.index h1 {
+    margin: 20px 0 10px 0;
+}
+
+.index .box-yellow {
+    background-color: #ffeebb;
+}
+.index .box-yellow > .text-bottom {
+    font-size: 18px;
+    margin: 0 0 9px;
+}
+
+.index .box-blue {
+    background-color: #e5eef8;
+}
+
+.index .box-blue > .text-bottom {
+    font-size: 18px;
+    margin: 0 0 9px;
+}
+
+.index .box-text {
+    line-height: 28px;
+    padding: 10px 0;
+}
+
+.index .box-text.back {
+    padding: 20px;
+    height: 120px;
+}
+.index .box-yellow > .text-top {
+    color: #5b4401;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.index .box-yellow > .text-bottom {
+    color: #c59919;
+    font-size: 18px;
+}
+
+.index .box-blue > .text-top {
+    color: #094ba4;
+    font-size: 24px;
+}
+
+.index .box-blue > .text-bottom {
+    color: #3389fe;
+    font-size: 18px;
+}
+
+.index .box-social {
+    margin-top: 40px;
+}

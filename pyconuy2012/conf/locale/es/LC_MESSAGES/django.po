@@ -24,22 +24,22 @@ msgstr ""
 
 #: account/templates/password_change_done.html:6
 #: account/templates/password_change_done.html:7
-#: account/templates/password_change_done.html:13
+#: account/templates/password_change_done.html:12
 msgid "Password change successful"
 msgstr "Contraseña cambiada con éxito"
 
-#: account/templates/password_change_done.html:17
+#: account/templates/password_change_done.html:15
 msgid "Your password was changed."
 msgstr "Su contraseña fue cambiada."
 
 #: account/templates/password_change_form.html:6
 #: account/templates/password_change_form.html:7
-#: account/templates/password_change_form.html:13
+#: account/templates/password_change_form.html:12
 msgid "Password change"
 msgstr "Cambio de contraseña"
 
-#: account/templates/password_change_form.html:17
-#: account/templates/password_reset_form.html:17
+#: account/templates/password_change_form.html:15
+#: account/templates/password_reset_form.html:15
 msgid ""
 "Forgotten your password? Enter your e-mail address below, and we'll e-mail "
 "instructions for setting a new one."
@@ -47,44 +47,44 @@ msgstr ""
 "¿Olvido su contraseña? Ingrese su dirección de e-mail por debajo, y le  "
 "enviaremos las instrucciones para crear una nueva."
 
-#: account/templates/password_change_form.html:23
-#: account/templates/password_reset_confirm.html:23
+#: account/templates/password_change_form.html:21
+#: account/templates/password_reset_confirm.html:21
 msgid "Change my password"
 msgstr "Cambiar mi contraseña"
 
-#: account/templates/password_change_form.html:24
-#: account/templates/password_reset_confirm.html:24
-#: account/templates/password_reset_form.html:24
+#: account/templates/password_change_form.html:22
+#: account/templates/password_reset_confirm.html:22
+#: account/templates/password_reset_form.html:22
 msgid "Cancel"
 msgstr "Cancelar"
 
 #: account/templates/password_reset_complete.html:6
 #: account/templates/password_reset_complete.html:7
-#: account/templates/password_reset_complete.html:12
+#: account/templates/password_reset_complete.html:11
 msgid "Password reset complete"
 msgstr "Reinicio de contraseña completo"
 
-#: account/templates/password_reset_complete.html:16
+#: account/templates/password_reset_complete.html:14
 msgid "Your password has been set.  You may go ahead and log in now."
-msgstr "Su contraseña se ha  fijado. Quizás ahora deba ir a loguearse"
+msgstr "Su contraseña se ha  fijado. Quizás ahora deba ir a acceder"
 
-#: account/templates/password_reset_complete.html:17
+#: account/templates/password_reset_complete.html:15
 msgid "Log in"
-msgstr "Loguearse"
+msgstr "Acceder"
 
 #: account/templates/password_reset_confirm.html:6
 #: account/templates/password_reset_confirm.html:7
 #: account/templates/password_reset_form.html:6
 #: account/templates/password_reset_form.html:7
-#: account/templates/password_reset_form.html:13
+#: account/templates/password_reset_form.html:12
 msgid "Password reset"
 msgstr "Reinicio de contraseña"
 
-#: account/templates/password_reset_confirm.html:13
+#: account/templates/password_reset_confirm.html:12
 msgid "Enter new password"
 msgstr "Ingrese su contraseña"
 
-#: account/templates/password_reset_confirm.html:17
+#: account/templates/password_reset_confirm.html:15
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
@@ -92,11 +92,11 @@ msgstr ""
 "Por favor ingrese su nueva contraseña dos veces, así podemos verificar que "
 "las escribió correctamente."
 
-#: account/templates/password_reset_confirm.html:32
+#: account/templates/password_reset_confirm.html:30
 msgid "Password reset unsuccessful"
 msgstr "Reinicio de contraseña fallído"
 
-#: account/templates/password_reset_confirm.html:36
+#: account/templates/password_reset_confirm.html:34
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
@@ -106,11 +106,11 @@ msgstr ""
 
 #: account/templates/password_reset_done.html:6
 #: account/templates/password_reset_done.html:7
-#: account/templates/password_reset_done.html:12
+#: account/templates/password_reset_done.html:11
 msgid "Password reset successful"
 msgstr "Reinicio de contraseña exitoso"
 
-#: account/templates/password_reset_done.html:16
+#: account/templates/password_reset_done.html:14
 msgid ""
 "We've e-mailed you instructions for setting your password to the e-mail "
 "address you submitted. You should be receiving it shortly."
@@ -143,7 +143,7 @@ msgstr "¡Gracias por usar nuestro sitio!"
 msgid "The Python.org.uy team"
 msgstr "El equipo Python.org.uy"
 
-#: account/templates/password_reset_form.html:23
+#: account/templates/password_reset_form.html:21
 msgid "Reset my password"
 msgstr "Reiniciar mi contraseña"
 
@@ -157,26 +157,26 @@ msgstr "Reinicio de contraseña en %(site_name)s"
 msgid "Profile"
 msgstr "Perfil"
 
-#: account/templates/profile.html:23
+#: account/templates/profile.html:21
 msgid "Save"
 msgstr "Guardar"
 
-#: account/templates/profile.html:24
+#: account/templates/profile.html:22
 msgid "Change password"
 msgstr "Cambiar contraseña"
 
 #: account/templates/sign_in.html:7 account/templates/sign_in.html.py:8
-#: account/templates/sign_in.html:14 account/templates/sign_in.html.py:23
+#: account/templates/sign_in.html:13 account/templates/sign_in.html.py:21
 #: templates/base.html:86
 msgid "Sign In"
-msgstr "Loguearse"
+msgstr "Acceder"
 
-#: account/templates/sign_in.html:24
+#: account/templates/sign_in.html:22
 msgid "Forgot Password?"
-msgstr "¿Olvido su contraseña?"
+msgstr "¿Olvidó su contraseña?"
 
 #: account/templates/sign_up.html:7 account/templates/sign_up.html.py:8
-#: account/templates/sign_up.html:14 account/templates/sign_up.html.py:23
+#: account/templates/sign_up.html:13 account/templates/sign_up.html.py:21
 #: templates/base.html:85
 msgid "Sign Up"
 msgstr "Registrarse"
@@ -184,6 +184,38 @@ msgstr "Registrarse"
 #: main/cms_plugins.py:8
 msgid "Menu"
 msgstr "Menu"
+
+#: main/forms.py:8
+msgid "Title"
+msgstr "Título"
+
+#: main/forms.py:9
+msgid "Abstract"
+msgstr "Resumen"
+
+#: main/forms.py:10
+msgid "Description"
+msgstr "Descripción"
+
+#: main/forms.py:11
+msgid "Kind"
+msgstr "Tipo"
+
+#: main/forms.py:12
+msgid "Audience Level"
+msgstr "Nivel de audencia"
+
+#: main/forms.py:13
+msgid "Duration"
+msgstr "Duración"
+
+#: main/forms.py:14
+msgid "Additional Notes"
+msgstr "Notas adicionales"
+
+#: main/forms.py:16
+msgid "About you (biography)"
+msgstr "Sobre ti (biografía)"
 
 #: main/models.py:9
 msgid "page"
@@ -225,28 +257,28 @@ msgstr "Mostrar siempre"
 msgid "User must not be authenticated"
 msgstr "El usuario no debe estar autenticado"
 
-#: main/templates/index.html:8
+#: main/templates/index.html:9
 msgid "Home"
 msgstr "Inicio"
 
-#: main/templates/index.html:9
+#: main/templates/index.html:10
 msgid "PyCon Home"
 msgstr "PyCon Inicio"
 
-#: main/templates/index.html:32
+#: main/templates/index.html:34
 msgid "by"
 msgstr "por"
 
-#: main/templates/index.html:45 templates/base.html:76
+#: main/templates/index.html:47 templates/base.html:76
 #: templates/base.html.py:127
 msgid "About"
 msgstr "Acerca de"
 
-#: main/templates/index.html:45
+#: main/templates/index.html:47
 msgid "What is PyCon Uruguay?"
 msgstr "¿Qué es PyCon Uruguay?"
 
-#: main/templates/index.html:47
+#: main/templates/index.html:49
 msgid ""
 "\n"
 "                <strong>PyCon</strong> is the annual conference for the "
@@ -268,117 +300,146 @@ msgstr ""
 "los integrantes del Grupo de Usuarios Python en Uruguay PyUy, a emprender "
 "esta primera PyCon.                "
 
-#: main/templates/index.html:54
+#: main/templates/index.html:56
 msgid ""
 "We have been already conquered by python and are now committed to bringing "
 "it to the edge. It is time that you also meet it and start building "
 "beautiful software together."
 msgstr ""
-"Ya hemos sido conquistados por python y ahora estamos comprometidos a "
-"traerlo a la orilla. Es tiempo de que tú lo conozcas y comiences a construir "
-"el mejor software y a divertirnos juntos."
+"Ya hemos sido conquistados por python y ahora estamos comprometidos "
+"a aprovecharlo al máximo. Es tiempo de que tú lo conozcas y comiences a "
+"construir el mejor software y a divertirnos juntos."
 
-#: main/templates/index.html:56
+#: main/templates/index.html:58
 msgid "> Read more"
 msgstr ">Leer más"
 
-#: main/templates/index.html:59
+#: main/templates/index.html:61
 msgid "Call for Proposals"
 msgstr "LLamado a propuestas"
 
-#: main/templates/index.html:59
+#: main/templates/index.html:61
 msgid "Open!"
 msgstr "¡Abierto!"
 
-#: main/templates/index.html:61
+#: main/templates/index.html:63
 msgid "Opens"
 msgstr "Abren"
 
-#: main/templates/index.html:61
+#: main/templates/index.html:63
 msgid " August 29, 2012"
 msgstr " 29 de agosto, 2012"
 
-#: main/templates/index.html:62
+#: main/templates/index.html:64
 msgid "Deadline"
 msgstr "Fin"
 
-#: main/templates/index.html:62
+#: main/templates/index.html:64
 msgid " October 1, 2012"
 msgstr " 1 de octubre, 2012"
 
-#: main/templates/index.html:63
+#: main/templates/index.html:65
 msgid "Acceptance"
 msgstr "Aceptación"
 
-#: main/templates/index.html:63
+#: main/templates/index.html:65
 msgid " October 10, 2012"
 msgstr " 10 de octubre, 2012"
 
-#: main/templates/index.html:65 main/templates/schedule.html:25
+#: main/templates/index.html:67 main/templates/schedule.html:24
 msgid "Send a Proposal"
 msgstr "Enviar Propuesta"
 
-#: main/templates/index.html:82
+#: main/templates/index.html:84
 msgid "When"
 msgstr "Cuándo"
 
-#: main/templates/index.html:82
+#: main/templates/index.html:84
 msgid "What appointments should I cancel?"
 msgstr "¿Qué citas cancelar?"
 
-#: main/templates/index.html:84
+#: main/templates/index.html:86
 msgid " Saturday 10th & Sunday 11th November"
 msgstr " sábado 10 & domingo 11 de noviembre"
 
-#: main/templates/index.html:85
+#: main/templates/index.html:87
 msgid "Talks"
 msgstr "Charlas"
+
 
 #: main/templates/index.html:85
 msgid " Saturday from 9:00 to 19:00"
 msgstr " sábado de 9:00 a 19:00"
 
-#: main/templates/index.html:86
+
+#: main/templates/index.html:88
 msgid "Sprints"
 msgstr "Sprints"
 
-#: main/templates/index.html:86
+#: main/templates/index.html:88
 msgid " Sunday from 10:00 to 18:00"
 msgstr " domingo de 10:00 a 18:00"
 
-#: main/templates/index.html:88
+#: main/templates/index.html:90
 msgid "Schedule it"
 msgstr "Agéndalo"
 
-#: main/templates/index.html:91
+#: main/templates/index.html:93
 msgid "Where"
 msgstr "Dónde"
 
-#: main/templates/index.html:91
+#: main/templates/index.html:93
 msgid "Take me there!"
 msgstr "¡Llévame ahí!"
 
-#: main/templates/index.html:98
+#: main/templates/index.html:100
 msgid "See Map"
 msgstr "Ver mapa"
 
-#: main/templates/index.html:103
+#: main/templates/index.html:105
 msgid "Sponsors"
 msgstr "Sponsors"
 
-#: main/templates/index.html:103
+#: main/templates/index.html:105
 msgid "What important companies are behind this?"
 msgstr "¿Qué empresas importantes están detrás de todo esto?"
 
 #: main/templates/proposal_add.html:8 main/templates/proposal_add.html.py:9
-#: main/templates/proposal_add.html:13
+#: main/templates/proposal_add.html:12
 msgid "Send a proposal"
 msgstr "Enviar propuesta"
 
+#: main/templates/proposal_add.html:17
+msgid "Your proposal:"
+msgstr "Tu propuesta:"
+
+#: main/templates/proposal_add.html:20
+msgid "Send"
+msgstr "Enviar"
+
 #: main/templates/proposal_sent.html:8 main/templates/proposal_sent.html:9
-#: main/templates/proposal_sent.html:13
-msgid "Proposal sent correctly"
-msgstr "Propuesta enviada correctamente"
+#: main/templates/proposal_sent.html:12
+msgid "Proposal sent"
+msgstr "Propuesta enviada"
+
+#: main/templates/proposal_sent.html:16
+#, python-format
+msgid ""
+"\n"
+"        Thanks for submitting your proposal. We'll review it and come back "
+"to you shortly.<br>\n"
+"        Please contact us at <a href=\"mailto:%(email)s\">%(email)s</a> if "
+"you have any questions.\n"
+"        "
+msgstr ""
+"\n"
+"Gracias por enviar tu propuesta. La revisaremos y te contacateremos a la "
+"brevedad.<br>Por favor contáctanos en  <a href=\"mailto:%(email)s\">"
+"%(email)s</a> si tienes alguna pregunta."
+
+#: main/templates/proposal_sent.html:21
+msgid "Back to home"
+msgstr "Volver al inicio"
 
 #: main/templates/schedule.html:8 main/templates/schedule.html.py:19
 #: templates/base.html:91 templates/base.html.py:125
@@ -390,14 +451,8 @@ msgid "About PyCon 2012 Uruguay"
 msgstr "Acerca de PyCon 2012 Uruguay"
 
 #: main/templates/schedule.html:21
-msgid ""
-"\n"
-"                Comming soon...\n"
-"                "
-msgstr ""
-"\n"
-"                Próximamente...\n"
-"                "
+msgid "Coming soon..."
+msgstr "Próximamente..."
 
 #: main/templates/cmsplugin_blog/author_links_snippet.html:3
 msgid "See entries by"
@@ -497,6 +552,23 @@ msgstr "Pycon UY 2012 es una producción de"
 #: templates/base.html:130
 msgid "Site built and hosted by"
 msgstr "Sitio construido y alojado por"
+
+
+#~ msgid "Back to index"
+#~ msgstr "Volver arriba"
+
+#~ msgid ""
+#~ "\n"
+#~ "                Comming soon...\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "                Próximamente...\n"
+#~ "                "
+
+
+#~ msgid "Thanks for submitting your proposal. We"
+#~ msgstr "¡Gracias por usar nuestro sitio!"
 
 #~ msgid "No news added"
 #~ msgstr "Ninguna noticia agregada"
@@ -608,9 +680,6 @@ msgstr "Sitio construido y alojado por"
 
 #~ msgid "Documentation"
 #~ msgstr "Documentación"
-
-#~ msgid "Education"
-#~ msgstr "Educación"
 
 #~ msgid "Embedding and extending Python"
 #~ msgstr "Embebiend"
@@ -918,9 +987,6 @@ msgstr "Sitio construido y alojado por"
 
 #~ msgid "Simplified Chinese"
 #~ msgstr "chino simplificado"
-
-#~ msgid "Traditional Chinese"
-#~ msgstr "chino tradicional"
 
 #~ msgid "Enter a valid value."
 #~ msgstr "Introduzca un valor correcto."

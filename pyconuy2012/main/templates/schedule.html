@@ -16,13 +16,13 @@
 {% block content %}
     <div class="row">
         <div class="span12 pull-left">
-            <h1 class="box-title">{% trans 'Schedule' %}<small class="small"></small></h1>
-            <p class="box-text">
-                {% blocktrans %}
-                Comming soon...
-                {% endblocktrans %}
+            <h1>{% trans 'Schedule' %}<small class="small"></small></h1>
+            <p>
+                {% blocktrans %}Coming soon...{% endblocktrans %}
             </p>
-            <a class="button button-blue" href="{% page_id_url 'proposal-info' %}">{% trans 'Send a Proposal' %}</a>
+            <p>
+                <a class="button button-blue" href="{% page_id_url 'proposal-info' %}">{% trans 'Send a Proposal' %}</a>
+            </p>
         </div>
     </div>
 {% endblock %}

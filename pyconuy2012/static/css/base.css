@@ -6,21 +6,36 @@
 }
 
 body {
-    font-family: PT Sans;
     background-color: #f5f5f5;
 }
-.menu-box {
-    width: 940px;
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    margin-left: -470px;
+
+body, label, input, button, select, textarea, p {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
+
 h1 {
     font-weight: normal;
-    margin: 20px 0 10px 0;
+    margin: 20px 0;
     color: #094BA4;
 }
+
+h2 {
+    font-weight: normal;
+    margin: 12px 0;
+    color: #094BA4;
+}
+
+h1 small {
+    margin-left: 10px;
+    color: #6fa8e7;!important
+}
+
+p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+}
+
 a, a:visited {
     text-decoration: none;
     color: #094BA4;
@@ -29,6 +44,19 @@ a:hover {
     text-decoration: none;
     color: #0c3966;
 }
+
+.menu-box {
+    width: 940px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -470px;
+}
+
+form {
+    margin: 18px 0;
+}
+
 .logo > .text {
     display: none;
 }
@@ -51,68 +79,6 @@ header {
 
 .row {
     margin-bottom: 50px;
-}
-
-.box-yellow {
-    background-color: #ffeebb;
-}
-.box-yellow > .text-bottom {
-    font-size: 18px;
-}
-
-.box-blue {
-    background-color: #e5eef8;
-}
-
-.box-blue > .text-bottom {
-    font-size: 18px;
-}
-
-.box-text {
-    font-size: 16px;
-    line-height: 28px;
-    padding: 10px 0;
-}
-
-.box-text.back {
-    padding: 20px;
-    height: 120px;
-}
-.box-yellow > .text-top {
-    color: #5b4401;
-    font-size: 18pt;
-    margin-bottom: 20px;
-}
-.box-yellow > .text-bottom {
-    color: #c59919;
-    font-size: 18px;
-}
-.box-blue > .text-top {
-    color: #094ba4;
-    font-size: 18pt;
-}
-.box-blue > .text-bottom {
-    color: #3389fe;
-    font-size: 18px;
-}
-
-.box-social {
-    margin-top: 40px;
-}
-/*
-.box-social .fb-like-box, .box-social .fb-like-box > span {
-    display: block;
-    margin: 0 auto;
-}
-
-.box-social p {
-    text-align: center;
-}
-*/
-
-h1 small {
-    margin-left: 10px;
-    color: #6fa8e7;!important
 }
 
 .button {
@@ -169,6 +135,7 @@ footer {
     background-color: #094ba4;
     color: white;
     margin: 30px 0 0 0;
+    font-size: 13px;
 }
 
 .list-text li{
@@ -279,7 +246,7 @@ footer .rights a:hover {
 }
 
 .flexslider {
-    min-height: 590px;
+    min-height: 400px;
     overflow: hidden;
     min-width: 940px;
     border: none;
@@ -338,7 +305,7 @@ footer .rights a:hover {
 .flexslider .notes {
     width: 940px;
     position: absolute;
-    top: 450px;
+    bottom: 127px;
     left: 50%;
     margin-left: -470px;
     color: white;
@@ -355,7 +322,7 @@ footer .rights a:hover {
 .slider-box {
     width: 670px;
     position: absolute;
-    top: 250px;
+    bottom: 125px;
     left: 50%;
     margin-left: -470px;
     color: white;
@@ -426,34 +393,33 @@ footer .rights a:hover {
 
 /** Override bootstrap **/
 
-.page-header {
-    padding-bottom: 17px;
-    margin: 18px 0;
-    border: 0;
-}
-
 .form-horizontal .form-actions {
     background-color: transparent;
     margin-top: 0;
     margin-bottom: 0;
     border-top: 0;
 }
-.langs {
+
+ul.links {
     float: right;
     margin-top: 20px;
     line-height: 18px;
 }
-.langs a{
+
+ul.links li {
+    float: left;
+}
+
+ul.links li a {
     color: #dcdcdc;
     padding: 5px 15px 5px 15px;
-
     display: block;
 }
-.langs  a:visited {
+ul.links li  a:visited {
     color: #dcdcdc;
 
 }
-.langs a:hover {
+ul.links li a:hover {
     background: #ffffff;
     color: #094ba4;
 
