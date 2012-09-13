@@ -20,6 +20,17 @@
             <p>
                 {% blocktrans %}Coming soon...{% endblocktrans %}
             </p>
+            <h2>{% blocktrans %}Register to the Event{% endblocktrans %}</h2>
+            <p>
+                {% blocktrans %}You don't need to wait for the Schedule.{% endblocktrans %}
+            </p>
+            <p>
+                <a class="button button-blue" href="{% url 'account:sign_up' %}">{% trans 'Sign up now' %}</a>
+            </p>
+            <h2>{% blocktrans %}Send a Talk or Sprint Proposal{% endblocktrans %}</h2>
+            <p>
+                {% blocktrans %}Do you have a killer presentation in mind?{% endblocktrans %}
+            </p>
             <p>
                 <a class="button button-blue" href="{% page_id_url 'proposal-info' %}">{% trans 'Send a Proposal' %}</a>
             </p>
