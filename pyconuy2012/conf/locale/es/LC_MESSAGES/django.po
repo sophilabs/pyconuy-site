@@ -191,7 +191,7 @@ msgid ""
 "To register for the conference, please fill out the form below. Remember "
 "that there are no fees."
 msgstr "Para registrarse en la conferencia, por favor completa el formulario de "
-"aquí debajo. Recuerda que la inscripción tiene costo."
+"aquí debajo. Recuerda que la inscripción no tiene costo."
 
 #: main/cms_plugins.py:8
 msgid "Menu"
