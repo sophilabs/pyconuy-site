@@ -190,8 +190,8 @@ msgstr "Registrarse"
 msgid ""
 "To register for the conference, please fill out the form below. Remember "
 "that there are no fees."
-msgstr "Para registrarse en la conferencia, por favor completa el formulario de "
-"aquí debajo. Recuerda que la inscripción no tiene costo."
+msgstr "Para registrarse en la conferencia, por favor completa el formulario que "
+"viene a continuación. Recuerda que la inscripción no tiene costo."
 
 #: main/cms_plugins.py:8
 msgid "Menu"
@@ -468,11 +468,11 @@ msgstr "Próximamente..."
 msgid ""
 "We are receiving talks and sprint proposals. Do you have a killer "
 "presentation in mind? "
-msgstr ""
+msgstr "Estamos recibiendo propuestas de charlas y sprints. ¿Tienes alguna presentación exitosa en mente?"
 
 #: main/templates/schedule.html:29
 msgid "Register to the Event"
-msgstr "Inscripción"
+msgstr "Regístrate al Evento"
 
 #: main/templates/schedule.html:31
 msgid "You don't need to wait until the schedule is published."
@@ -480,7 +480,7 @@ msgstr "No necesitas esperar hasta que el calendario este publicado."
 
 #: main/templates/schedule.html:34
 msgid "Sign up now"
-msgstr "Acceder"
+msgstr "Regístrate ahora"
 
 #: main/templates/cmsplugin_blog/author_links_snippet.html:3
 msgid "See entries by"
