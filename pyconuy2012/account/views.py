@@ -30,7 +30,6 @@ def profile(request):
     }, context_instance=RequestContext(request))
 
 def sign(request):
-    sign_up = forms.UserCreationForm()
     sign_in = forms.AuthenticationForm()
     if request.method == 'POST':
         if 'sign_in' in request.POST:
@@ -41,11 +40,12 @@ def sign(request):
                     request.session.delete_test_cookie()
                 return HttpResponseRedirect(_get_redirect(request, reverse('account:profile')))
         else:
-            sign_up(request)
+            return sign_up(request)
 
+    sign_up_form = forms.UserCreationForm()
     request.session.set_test_cookie()
     return render_to_response('sign.html',{
-        'sign_up' : sign_up,
+        'sign_up' : sign_up_form,
         'sign_in': sign_in
     }, context_instance=RequestContext(request))
 
