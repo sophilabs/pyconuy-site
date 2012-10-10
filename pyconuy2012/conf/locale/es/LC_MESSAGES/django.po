@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-10 13:17-0500\n"
+"POT-Creation-Date: 2012-10-10 12:31-0500\n"
 "PO-Revision-Date: 2012-03-13 19:44+0000\n"
 "Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -38,21 +38,12 @@ msgstr "Su contraseña fue cambiada."
 msgid "Password change"
 msgstr "Cambio de contraseña"
 
-#: account/templates/password_change_form.html:15
-#: account/templates/password_reset_form.html:15
-msgid ""
-"Forgotten your password? Enter your e-mail address below, and we'll e-mail "
-"instructions for setting a new one."
-msgstr ""
-"¿Olvido su contraseña? Ingrese su dirección de e-mail por debajo, y le  "
-"enviaremos las instrucciones para crear una nueva."
-
-#: account/templates/password_change_form.html:21
+#: account/templates/password_change_form.html:20
 #: account/templates/password_reset_confirm.html:21
 msgid "Change my password"
 msgstr "Cambiar mi contraseña"
 
-#: account/templates/password_change_form.html:22
+#: account/templates/password_change_form.html:21
 #: account/templates/password_reset_confirm.html:22
 #: account/templates/password_reset_form.html:22
 msgid "Cancel"
@@ -143,6 +134,14 @@ msgstr "¡Gracias por usar nuestro sitio!"
 msgid "The Python.org.uy team"
 msgstr "El equipo Python.org.uy"
 
+#: account/templates/password_reset_form.html:15
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll e-mail "
+"instructions for setting a new one."
+msgstr ""
+"¿Olvido su contraseña? Ingrese su dirección de e-mail por debajo, y le  "
+"enviaremos las instrucciones para crear una nueva."
+
 #: account/templates/password_reset_form.html:21
 msgid "Reset my password"
 msgstr "Reiniciar mi contraseña"
@@ -153,7 +152,7 @@ msgid "Password reset on %(site_name)s"
 msgstr "Reinicio de contraseña en %(site_name)s"
 
 #: account/templates/profile.html:6 account/templates/profile.html.py:7
-#: templates/base.html:83
+#: templates/base.html:82 templates/base.html.py:106
 msgid "Profile"
 msgstr "Perfil"
 
@@ -165,19 +164,25 @@ msgstr "Guardar"
 msgid "Change password"
 msgstr "Cambiar contraseña"
 
+#: account/templates/sign.html:7 account/templates/sign.html.py:8
+msgid "Sign In or Sign Up"
+msgstr ""
+
+#: account/templates/sign.html:15 account/templates/sign.html.py:21
 #: account/templates/sign_in.html:7 account/templates/sign_in.html.py:8
 #: account/templates/sign_in.html:13 account/templates/sign_in.html.py:21
-#: templates/base.html:86
+#: templates/base.html:85 templates/base.html.py:108
 msgid "Sign In"
 msgstr "Acceder"
 
-#: account/templates/sign_in.html:22
+#: account/templates/sign.html:22 account/templates/sign_in.html:22
 msgid "Forgot Password?"
 msgstr "¿Olvidó su contraseña?"
 
+#: account/templates/sign.html:28 account/templates/sign.html.py:34
 #: account/templates/sign_up.html:7 account/templates/sign_up.html.py:8
 #: account/templates/sign_up.html:13 account/templates/sign_up.html.py:21
-#: templates/base.html:85
+#: templates/base.html:86
 msgid "Sign Up"
 msgstr "Registrarse"
 
@@ -270,7 +275,7 @@ msgid "by"
 msgstr "por"
 
 #: main/templates/index.html:47 templates/base.html:76
-#: templates/base.html.py:127
+#: templates/base.html.py:132
 msgid "About"
 msgstr "Acerca de"
 
@@ -306,8 +311,8 @@ msgid ""
 "it to the edge. It is time that you also meet it and start building "
 "beautiful software together."
 msgstr ""
-"Ya hemos sido conquistados por python y ahora estamos comprometidos "
-"a aprovecharlo al máximo. Es tiempo de que tú lo conozcas y comiences a "
+"Ya hemos sido conquistados por python y ahora estamos comprometidos a "
+"aprovecharlo al máximo. Es tiempo de que tú lo conozcas y comiences a "
 "construir el mejor software y a divertirnos juntos."
 
 #: main/templates/index.html:58
@@ -335,16 +340,18 @@ msgid "Deadline"
 msgstr "Fin"
 
 #: main/templates/index.html:64
-msgid " October 1, 2012"
-msgstr " 1 de octubre, 2012"
+#, fuzzy
+msgid " October 29, 2012"
+msgstr " 29 de octubre, 2012"
 
 #: main/templates/index.html:65
 msgid "Acceptance"
 msgstr "Aceptación"
 
 #: main/templates/index.html:65
-msgid " October 10, 2012"
-msgstr " 10 de octubre, 2012"
+#, fuzzy
+msgid " November 1, 2012"
+msgstr " 1 de noviembre, 2012"
 
 #: main/templates/index.html:67 main/templates/schedule.html:24
 msgid "Send a Proposal"
@@ -366,11 +373,9 @@ msgstr " sábado 10 & domingo 11 de noviembre"
 msgid "Talks"
 msgstr "Charlas"
 
-
-#: main/templates/index.html:85
+#: main/templates/index.html:87
 msgid " Saturday from 9:00 to 19:00"
 msgstr " sábado de 9:00 a 19:00"
-
 
 #: main/templates/index.html:88
 msgid "Sprints"
@@ -442,7 +447,7 @@ msgid "Back to home"
 msgstr "Volver al inicio"
 
 #: main/templates/schedule.html:8 main/templates/schedule.html.py:19
-#: templates/base.html:91 templates/base.html.py:125
+#: templates/base.html:91 templates/base.html.py:130
 msgid "Schedule"
 msgstr "Calendario"
 
@@ -517,11 +522,19 @@ msgstr "inglés"
 msgid "Spanish"
 msgstr "español"
 
-#: templates/base.html:79 templates/base.html.py:126
+#: templates/404.html:6 templates/404.html.py:7
+msgid "Not Found"
+msgstr ""
+
+#: templates/500.html:6 templates/500.html.py:7
+msgid "Internal Server Error"
+msgstr ""
+
+#: templates/base.html:79 templates/base.html.py:131
 msgid "Registration"
 msgstr "Inscripción"
 
-#: templates/base.html:82
+#: templates/base.html:83
 msgid "Sign Out"
 msgstr "Cerrar sesión"
 
@@ -533,7 +546,7 @@ msgstr "Calendario de conferencias"
 msgid "Send Proposal"
 msgstr "Enviar propuesta"
 
-#: templates/base.html:98 templates/base.html.py:124
+#: templates/base.html:98 templates/base.html.py:129
 msgid "Venue"
 msgstr "Lugar"
 
@@ -541,18 +554,20 @@ msgstr "Lugar"
 msgid "The Place"
 msgstr "El lugar"
 
-#: templates/base.html:123
+#: templates/base.html:128
 msgid "Back to top"
 msgstr "Volver arriba"
 
-#: templates/base.html:130
+#: templates/base.html:135
 msgid "PyCon UY 2012 is a production of the"
 msgstr "Pycon UY 2012 es una producción de"
 
-#: templates/base.html:130
+#: templates/base.html:135
 msgid "Site built and hosted by"
 msgstr "Sitio construido y alojado por"
 
+#~ msgid " October 10, 2012"
+#~ msgstr " 10 de octubre, 2012"
 
 #~ msgid "Back to index"
 #~ msgstr "Volver arriba"
@@ -565,7 +580,6 @@ msgstr "Sitio construido y alojado por"
 #~ "\n"
 #~ "                Próximamente...\n"
 #~ "                "
-
 
 #~ msgid "Thanks for submitting your proposal. We"
 #~ msgstr "¡Gracias por usar nuestro sitio!"
