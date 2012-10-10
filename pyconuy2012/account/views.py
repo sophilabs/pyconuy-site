@@ -30,7 +30,6 @@ def profile(request):
     }, context_instance=RequestContext(request))
 
 def sign(request):
-    sign_up = forms.UserCreationForm()
     sign_in = forms.AuthenticationForm()
     if request.method == 'POST':
         if 'sign_in' in request.POST:
@@ -41,15 +40,12 @@ def sign(request):
                     request.session.delete_test_cookie()
                 return HttpResponseRedirect(_get_redirect(request, reverse('account:profile')))
         else:
-            sign_up = forms.UserCreationForm(data=request.POST)
-            if sign_up.is_valid():
-                sign_up.instance.email = sign_up.cleaned_data['username']
-                sign_up.save()
-                authenticate(username=sign_up.instance.username, password=sign_up.instance.password)
-                return HttpResponseRedirect(_get_redirect(request, reverse('account:profile')))
+            return sign_up(request)
+
+    sign_up_form = forms.UserCreationForm()
     request.session.set_test_cookie()
     return render_to_response('sign.html',{
-        'sign_up' : sign_up,
+        'sign_up' : sign_up_form,
         'sign_in': sign_in
     }, context_instance=RequestContext(request))
 
@@ -59,7 +55,9 @@ def sign_up(request):
         if form.is_valid():
             form.instance.email = form.cleaned_data['username']
             form.save()
-            authenticate(username=form.instance.username, password=form.instance.password)
+            user = authenticate(username=form.cleaned_data['username'], password=form.cleaned_data['password1'])
+            login(request, user)
+            messages.success(request, 'You have been successfully registered to PyCon Uruguay 2012.')
             return HttpResponseRedirect(_get_redirect(request, reverse('account:profile')))
     else:
         form = forms.UserCreationForm()

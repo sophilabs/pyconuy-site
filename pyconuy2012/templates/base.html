@@ -47,13 +47,6 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     {% cms_toolbar %}
-    {% if messages %}
-    <ul class="messages">
-        {% for message in messages %}
-        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
     <header>
         {% block slider %}
         <div class="header-back">
@@ -79,7 +72,7 @@
                             <a href="{% url 'account:sign_up' %}">{% trans 'Registration' %}</a>
                             <ul>
                                 {% if user.is_authenticated %}
-                                    <li><a class="sub_menu" href="{% url 'account:profile' %}">{% trans 'Profile' %}</a></li>
+                                    <li><a class="sub_menu" href="{% url 'account:profile' %}">{% trans 'My Profile' %}</a></li>
                                     <li><a class="sub_menu" href="{% url 'account:sign_out' %}">{% trans 'Sign Out' %}</a></li>
                                 {% else %}
                                     <li><a class="sub_menu" href="{% url 'account:sign_in' %}">{% trans 'Sign In' %}</a></li>
@@ -103,7 +96,7 @@
                     </ul>
                     <ul class="links" >
                         {% if user.is_authenticated %}
-                        <li><a class="sub_menu" href="{% url 'account:profile' %}">{% trans 'Profile' %}</a></li>
+                        <li><a class="sub_menu" href="{% url 'account:profile' %}">{% trans 'My Profile' %}</a></li>
                         {% else %}
                         <li><a class="sub_menu" href="{% url 'account:sign' %}">{% trans 'Sign In' %}</a></li>
                         {% endif %}
@@ -120,6 +113,13 @@
         </div>
     </header>
     <div class="container">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
         {% block content %}{% endblock %}
         {% placeholder content%}
     </div>

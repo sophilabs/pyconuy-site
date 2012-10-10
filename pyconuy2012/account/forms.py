@@ -31,6 +31,11 @@ class UserCreationForm(BootstrapMixin, aforms.UserCreationForm):
         fields = ('first_name', 'last_name', 'username', 'password1', 'password2')
 
 class ProfileForm(BootstrapModelForm):
+    username = forms.EmailField(required=True)
+
+    def __init__(self, *args, **kwargs):
+        super(ProfileForm, self).__init__(*args, **kwargs)
+        self.fields['username'].label = 'E-mail'
 
     class Meta:
         model = User

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-10 12:31-0500\n"
+"POT-Creation-Date: 2012-10-10 12:39-0500\n"
 "PO-Revision-Date: 2012-03-13 19:44+0000\n"
 "Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -81,7 +81,7 @@ msgid ""
 "correctly."
 msgstr ""
 "Por favor ingrese su nueva contraseña dos veces, así podemos verificar que "
-"las escribió correctamente."
+"la escribió correctamente."
 
 #: account/templates/password_reset_confirm.html:30
 msgid "Password reset unsuccessful"
@@ -152,7 +152,6 @@ msgid "Password reset on %(site_name)s"
 msgstr "Reinicio de contraseña en %(site_name)s"
 
 #: account/templates/profile.html:6 account/templates/profile.html.py:7
-#: templates/base.html:82 templates/base.html.py:106
 msgid "Profile"
 msgstr "Perfil"
 
@@ -166,12 +165,12 @@ msgstr "Cambiar contraseña"
 
 #: account/templates/sign.html:7 account/templates/sign.html.py:8
 msgid "Sign In or Sign Up"
-msgstr ""
+msgstr "Acceder o Registrarse"
 
 #: account/templates/sign.html:15 account/templates/sign.html.py:21
 #: account/templates/sign_in.html:7 account/templates/sign_in.html.py:8
 #: account/templates/sign_in.html:13 account/templates/sign_in.html.py:21
-#: templates/base.html:85 templates/base.html.py:108
+#: templates/base.html:78 templates/base.html.py:101
 msgid "Sign In"
 msgstr "Acceder"
 
@@ -181,10 +180,18 @@ msgstr "¿Olvidó su contraseña?"
 
 #: account/templates/sign.html:28 account/templates/sign.html.py:34
 #: account/templates/sign_up.html:7 account/templates/sign_up.html.py:8
-#: account/templates/sign_up.html:13 account/templates/sign_up.html.py:21
-#: templates/base.html:86
+#: account/templates/sign_up.html:13 account/templates/sign_up.html.py:22
+#: templates/base.html:79
 msgid "Sign Up"
 msgstr "Registrarse"
+
+#: account/templates/sign_up.html:16
+msgid ""
+"To register for the conference, please fill out the form below. Remember "
+"that there are no fees."
+msgstr ""
+"Para registrarse en la conferencia, por favor completa el formulario que "
+"viene a continuación. Recuerda que la inscripción no tiene costo."
 
 #: main/cms_plugins.py:8
 msgid "Menu"
@@ -274,7 +281,7 @@ msgstr "PyCon Inicio"
 msgid "by"
 msgstr "por"
 
-#: main/templates/index.html:47 templates/base.html:76
+#: main/templates/index.html:47 templates/base.html:69
 #: templates/base.html.py:132
 msgid "About"
 msgstr "Acerca de"
@@ -353,7 +360,7 @@ msgstr "Aceptación"
 msgid " November 1, 2012"
 msgstr " 1 de noviembre, 2012"
 
-#: main/templates/index.html:67 main/templates/schedule.html:24
+#: main/templates/index.html:67 main/templates/schedule.html:27
 msgid "Send a Proposal"
 msgstr "Enviar Propuesta"
 
@@ -447,7 +454,7 @@ msgid "Back to home"
 msgstr "Volver al inicio"
 
 #: main/templates/schedule.html:8 main/templates/schedule.html.py:19
-#: templates/base.html:91 templates/base.html.py:130
+#: templates/base.html:84 templates/base.html.py:130
 msgid "Schedule"
 msgstr "Calendario"
 
@@ -458,6 +465,26 @@ msgstr "Acerca de PyCon 2012 Uruguay"
 #: main/templates/schedule.html:21
 msgid "Coming soon..."
 msgstr "Próximamente..."
+
+#: main/templates/schedule.html:24
+msgid ""
+"We are receiving talks and sprint proposals. Do you have a killer "
+"presentation in mind? "
+msgstr ""
+"Estamos recibiendo propuestas de charlas y sprints. ¿Tienes alguna "
+"presentación exitosa en mente?"
+
+#: main/templates/schedule.html:29
+msgid "Register to the Event"
+msgstr "Regístrate al Evento"
+
+#: main/templates/schedule.html:31
+msgid "You don't need to wait until the schedule is published."
+msgstr "No necesitas esperar hasta que el calendario este publicado."
+
+#: main/templates/schedule.html:34
+msgid "Sign up now"
+msgstr "Regístrate ahora"
 
 #: main/templates/cmsplugin_blog/author_links_snippet.html:3
 msgid "See entries by"
@@ -524,33 +551,37 @@ msgstr "español"
 
 #: templates/404.html:6 templates/404.html.py:7
 msgid "Not Found"
-msgstr ""
+msgstr "No encontrado"
 
 #: templates/500.html:6 templates/500.html.py:7
 msgid "Internal Server Error"
-msgstr ""
+msgstr "Error interno del servidor"
 
-#: templates/base.html:79 templates/base.html.py:131
+#: templates/base.html:72 templates/base.html.py:131
 msgid "Registration"
 msgstr "Inscripción"
 
-#: templates/base.html:83
+#: templates/base.html:75 templates/base.html.py:99
+msgid "My Profile"
+msgstr "Perfil"
+
+#: templates/base.html:76
 msgid "Sign Out"
 msgstr "Cerrar sesión"
 
-#: templates/base.html:93
+#: templates/base.html:86
 msgid "Conference Schedule"
 msgstr "Calendario de conferencias"
 
-#: templates/base.html:94
+#: templates/base.html:87
 msgid "Send Proposal"
 msgstr "Enviar propuesta"
 
-#: templates/base.html:98 templates/base.html.py:129
+#: templates/base.html:91 templates/base.html.py:129
 msgid "Venue"
 msgstr "Lugar"
 
-#: templates/base.html:100
+#: templates/base.html:93
 msgid "The Place"
 msgstr "El lugar"
 
