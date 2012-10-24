@@ -11,11 +11,9 @@ from symposion.proposals.models import PresentationCategory
 from main.forms import ProposalForm
 
 def index(request):
-
     return render_to_response('index.html',
-    {
-        'sponsors':Sponsor.objects.order_by('level')
-    }, context_instance=RequestContext(request))
+        {'sponsors':Sponsor.objects.order_by('level__order', 'name')},
+        context_instance=RequestContext(request))
 
 
 @login_required
@@ -72,5 +70,6 @@ def schedule(request):
     return render_to_response('schedule.html', context_instance=RequestContext(request))
 
 def sponsors(request):
-    sponsors = Sponsor.objects.order_by('level')
-    return render_to_response('sponsors.html', {'sponsors': sponsors}, context_instance=RequestContext(request))
+    return render_to_response('sponsors.html',
+        {'sponsors': Sponsor.objects.order_by('level__order', 'name')},
+        context_instance=RequestContext(request))
