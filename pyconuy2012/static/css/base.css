@@ -26,6 +26,12 @@ h2 {
     color: #094BA4;
 }
 
+h3 {
+    font-weight: normal;
+    margin: 12px 0;
+    color: #094BA4;
+}
+
 h1 small {
     margin-left: 10px;
     color: #6fa8e7;!important
@@ -77,7 +83,7 @@ header {
     width: 80%;
 }
 
-.row {
+.container > .row {
     margin-bottom: 50px;
 }
 
@@ -286,22 +292,34 @@ footer .rights a:hover {
 }
 .menu-list {
     margin-top: 20px;
+    margin-left: 0;
     float: left;
+}
+
+.sponsor-level {
+    margin-bottom: 20px;
+}
+
+.sponsor-level h2 {
+    margin: 0;
+    font-size: 18px;
 }
 .sponsor-logo {
-    width: 215px;
-    height: 53px;
+    width: 185px;
+    height: 46px;
     float: left;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
 }
-.sponsor-logo:hover {
-    background-position: 0 -53px;
+
+.sponsor-logo img {
+    display: block;
 }
-.sponsor-logo span {
-    visibility: hidden;
+
+.sponsor-logo:hover img {
+    margin-top: -46px;
 }
-.box-sponsors {
-    margin: 40px 0;
-}
+
 .flexslider .notes {
     width: 940px;
     position: absolute;
@@ -404,6 +422,7 @@ ul.links {
     float: right;
     margin-top: 20px;
     line-height: 18px;
+    margin-left: 0;
 }
 
 ul.links li {

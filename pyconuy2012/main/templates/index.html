@@ -41,31 +41,28 @@
 {% endblock %}
 
 {% block content %}
-
-    <div class="row">
-        <div class="row">
-        <div class="span12 pull-left">
+    <div class="row sponsors">
+        <div class="span12">
             <h1>{% trans 'Sponsors' %}<small class="small">{% trans 'What important companies are behind this?' %}</small></h1>
-            <div class="box-sponsors">
-                {% regroup sponsor_list by level as sponsors_ordered %}
-                {% for spon in sponsors_ordered %}
-                {{ spon.grouper.name }}
-                {% if forloop.first %}<div class="row">{% endif %}
-                {% for sponsor in spon.list %}
-                <div class="span3">
-                    <a class="sponsor-logo" href="{{ sponsor.external_url }}" style="background-image:url({{ sponsor.website_logo_url }});">
-                       <span>{{ sponsor }}</span>
+            {% regroup sponsors by level as sponsors_grouped %}
+            {% for sponsor_group in sponsors_grouped %}
+            <div class="row sponsor-level">
+                <div class="span2"><h2>{{ sponsor_group.grouper.name }}</h2></div>
+                <div class="span10">
+                    {% for sponsor in sponsor_group.list %}
+                    <a class="sponsor-logo" href="{{ sponsor.external_url }}">
+                        <img src="{{ sponsor.website_logo_url }}" alt="{{ sponsor }}" />
                     </a>
-                </div>
-                {% if forloop.counter|divisibleby:6 %}
-                </div><div class="row">
-                {% endif %}
-                {% endfor %}
-                {% if forloop.last %}</div>{% endif %}
                     {% endfor %}
+                </div>
             </div>
+            {% endfor %}
+            <div class="row"><div class="span3 offset9">
+                <a class="button button-blue" href="{% url 'main:sponsors' %}">{% trans 'View Full List of Sponsors' %}</a>
+            </div></div>
         </div>
     </div>
+    <div class="row">
         <div class="span6 pull-left">
             <h1>{% trans "About" %}<small class="small">{% trans 'What is PyCon Uruguay?' %}</small></h1>
             <p class="box-text">
@@ -123,7 +120,6 @@
             <a rel="nofollow" href="https://maps.google.com.uy/maps?q=latu&hl=en&ll=-34.877306,-56.077266&spn=0.009805,0.021136&fb=1&gl=uy&hq=latu&hnear=0x959f80ffc63bf7d3:0x6b321b2e355bec99,Montevideo&cid=0,0,10519268855607095324&t=m&z=16&iwloc=A" class="button button-blue over pull-right">{% trans 'See Map' %}</a>
         </div>
     </div>
-    
 {% endblock %}
 
 {% block js %}

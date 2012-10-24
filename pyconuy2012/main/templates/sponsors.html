@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load cms_tags %}
+{% load background_tags  %}
+{% load url from future %}
+
+{% block meta_title %}{% trans 'Sponsors' %} - {{ block.super }}{% endblock %}
+{% block meta_description %}{% trans 'Sponsors PyCon 2012 Uruguay' %}{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block class %}no-slider sponsors{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="span12">
+        <div class="row">
+            <div class="span12">
+                <h1>{% trans 'Sponsors' %}<small class="small">{% trans 'What important companies are behind this?' %}</small></h1>
+            </div>
+        </div>
+        {% regroup sponsors by level as sponsors_grouped %}
+        {% for sponsors_group in sponsors_grouped %}
+        <div class="row">
+            <div class="span12">
+                <h2>{{ sponsors_group.grouper.name }}</h2>
+            </div>
+        </div>
+        {% for sponsor in sponsors_group.list %}
+        <div class="row">
+            <div class="span3">
+                <a class="sponsor-logo" href="{{ sponsor.external_url }}">
+                    <img src="{{ sponsor.website_logo_url }}" alt="{{ sponsor }}" />
+                </a>
+            </div>
+            <div class="span9">
+                <h3>{{ sponsor.name }}</h3>
+                <p>{{ sponsor.annotation }}</p>
+                <p><a href="{{ sponsor.external_url }}">{{ sponsor.external_url }}</a></p>
+            </div>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+{{ block.super }}
+{% endblock %}

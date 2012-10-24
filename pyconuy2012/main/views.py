@@ -14,7 +14,7 @@ def index(request):
 
     return render_to_response('index.html',
     {
-        'sponsor_list':Sponsor.objects.order_by('level'),
+        'sponsors':Sponsor.objects.order_by('level')
     }, context_instance=RequestContext(request))
 
 
@@ -70,3 +70,7 @@ def proposal_sent(request):
 
 def schedule(request):
     return render_to_response('schedule.html', context_instance=RequestContext(request))
+
+def sponsors(request):
+    sponsors = Sponsor.objects.order_by('level')
+    return render_to_response('sponsors.html', {'sponsors': sponsors}, context_instance=RequestContext(request))
