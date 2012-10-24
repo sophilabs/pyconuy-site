@@ -12,7 +12,7 @@ from main.forms import ProposalForm
 
 def index(request):
     return render_to_response('index.html',
-        {'sponsors':Sponsor.objects.order_by('level__order', 'name')},
+        {'sponsors':Sponsor.objects.filter(active=True).order_by('level__order', 'name')},
         context_instance=RequestContext(request))
 
 
@@ -71,5 +71,5 @@ def schedule(request):
 
 def sponsors(request):
     return render_to_response('sponsors.html',
-        {'sponsors': Sponsor.objects.order_by('level__order', 'name')},
+        {'sponsors': Sponsor.objects.filter(active=True).order_by('level__order', 'name')},
         context_instance=RequestContext(request))
