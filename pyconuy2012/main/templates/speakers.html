@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load cms_tags %}
+{% load background_tags  %}
+{% load url from future %}
+
+{% block meta_title %}{% trans 'Sponsors' %} - {{ block.super }}{% endblock %}
+{% block meta_description %}{% trans 'Sponsors PyCon 2012 Uruguay' %}{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block class %}no-slider speakers{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="span12">
+        <div class="row">
+            <div class="span12">
+                <h1>{% trans 'Speakers' %}<small class="small">{% trans 'Speakers' %}</small></h1>
+            </div>
+        </div>
+        {% for speaker in speakers.objects.all %}
+        <div class="row">
+            <div class="span12">
+                <h2>{{ speaker.name }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span3">
+                <img src="{{ speaker.photo }}" alt="{{ speaker.name }}" />
+            </div>
+            <div class="span9">
+                
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+{{ block.super }}
+{% endblock %}

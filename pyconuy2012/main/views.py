@@ -73,3 +73,8 @@ def sponsors(request):
     return render_to_response('sponsors.html',
         {'sponsors': Sponsor.objects.filter(active=True).order_by('level__order', 'name')},
         context_instance=RequestContext(request))
+
+def speakers(request):
+    return render_to_response('speakers.html',
+        {'speakers': Speaker.objects},
+        context_instance=RequestContext(request))
