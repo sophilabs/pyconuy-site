@@ -12,7 +12,7 @@ from main.forms import ProposalForm
 
 def index(request):
     return render_to_response('index.html',
-        {'sponsors':Sponsor.objects.filter(active=True).order_by('level__order', 'name')},
+        {'sponsors':Sponsor.objects.filter(active=True).order_by('level__order', 'contact_name')},
         context_instance=RequestContext(request))
 
 
