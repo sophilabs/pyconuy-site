@@ -78,3 +78,8 @@ def speakers(request):
     return render_to_response('speakers.html',
         {'speakers': Speaker.objects.filter(sessions_preference=1)},
         context_instance=RequestContext(request))
+        
+def proposals(request):
+    return render_to_response('proposals.html',
+        {'proposals': Proposal.objects.filter(cancelled=False)},
+        context_instance=RequestContext(request))

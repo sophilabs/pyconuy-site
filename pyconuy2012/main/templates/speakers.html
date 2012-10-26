@@ -22,6 +22,7 @@
             </div>
         </div>
         {% for speaker in speakers %}
+        <a name="{{speaker.name}}"></a>
         <div class="row">
             <div class="span12">
                 <h2>{{ speaker.name }}</h2>
@@ -35,9 +36,11 @@
                 <p>
                     {{speaker.biography}}
                 </p>
+                {% if speaker.twitter_username %}
                 <p>
-                    <a href="//twitter.com/{{speaker.twitter_username}}">@{{speaker.twitter_username}}</a>
+                    <a href="http://twitter.com/{{speaker.twitter_username}}">@{{speaker.twitter_username}}</a>
                  </p>
+                {% endif %}
             </div>
         </div>
         {% endfor %}

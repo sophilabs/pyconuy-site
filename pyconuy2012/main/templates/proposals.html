@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load cms_tags %}
+{% load background_tags  %}
+{% load url from future %}
+
+{% block meta_title %}{% trans 'Talks' %} - {{ block.super }}{% endblock %}
+{% block meta_description %}{% trans 'Talks PyCon 2012 Uruguay' %}{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block class %}no-slider talks{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="span12">
+        <div class="row">
+            <div class="span12">
+                <h1>{% trans 'Talks' %}</h1>
+            </div>
+        </div>
+        {% for proposal in proposals %}
+        <a name="{{proposal.title}}"></a>
+        <div class="row">
+            <div class="span12">
+                <h2>{{proposal.title}}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span9">
+                {{ proposal.description }}
+            </div>
+        </div>
+        <div class="row proposal speaker">
+            <div class="span1">
+                Level {{proposal.audience_level}}
+            </div>
+            <div class="span6">
+                <a href="/speakers#{{proposal.speaker.name}}">{{proposal.speaker.name}}</a>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="row">
+            <a class="button button-blue register speakers" href="{% url 'account:sign_up' %}">{% trans 'Register now!' %}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+{{ block.super }}
+{% endblock %}

@@ -493,3 +493,7 @@ ul.messages li.error{ background: #FF3333; padding: 5px, 0 5px 0; list-style: no
 	left: 178px;
 	line-height: 33px;
 }
+
+.row.proposal.speaker {
+	margin-top: 10px;
+}
