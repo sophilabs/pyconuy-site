@@ -468,3 +468,28 @@ ul.messages li.info{ background: #EEFAEA; padding: 0.5em, 0 0.5em 0; list-style:
 ul.messages li.success{ background: #EEFAEA; padding: 0.5em, 0 0.5em 0; list-style: none;}
 ul.messages li.warning{ background: #FF3333; padding: 0.5em, 0 0.5em 0; list-style: none;}
 ul.messages li.error{ background: #FF3333; padding: 5px, 0 5px 0; list-style: none;}
+
+.button-blue.register {
+	position: absolute;
+	top: 261px;
+	z-index: 9999;
+	font-size: 28px;
+	left: 178px;
+	line-height: 33px;
+}
+
+.button-blue.register.speakers {
+	margin-top: 20px;
+	font-size: 24px;
+	line-height: 24px;
+	position: static;
+}
+
+.button-yellow.speakers {
+	position: absolute;
+	top: 327px;
+	z-index: 9999;
+	font-size: 28px;
+	left: 178px;
+	line-height: 33px;
+}

@@ -17,6 +17,8 @@
 {% block class %}index{% endblock %}
 
 {% block slider %}
+<a class="button button-blue register" href="{% url 'account:sign_up' %}">{% trans 'Register now!' %}</a>
+<a class="button button-yellow speakers" href="{% url 'main:speakers' %}">{% trans 'View speakers' %}</a>        
 <div class="flexslider">
     <ul class="slides">
         {% backgrounds 'pyconuy2012' %}
@@ -41,14 +43,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class="row featured">
-        <div class="span3">
-            <a class="button button-yellow" href="{% url 'account:sign_up' %}">{% trans 'Register now!' %}</a>
-        </div><div class="span3 offset6">
-            <a class="button button-blue" href="{% url 'main:speakers' %}">{% trans 'View speakers' %}</a>
-        </div>
-        
-    </div>
     <div class="row sponsors">
         <div class="span12">
             <h1>{% trans 'Sponsors' %}<small class="small">{% trans 'What important companies are behind this?' %}</small></h1>
