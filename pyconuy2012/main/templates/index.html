@@ -41,6 +41,14 @@
 {% endblock %}
 
 {% block content %}
+    <div class="row featured">
+        <div class="span3">
+            <a class="button button-yellow" href="{% url 'account:sign_up' %}">{% trans 'Register now!' %}</a>
+        </div><div class="span3 offset6">
+            <a class="button button-blue" href="{% url 'main:speakers' %}">{% trans 'View speakers' %}</a>
+        </div>
+        
+    </div>
     <div class="row sponsors">
         <div class="span12">
             <h1>{% trans 'Sponsors' %}<small class="small">{% trans 'What important companies are behind this?' %}</small></h1>

@@ -71,10 +71,10 @@ def schedule(request):
 
 def sponsors(request):
     return render_to_response('sponsors.html',
-        {'sponsors': Sponsor.objects.filter(active=True).order_by('level__order', 'name')},
+        {'sponsors': Sponsor.objects.filter(active=True).order_by('level__order', 'contact_name')},
         context_instance=RequestContext(request))
 
 def speakers(request):
     return render_to_response('speakers.html',
-        {'speakers': Speaker.objects},
+        {'speakers': Speaker.objects.filter(sessions_preference=1)},
         context_instance=RequestContext(request))
