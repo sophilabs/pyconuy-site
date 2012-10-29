@@ -81,5 +81,5 @@ def speakers(request):
         
 def proposals(request):
     return render_to_response('proposals.html',
-        {'proposals': Proposal.objects.filter(cancelled=False)},
+        {'proposals': Proposal.objects.filter(cancelled=False).order_by('speaker__invite_token')},
         context_instance=RequestContext(request))
