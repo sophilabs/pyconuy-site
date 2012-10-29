@@ -83,6 +83,7 @@
                         <li class="menu pull-left">
                             <a href="#">{% trans 'Schedule' %}</a>
                             <ul>
+                                <li><a class="sub_menu" href="{% url 'main:speakers' %}">{% trans 'Speakers' %}</a></li>
                                 <li><a class="sub_menu" href="{% url 'main:schedule' %}">{% trans 'Conference Schedule' %}</a></li>
                                 <li><a class="sub_menu" href="{% page_id_url 'proposal-info' %}">{% trans 'Send Proposal' %}</a></li>
                             </ul>
