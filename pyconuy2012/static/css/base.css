@@ -498,6 +498,10 @@ ul.messages li.error{ background: #FF3333; padding: 5px, 0 5px 0; list-style: no
 	margin-top: 10px;
 }
 
+.proposal.speaker img {
+	height: 75px;
+}
+
 h2.speaker {
 	margin: 0;
 }

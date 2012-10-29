@@ -34,11 +34,14 @@
             </div>
         </div>
         <div class="row proposal speaker">
+            <div class="span3">
+                <a href="/speakers#{{proposal.speaker.name}}">{{proposal.speaker.name}}</a>
+                <div>
+                    <img src="{{ proposal.speaker.photo.url }}" alt="{{ proposal.speaker.name }}" />
+                </div>
+            </div>
             <div class="span2">
                 {{proposal.get_audience_level_display}}
-            </div>
-            <div class="span6">
-                <a href="/speakers#{{proposal.speaker.name}}">{{proposal.speaker.name}}</a>
             </div>
         </div>
         {% endfor %}
