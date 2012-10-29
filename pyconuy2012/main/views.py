@@ -76,7 +76,7 @@ def sponsors(request):
 
 def speakers(request):
     return render_to_response('speakers.html',
-        {'speakers': Speaker.objects.filter(sessions_preference=1)},
+        {'speakers': Speaker.objects.filter(sessions_preference=1).order_by('invite_token')},
         context_instance=RequestContext(request))
         
 def proposals(request):
