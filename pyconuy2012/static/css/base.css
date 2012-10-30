@@ -329,7 +329,11 @@ footer .rights a:hover {
     margin-top: -46px;
 }
 
-.sponsor-logo.diamond, .sponsor-logo.platinum:hover img {
+.Diamond .sponsor-logo:hover img {
+    margin-top: 0;
+}
+
+.Platinum .sponsor-logo:hover img {
     margin-top: 0;
 }
 
