@@ -322,12 +322,21 @@ footer .rights a:hover {
     height: 129px;
 }
 
+.Supporting .sponsor-logo{
+    width: 130px;
+    height: 35px;
+}
+
 .sponsor-logo img {
     display: block;
 }
 
 .sponsor-logo:hover img {
     margin-top: -46px;
+}
+
+.Supporting .sponsor-logo:hover img {
+    margin-top: -32px;
 }
 
 .Diamond .sponsor-logo:hover img {
