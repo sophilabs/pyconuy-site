@@ -44,7 +44,9 @@
         </div>
         {% endfor %}
         <div class="row">
-            <a class="button button-blue register speakers" href="{% url 'account:sign_up' %}">{% trans 'Register now!' %}</a>
+            <div class="span12">
+                <a class="button button-blue register speakers" href="{% url 'account:sign_up' %}">{% trans 'Register now!' %}</a>
+            </div>
         </div>
     </div>
 </div>
