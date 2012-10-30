@@ -48,7 +48,7 @@
             <h1>{% trans 'Sponsors' %}<small class="small">{% trans 'What important companies are behind this?' %}</small></h1>
             {% regroup sponsors by level as sponsors_grouped %}
             {% for sponsor_group in sponsors_grouped %}
-            <div class="row sponsor-level">
+            <div class="row sponsor-level {{sponsor_group.grouper.name}}">
                 <div class="span2"><h2>{{ sponsor_group.grouper.name }}</h2></div>
                 <div class="span10">
                     {% for sponsor in sponsor_group.list %}
