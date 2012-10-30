@@ -312,12 +312,25 @@ footer .rights a:hover {
     overflow: hidden;
 }
 
+.sponsor-logo.diamond{
+    width: 220px;
+    height: 139px;
+}
+
+.sponsor-logo.platinum{
+    
+}
+
 .sponsor-logo img {
     display: block;
 }
 
 .sponsor-logo:hover img {
     margin-top: -46px;
+}
+
+.sponsor-logo.diamond, .sponsor-logo.platinum:hover img {
+    margin-top: 0;
 }
 
 .flexslider .notes {
