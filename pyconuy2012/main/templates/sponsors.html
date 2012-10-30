@@ -29,7 +29,7 @@
             </div>
         </div>
         {% for sponsor in sponsors_group.list %}
-        <div class="row">
+        <div class="row {{ sponsors_group.grouper.name }}">
             <div class="span3">
                 <a class="sponsor-logo" href="{{ sponsor.external_url }}">
                     <img src="{{ sponsor.website_logo_url }}" alt="{{ sponsor }}" />
