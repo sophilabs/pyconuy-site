@@ -23,17 +23,17 @@
         </div>
         {% for proposal in proposals %}
         <a name="{{proposal.title}}"></a>
-        <div class="row">
+        <div class="row proposal headline">
             <div class="span12">
                 <h2>{{proposal.title}}</h2>
             </div>
         </div>
         <div class="row proposal speaker">
             <div class="span3">
-                <a href="/speakers#{{proposal.speaker.name}}">{{proposal.speaker.name}}</a>
                 <div>
                     <img src="{{ proposal.speaker.photo.url }}" alt="{{ proposal.speaker.name }}" />
                 </div>
+                <a href="/speakers#{{proposal.speaker.name}}">{{proposal.speaker.name}}</a>
             </div>
             <div class="span9">
                 {{ proposal.description }}
