@@ -23,29 +23,35 @@
         </div>
         {% for speaker in speakers %}
         <a name="{{speaker.name}}"></a>
-        <div class="row">
-            <div class="span12">
-                <h2 class="speaker">{{ speaker.name }}</h2>
-            </div>
-        </div>
         <div class="row speaker">
             <div class="span3">
                 <img src="{{ speaker.photo.url }}" alt="{{ speaker.name }}" />
             </div>
             <div class="span9">
-                <p>
-                    {{speaker.biography}}
-                </p>
-                {% if speaker.twitter_username %}
-                <p>
-                    <a href="http://twitter.com/{{speaker.twitter_username}}">@{{speaker.twitter_username}}</a>
-                 </p>
-                {% endif %}
+                <div class="row">
+                    <div class="span12">
+                        <h2 class="speaker">{{ speaker.name }}</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <p>
+                            {{speaker.biography}}
+                        </p>
+                        {% if speaker.twitter_username %}
+                        <p>
+                            <a href="http://twitter.com/{{speaker.twitter_username}}">@{{speaker.twitter_username}}</a>
+                         </p>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
         {% endfor %}
         <div class="row">
-            <a class="button button-blue register speakers" href="{% url 'account:sign_up' %}">{% trans 'Register now!' %}</a>
+            <div class="span12">
+                <a class="button button-blue register speakers" href="{% url 'account:sign_up' %}">{% trans 'Register now!' %}</a>
+            </div>
         </div>
     </div>
 </div>

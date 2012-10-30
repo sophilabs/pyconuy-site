@@ -28,11 +28,6 @@
                 <h2>{{proposal.title}}</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="span9">
-                {{ proposal.description }}
-            </div>
-        </div>
         <div class="row proposal speaker">
             <div class="span3">
                 <a href="/speakers#{{proposal.speaker.name}}">{{proposal.speaker.name}}</a>
@@ -40,8 +35,11 @@
                     <img src="{{ proposal.speaker.photo.url }}" alt="{{ proposal.speaker.name }}" />
                 </div>
             </div>
-            <div class="span2">
-                {{proposal.get_audience_level_display}}
+            <div class="span9">
+                {{ proposal.description }}
+                <p>
+                    <em>Level: {{proposal.get_audience_level_display}}</em>
+                </p>
             </div>
         </div>
         {% endfor %}
