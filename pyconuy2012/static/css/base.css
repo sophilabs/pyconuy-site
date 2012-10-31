@@ -536,3 +536,32 @@ h2.speaker {
 .row.speaker {
 	margin-bottom: 30px;
 }
+
+.table tbody tr.accreditation td {
+  background-color: #d9d9d9;
+}
+
+.table tbody tr.accreditation td[colspan="3"] {
+	text-align:center;
+}
+
+.table tbody tr.break td {
+  background-color: #93c47d;
+}
+
+.table tbody tr td[colspan="3"] {
+	text-align:center;
+}
+
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+  background-color: transparent;
+}
+
+.table tbody tr.accreditation:hover td {
+  background-color: #d9d9d9;
+}
+
+.table tbody tr.break:hover td{
+  background-color: #93c47d;
+}

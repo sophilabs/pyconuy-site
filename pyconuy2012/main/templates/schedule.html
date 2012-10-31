@@ -6,7 +6,7 @@
 {% load url from future %}
 
 {% block meta_title %}{% trans 'Schedule' %} - {{ block.super }}{% endblock %}
-{% block meta_description %}{% trans 'About PyCon 2012 Uruguay' %}{% endblock %}
+{% block meta_description %}{% trans 'Schedule for PyCon 2012 Uruguay' %}{% endblock %}
 
 {% block css %}
 {{ block.super }}
@@ -16,23 +16,63 @@
 {% block content %}
     <div class="row">
         <div class="span12 pull-left">
-            <h1>{% trans 'Schedule' %}<small class="small"></small></h1>
-            <p>
-                {% blocktrans %}Coming soon...{% endblocktrans %}
-            </p>
-            <p>
-                {% blocktrans %}We are receiving talks and sprint proposals. Do you have a killer presentation in mind? {% endblocktrans %}
-            </p>
-            <p>
-                <a class="button button-blue" href="{% page_id_url 'proposal-info' %}">{% trans 'Send a Proposal' %}</a>
-            </p>
-            <h2>{% blocktrans %}Register to the Event{% endblocktrans %}</h2>
-            <p>
-                {% blocktrans %}You don't need to wait until the schedule is published.{% endblocktrans %}
-            </p>
-            <p>
-                <a class="button button-yellow" href="{% url 'account:sign_up' %}">{% trans 'Sign up now' %}</a>
-            </p>
+            <table class="table  table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th>{% trans 'Time' %}</th><th>{% trans 'Level' %}</th><th>{% trans 'Talk' %}</th><th>{% trans 'Presenter' %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for session, presentations in presentations_group.items %}
+                        {% if session == '1' %}
+                        <tr class="accreditation">
+                            <td>9:00</td>
+                            <td colspan=3>{% trans 'Accreditations' %}</td>
+                        </tr>
+                        <tr class="break">
+                            <td>9:30</td>
+                            <td colspan=3>{% trans 'Introductions' %}</td>
+                        </tr>                        
+                        {% endif %}
+                        {% if session == '2' %}
+                        <tr class="break">
+                            <td>11:35</td>
+                            <td colspan=3>{% trans 'Coffe break' %}</td>
+                        </tr>                        
+                        {% endif %}
+                        {% if session == '3' %}
+                        <tr class="break">
+                            <td>13:30</td>
+                            <td colspan=3>{% trans 'Lunch' %}</td>
+                        </tr>                        
+                        {% endif %}
+                        {% if session == '4' %}
+                        <tr class="break">
+                            <td>16:35</td>
+                            <td colspan=3>{% trans 'Coffe break' %}</td>
+                        </tr>                        
+                        {% endif %}
+                        {% for presentation in presentations %}
+                            <tr>
+                                <td>{{presentation.slot.start|date:"h:i"}}</td>
+                                <td>{{presentation.audience_level}}</td>
+                                <td>{{presentation.title}}</td>
+                                <td>{{presentation.speaker.name}}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                    <tr class="accreditation">
+                        <td>18:15</td>
+                        <td colspan=3>{% trans 'Cierre - Sorteos' %}</td>
+                    </tr>                        
+                        
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12 pull-left">
+            <a class="button button-yellow" href="{% url 'account:sign_up' %}">{% trans 'Sign up now!' %}</a>
         </div>
     </div>
 {% endblock %}

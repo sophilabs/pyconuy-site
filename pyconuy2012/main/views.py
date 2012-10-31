@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from symposion.speakers.models import Speaker
 from symposion.proposals.models import Proposal
+from symposion.schedule.models import Presentation
 from django.template import RequestContext
 from symposion.sponsors_pro.models import Sponsor
 from symposion.proposals.models import PresentationCategory
@@ -67,7 +68,16 @@ def proposal_sent(request):
     return render_to_response('proposal_sent.html', context_instance=RequestContext(request))
 
 def schedule(request):
-    return render_to_response('schedule.html', context_instance=RequestContext(request))
+    regroup = {}
+    presentations = Presentation.objects.all().order_by('slot__session', 'slot')
+    for presentation in presentations:
+        session_id = str(presentation.slot.session.id)
+        if not session_id in regroup:
+            regroup[session_id] = []
+        regroup[session_id].append(presentation)
+    return render_to_response('schedule.html', 
+        {'presentations_group': regroup},
+        context_instance=RequestContext(request))
 
 def sponsors(request):
     return render_to_response('sponsors.html',
