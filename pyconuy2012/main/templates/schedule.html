@@ -23,8 +23,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for session, presentations in presentations_group.items %}
-                        {% if session == '1' %}
+                    {% for session in presentations_group %}
+                        {% if session.0 == '1' %}
                         <tr class="accreditation">
                             <td>9:00</td>
                             <td colspan=3>{% trans 'Accreditations' %}</td>
@@ -32,32 +32,32 @@
                         <tr class="break">
                             <td>9:30</td>
                             <td colspan=3>{% trans 'Introductions' %}</td>
-                        </tr>                        
+                        </tr>
                         {% endif %}
-                        {% if session == '3' %}
+                        {% if session.0 == '2' %}
                         <tr class="break">
                             <td>11:35</td>
                             <td colspan=3>{% trans 'Coffe break' %}</td>
-                        </tr>                        
+                        </tr>
                         {% endif %}
-                        {% if session == '2' %}
+                        {% if session.0 == '3' %}
                         <tr class="break">
                             <td>13:30</td>
                             <td colspan=3>{% trans 'Lunch' %}</td>
-                        </tr>                        
+                        </tr>
                         {% endif %}
-                        {% if session == '4' %}
+                        {% if session.0 == '4' %}
                         <tr class="break">
                             <td>16:35</td>
                             <td colspan=3>{% trans 'Coffe break' %}</td>
-                        </tr>                        
+                        </tr>
                         {% endif %}
-                        {% for presentation in presentations %}
+                        {% for presentation in session.1 %}
                             <tr>
-                                <td>{{ presentation.slot.start|date:"h:i" }}</td>
+                                <td>{{ presentation.slot.start|date:"H:i" }}</td>
                                 <td>{{ presentation.get_audience_level_display }}</td>
-                                <td>{{ presentation.title }}</td>
-                                <td>{{ presentation.speaker.name }}</td>
+                                <td><a href="/proposals#{{ presentation.title }}">{{ presentation.title }}</a></td>
+                                <td><a href="/speakers#{{ presentation.speaker.name }}">{{ presentation.speaker.name }}</a></td>
                             </tr>
                         {% endfor %}
                     {% endfor %}
@@ -65,7 +65,6 @@
                         <td>18:15</td>
                         <td colspan=3>{% trans 'Cierre - Sorteos' %}</td>
                     </tr>                        
-                        
                 </tbody>
             </table>
         </div>

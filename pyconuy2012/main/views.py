@@ -83,7 +83,8 @@ def schedule(request):
             last_session_id = session_id
             session = [presentation]
     regroup[str(session_order)] = session
-    return render_to_response('schedule.html', 
+    regroup = sorted(regroup.iteritems())
+    return render_to_response('schedule.html',
         {'presentations_group': regroup},
         context_instance=RequestContext(request))
 
