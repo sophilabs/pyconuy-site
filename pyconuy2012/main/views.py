@@ -69,12 +69,20 @@ def proposal_sent(request):
 
 def schedule(request):
     regroup = {}
-    presentations = Presentation.objects.all().order_by('slot__session', 'slot')
+    presentations = Presentation.objects.all().order_by('slot__start')
+    last_session_id = presentations[1].slot.session.id
+    session = []
+    session_order = 1
     for presentation in presentations:
-        session_id = str(presentation.slot.session.id)
-        if not session_id in regroup:
-            regroup[session_id] = []
-        regroup[session_id].append(presentation)
+        session_id = presentation.slot.session.id
+        if session_id == last_session_id:
+            session.append(presentation)
+        else:
+            regroup[str(session_order)] = session
+            session_order += 1
+            last_session_id = session_id
+            session = [presentation]
+    regroup[str(session_order)] = session
     return render_to_response('schedule.html', 
         {'presentations_group': regroup},
         context_instance=RequestContext(request))
