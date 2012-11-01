@@ -54,10 +54,10 @@
                         {% endif %}
                         {% for presentation in presentations %}
                             <tr>
-                                <td>{{presentation.slot.start|date:"h:i"}}</td>
-                                <td>{{presentation.audience_level}}</td>
-                                <td>{{presentation.title}}</td>
-                                <td>{{presentation.speaker.name}}</td>
+                                <td>{{ presentation.slot.start|date:"h:i" }}</td>
+                                <td>{{ presentation.get_audience_level_display }}</td>
+                                <td>{{ presentation.title }}</td>
+                                <td>{{ presentation.speaker.name }}</td>
                             </tr>
                         {% endfor %}
                     {% endfor %}
