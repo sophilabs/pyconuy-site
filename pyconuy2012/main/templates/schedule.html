@@ -15,12 +15,12 @@
 {% block class %}no-slider about{% endblock %}
 {% block content %}
     <div class="row">
-        <div class="span12 pull-left">
-            <h1>{% trans 'Agenda del sábado 10 de noviembre de 2012' %}</h1>
+        <div class="span12">
+            <h1>{% trans 'Schedule Saturday November 10, 2012' %}</h1>
         </div>
     </div>
     <div class="row">
-        <div class="span12 pull-left">
+        <div class="span12">
             <table class="table  table-bordered table-condensed">
                 <thead>
                     <tr>
@@ -61,21 +61,21 @@
                             <tr>
                                 <td>{{ presentation.slot.start|date:"H:i" }}</td>
                                 <td>{{ presentation.get_audience_level_display }}</td>
-                                <td><a href="/proposals#{{ presentation.title }}">{{ presentation.title }}</a></td>
-                                <td><a href="/speakers#{{ presentation.speaker.name }}">{{ presentation.speaker.name }}</a></td>
+                                <td><a href="{% url 'main:talks' %}#{{ presentation.title }}">{{ presentation.title }}</a></td>
+                                <td><a href="{% url 'main:speakers' %}#{{ presentation.speaker.name }}">{{ presentation.speaker.name }}</a></td>
                             </tr>
                         {% endfor %}
                     {% endfor %}
                     <tr class="accreditation">
                         <td>18:15</td>
-                        <td colspan=3>{% trans 'Cierre - Sorteos' %}</td>
+                        <td colspan=3>{% trans 'Close - Draws' %}</td>
                     </tr>                        
                 </tbody>
             </table>
         </div>
     </div>
     <div class="row">
-        <div class="span12 pull-left">
+        <div class="span12">
             <a class="button button-yellow" href="{% url 'account:sign_up' %}">{% trans 'Sign up now!' %}</a>
         </div>
     </div>

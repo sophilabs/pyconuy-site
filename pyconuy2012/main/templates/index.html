@@ -18,7 +18,7 @@
 
 {% block slider %}
 <a class="button button-blue register" href="{% url 'account:sign_up' %}">{% trans 'Register now!' %}</a>
-<a class="button button-yellow proposals" href="{% url 'main:proposals' %}">{% trans 'View talks' %}</a>        
+<a class="button button-yellow talks" href="{% url 'main:talks' %}">{% trans 'View talks' %}</a>
 <div class="flexslider">
     <ul class="slides">
         {% backgrounds 'pyconuy2012' %}
@@ -60,25 +60,27 @@
             </div>
             {% endfor %}
             <div class="row"><div class="span3 offset9">
-                <a class="button button-blue" href="{% url 'main:sponsors' %}">{% trans 'View Full List of Sponsors' %}</a>
+                <a class="button button-blue" href="{% url 'main:sponsors' %}">{% trans 'View full list of Sponsors' %}</a>
             </div></div>
         </div>
     </div>
     <div class="row">
-        <div class="span6 pull-left">
+        <div class="span6">
             <div class="row">
-                <h1>{% trans "About" %}<small class="small">{% trans 'What is PyCon Uruguay?' %}</small></h1>
-                <p class="box-text">
-                    {% blocktrans %}
-                    <strong>PyCon</strong> is the annual conference for the community using and developing the open-source Python programming language.
-                    PyCon is an event organized by the Uruguayan Python community that mainly seeks to introduce and promote this wonderful language in Uruguay and the region.
-                    Our objective is to offer universal access to Python and related tools, that's why we keep the registration at FREE cost, thanks to many voluntary workers and sponsors.
-                    {% endblocktrans %}
-                </p>
-                <p class="about-small">
-                    {% blocktrans %}We have been already conquered by python and are now committed to bringing it to the edge. It is time that you also meet it and start building beautiful software together.{% endblocktrans %}
-                </p>
-                <a href="{% page_id_url 'about' %}" class="link">{% trans '> Read more' %}</a>
+                <div class="span6">
+                    <h1>{% trans "About" %}<small class="small">{% trans 'What is PyCon Uruguay?' %}</small></h1>
+                    <p class="box-text">
+                        {% blocktrans %}
+                        <strong>PyCon</strong> is the annual conference for the community using and developing the open-source Python programming language.
+                        PyCon is an event organized by the Uruguayan Python community that mainly seeks to introduce and promote this wonderful language in Uruguay and the region.
+                        Our objective is to offer universal access to Python and related tools, that's why we keep the registration at FREE cost, thanks to many voluntary workers and sponsors.
+                        {% endblocktrans %}
+                    </p>
+                    <p class="about-small">
+                        {% blocktrans %}We have been already conquered by python and are now committed to bringing it to the edge. It is time that you also meet it and start building beautiful software together.{% endblocktrans %}
+                    </p>
+                    <a href="{% page_id_url 'about' %}" class="link">{% trans '> Read more' %}</a>
+                </div>
             </div>
             <div class="row box-social">
                 <div class="span4">
@@ -93,9 +95,9 @@
                 </div>
             </div>
         </div>
-        <div class = "span6 pull-right">
+        <div class = "span6">
             <div class="row">
-                <div class="span6 pull-left">
+                <div class="span6">
                     <h1>{% trans 'When' %}<small class="small">{% trans 'What appointments should I cancel?' %}</small></h1>
                     <div class="box-text back box-yellow">
                         <p class="text-top">{% trans ' Saturday 10th & Sunday 11th November' %}</p>
@@ -106,7 +108,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="span6 pull-left">
+                <div class="span6">
                     <h1>{% trans 'Where' %}<small class="small">{% trans 'Take me there!' %}</small></h1>
 
                     <div class="box-text back box-blue">
@@ -120,8 +122,7 @@
         </div>
     </div>
     <div class="row">
-        
-        <div class="span6 pull-left">
+        <div class="span6">
             <h1>{% trans 'Call for Proposals' %}<small class="small">{% trans 'Closed' %}</small></h1>
             <div class="box-text back box-yellow">
                 <p class="text-top"><strong>{% trans 'Opens' %}</strong> >{% trans ' August 29, 2012' %}</p>

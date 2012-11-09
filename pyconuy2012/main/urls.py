@@ -8,4 +8,5 @@ urlpatterns = patterns('main.views',
     url(r"^sponsors", 'sponsors', name='sponsors'),
     url(r"^speakers", 'speakers', name='speakers'),
     url(r"^proposals", 'proposals', name='proposals'),
+    url(r"^talks", 'talks', name='talks'),
 )

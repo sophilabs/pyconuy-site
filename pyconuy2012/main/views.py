@@ -70,7 +70,10 @@ def proposal_sent(request):
 def schedule(request):
     regroup = {}
     presentations = Presentation.objects.all().order_by('slot__start')
-    last_session_id = presentations[1].slot.session.id
+    if presentations.count() > 0:
+        last_session_id = presentations[1].slot.session.id
+    else:
+        last_session_id = None
     session = []
     session_order = 1
     for presentation in presentations:
@@ -97,8 +100,11 @@ def speakers(request):
     return render_to_response('speakers.html',
         {'speakers': Speaker.objects.filter(sessions_preference=1).order_by('invite_token')},
         context_instance=RequestContext(request))
-        
+
 def proposals(request):
-    return render_to_response('proposals.html',
+    return HttpResponseRedirect(reverse("main:talks"))
+
+def talks(request):
+    return render_to_response('talks.html',
         {'proposals': Proposal.objects.filter(cancelled=False).order_by('speaker__invite_token')},
         context_instance=RequestContext(request))

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-10 12:39-0500\n"
+"POT-Creation-Date: 2012-11-09 07:01-0600\n"
 "PO-Revision-Date: 2012-03-13 19:44+0000\n"
 "Last-Translator: Antoni Aloy <antoni.aloy@trespams.com>\n"
 "Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/"
@@ -170,7 +170,7 @@ msgstr "Acceder o Registrarse"
 #: account/templates/sign.html:15 account/templates/sign.html.py:21
 #: account/templates/sign_in.html:7 account/templates/sign_in.html.py:8
 #: account/templates/sign_in.html:13 account/templates/sign_in.html.py:21
-#: templates/base.html:78 templates/base.html.py:101
+#: templates/base.html:78 templates/base.html.py:105
 msgid "Sign In"
 msgstr "Acceder"
 
@@ -277,31 +277,54 @@ msgstr "Inicio"
 msgid "PyCon Home"
 msgstr "PyCon Inicio"
 
-#: main/templates/index.html:34
+#: main/templates/index.html:20 main/templates/proposals.html:58
+#: main/templates/speakers.html:53
+msgid "Register now!"
+msgstr "Inscríbete ahora!"
+
+#: main/templates/index.html:21
+msgid "View talks"
+msgstr "Ver charlas"
+
+#: main/templates/index.html:36
 msgid "by"
 msgstr "por"
 
-#: main/templates/index.html:47 templates/base.html:69
-#: templates/base.html.py:132
+#: main/templates/index.html:48 main/templates/sponsors.html:8
+#: main/templates/sponsors.html.py:21 templates/base.html:92
+msgid "Sponsors"
+msgstr "Sponsors"
+
+#: main/templates/index.html:48
+msgid "What important companies are behind this?"
+msgstr "¿Qué empresas importantes están detrás de todo esto?"
+
+#: main/templates/index.html:63
+msgid "View full list of Sponsors"
+msgstr "Ver lista completa de Sponsors"
+
+#: main/templates/index.html:71 templates/base.html:69
+#: templates/base.html.py:136
 msgid "About"
 msgstr "Acerca de"
 
-#: main/templates/index.html:47
+#: main/templates/index.html:71
 msgid "What is PyCon Uruguay?"
 msgstr "¿Qué es PyCon Uruguay?"
 
-#: main/templates/index.html:49
+#: main/templates/index.html:73
 msgid ""
 "\n"
-"                <strong>PyCon</strong> is the annual conference for the "
-"community using and developing the open-source Python programming language.\n"
-"                PyCon is an event organized by the Uruguayan Python "
+"                        <strong>PyCon</strong> is the annual conference for "
+"the community using and developing the open-source Python programming "
+"language.\n"
+"                        PyCon is an event organized by the Uruguayan Python "
 "community that mainly seeks to introduce and promote this wonderful language "
 "in Uruguay and the region.\n"
-"                Our objective is to offer universal access to Python and "
-"related tools, that's why we keep the registration at FREE cost, thanks to "
-"many voluntary workers and sponsors.\n"
-"                "
+"                        Our objective is to offer universal access to Python "
+"and related tools, that's why we keep the registration at FREE cost, thanks "
+"to many voluntary workers and sponsors.\n"
+"                        "
 msgstr ""
 "\n"
 "                <strong>PyCon</strong> es una conferencia anual orientada a "
@@ -312,7 +335,7 @@ msgstr ""
 "los integrantes del Grupo de Usuarios Python en Uruguay PyUy, a emprender "
 "esta primera PyCon.                "
 
-#: main/templates/index.html:56
+#: main/templates/index.html:80
 msgid ""
 "We have been already conquered by python and are now committed to bringing "
 "it to the edge. It is time that you also meet it and start building "
@@ -322,99 +345,86 @@ msgstr ""
 "aprovecharlo al máximo. Es tiempo de que tú lo conozcas y comiences a "
 "construir el mejor software y a divertirnos juntos."
 
-#: main/templates/index.html:58
+#: main/templates/index.html:82
 msgid "> Read more"
-msgstr ">Leer más"
+msgstr "> Leer más"
 
-#: main/templates/index.html:61
-msgid "Call for Proposals"
-msgstr "LLamado a propuestas"
-
-#: main/templates/index.html:61
-msgid "Open!"
-msgstr "¡Abierto!"
-
-#: main/templates/index.html:63
-msgid "Opens"
-msgstr "Abren"
-
-#: main/templates/index.html:63
-msgid " August 29, 2012"
-msgstr " 29 de agosto, 2012"
-
-#: main/templates/index.html:64
-msgid "Deadline"
-msgstr "Fin"
-
-#: main/templates/index.html:64
-#, fuzzy
-msgid " October 29, 2012"
-msgstr " 29 de octubre, 2012"
-
-#: main/templates/index.html:65
-msgid "Acceptance"
-msgstr "Aceptación"
-
-#: main/templates/index.html:65
-#, fuzzy
-msgid " November 1, 2012"
-msgstr " 1 de noviembre, 2012"
-
-#: main/templates/index.html:67 main/templates/schedule.html:27
-msgid "Send a Proposal"
-msgstr "Enviar Propuesta"
-
-#: main/templates/index.html:84
+#: main/templates/index.html:101
 msgid "When"
 msgstr "Cuándo"
 
-#: main/templates/index.html:84
+#: main/templates/index.html:101
 msgid "What appointments should I cancel?"
 msgstr "¿Qué citas cancelar?"
 
-#: main/templates/index.html:86
+#: main/templates/index.html:103
 msgid " Saturday 10th & Sunday 11th November"
 msgstr " sábado 10 & domingo 11 de noviembre"
 
-#: main/templates/index.html:87
+#: main/templates/index.html:104 main/templates/proposals.html:8
+#: main/templates/proposals.html.py:21 templates/base.html:86
 msgid "Talks"
 msgstr "Charlas"
 
-#: main/templates/index.html:87
+#: main/templates/index.html:104
 msgid " Saturday from 9:00 to 19:00"
 msgstr " sábado de 9:00 a 19:00"
 
-#: main/templates/index.html:88
+#: main/templates/index.html:105
 msgid "Sprints"
 msgstr "Sprints"
 
-#: main/templates/index.html:88
+#: main/templates/index.html:105
 msgid " Sunday from 10:00 to 18:00"
 msgstr " domingo de 10:00 a 18:00"
 
-#: main/templates/index.html:90
+#: main/templates/index.html:107
 msgid "Schedule it"
 msgstr "Agéndalo"
 
-#: main/templates/index.html:93
+#: main/templates/index.html:112
 msgid "Where"
 msgstr "Dónde"
 
-#: main/templates/index.html:93
+#: main/templates/index.html:112
 msgid "Take me there!"
 msgstr "¡Llévame ahí!"
 
-#: main/templates/index.html:100
+#: main/templates/index.html:119
 msgid "See Map"
 msgstr "Ver mapa"
 
-#: main/templates/index.html:105
-msgid "Sponsors"
-msgstr "Sponsors"
+#: main/templates/index.html:126
+msgid "Call for Proposals"
+msgstr "LLamado a propuestas"
 
-#: main/templates/index.html:105
-msgid "What important companies are behind this?"
-msgstr "¿Qué empresas importantes están detrás de todo esto?"
+#: main/templates/index.html:126
+msgid "Closed"
+msgstr "Cerrado"
+
+#: main/templates/index.html:128
+msgid "Opens"
+msgstr "Abren"
+
+#: main/templates/index.html:128
+msgid " August 29, 2012"
+msgstr " 29 de agosto, 2012"
+
+#: main/templates/index.html:129
+msgid "Deadline"
+msgstr "Fin"
+
+#: main/templates/index.html:129
+msgid " October 29, 2012"
+msgstr " 29 de octubre, 2012"
+
+#: main/templates/index.html:130
+msgid "Acceptance"
+msgstr "Aceptación"
+
+#: main/templates/index.html:130
+msgid " November 1, 2012"
+msgstr " 1 de noviembre, 2012"
 
 #: main/templates/proposal_add.html:8 main/templates/proposal_add.html.py:9
 #: main/templates/proposal_add.html:12
@@ -453,38 +463,79 @@ msgstr ""
 msgid "Back to home"
 msgstr "Volver al inicio"
 
-#: main/templates/schedule.html:8 main/templates/schedule.html.py:19
-#: templates/base.html:84 templates/base.html.py:130
+#: main/templates/proposals.html:9
+msgid "Talks PyCon 2012 Uruguay"
+msgstr "Charlas de PyCon 2012 Uruguay"
+
+#: main/templates/schedule.html:8 templates/base.html:84
+#: templates/base.html.py:134
 msgid "Schedule"
-msgstr "Calendario"
+msgstr "Agenda"
 
 #: main/templates/schedule.html:9
-msgid "About PyCon 2012 Uruguay"
-msgstr "Acerca de PyCon 2012 Uruguay"
+msgid "Schedule for PyCon 2012 Uruguay"
+msgstr "Agenda de PyCon 2012 Uruguay"
 
-#: main/templates/schedule.html:21
-msgid "Coming soon..."
-msgstr "Próximamente..."
+#: main/templates/schedule.html:19
+msgid "Schedule Saturday November 10, 2012"
+msgstr "Agenda Sábado 10 de noviembre, 2012"
 
-#: main/templates/schedule.html:24
-msgid ""
-"We are receiving talks and sprint proposals. Do you have a killer "
-"presentation in mind? "
-msgstr ""
-"Estamos recibiendo propuestas de charlas y sprints. ¿Tienes alguna "
-"presentación exitosa en mente?"
+#: main/templates/schedule.html:27
+msgid "Time"
+msgstr "Hora"
 
-#: main/templates/schedule.html:29
-msgid "Register to the Event"
-msgstr "Regístrate al Evento"
+#: main/templates/schedule.html:27
+msgid "Level"
+msgstr "Nivel"
 
-#: main/templates/schedule.html:31
-msgid "You don't need to wait until the schedule is published."
-msgstr "No necesitas esperar hasta que el calendario este publicado."
+#: main/templates/schedule.html:27
+msgid "Talk"
+msgstr "Charlas"
 
-#: main/templates/schedule.html:34
-msgid "Sign up now"
+#: main/templates/schedule.html:27
+msgid "Presenter"
+msgstr "Presentador"
+
+#: main/templates/schedule.html:35
+msgid "Accreditations"
+msgstr "Acreditaciones"
+
+#: main/templates/schedule.html:39
+msgid "Introductions"
+msgstr "Apertura"
+
+#: main/templates/schedule.html:45 main/templates/schedule.html.py:57
+msgid "Coffe break"
+msgstr "Coffe break"
+
+#: main/templates/schedule.html:51
+msgid "Lunch"
+msgstr "Almuerzo"
+
+#: main/templates/schedule.html:71
+msgid "Close - Draws"
+msgstr "Cierre - Sorteos"
+
+#: main/templates/schedule.html:79
+msgid "Sign up now!"
 msgstr "Regístrate ahora"
+
+#: main/templates/speakers.html:8 main/templates/speakers.html.py:21
+#: templates/base.html:87
+msgid "Speakers"
+msgstr "Oradores"
+
+#: main/templates/speakers.html:9
+msgid "Speakers PyCon 2012 Uruguay"
+msgstr "Oradores de PyCon 2012 Uruguay"
+
+#: main/templates/sponsors.html:9
+msgid "Sponsors PyCon 2012 Uruguay"
+msgstr "Sponsors de PyCon 2012 Uruguay"
+
+#: main/templates/sponsors.html:21
+msgid "What important organizations are behind this?"
+msgstr "¿Qué empresas importantes están detrás de todo esto?"
 
 #: main/templates/cmsplugin_blog/author_links_snippet.html:3
 msgid "See entries by"
@@ -557,11 +608,11 @@ msgstr "No encontrado"
 msgid "Internal Server Error"
 msgstr "Error interno del servidor"
 
-#: templates/base.html:72 templates/base.html.py:131
+#: templates/base.html:72 templates/base.html.py:135
 msgid "Registration"
 msgstr "Inscripción"
 
-#: templates/base.html:75 templates/base.html.py:99
+#: templates/base.html:75 templates/base.html.py:103
 msgid "My Profile"
 msgstr "Perfil"
 
@@ -569,33 +620,54 @@ msgstr "Perfil"
 msgid "Sign Out"
 msgstr "Cerrar sesión"
 
-#: templates/base.html:86
+#: templates/base.html:88
 msgid "Conference Schedule"
-msgstr "Calendario de conferencias"
+msgstr "Agenda de conferencias"
 
-#: templates/base.html:87
-msgid "Send Proposal"
-msgstr "Enviar propuesta"
-
-#: templates/base.html:91 templates/base.html.py:129
+#: templates/base.html:95 templates/base.html.py:133
 msgid "Venue"
 msgstr "Lugar"
 
-#: templates/base.html:93
+#: templates/base.html:97
 msgid "The Place"
 msgstr "El lugar"
 
-#: templates/base.html:128
+#: templates/base.html:132
 msgid "Back to top"
 msgstr "Volver arriba"
 
-#: templates/base.html:135
+#: templates/base.html:139
 msgid "PyCon UY 2012 is a production of the"
 msgstr "Pycon UY 2012 es una producción de"
 
-#: templates/base.html:135
+#: templates/base.html:139
 msgid "Site built and hosted by"
 msgstr "Sitio construido y alojado por"
+
+#~ msgid "Open!"
+#~ msgstr "¡Abierto!"
+
+#~ msgid "Send a Proposal"
+#~ msgstr "Enviar Propuesta"
+
+#~ msgid "Coming soon..."
+#~ msgstr "Próximamente..."
+
+#~ msgid ""
+#~ "We are receiving talks and sprint proposals. Do you have a killer "
+#~ "presentation in mind? "
+#~ msgstr ""
+#~ "Estamos recibiendo propuestas de charlas y sprints. ¿Tienes alguna "
+#~ "presentación exitosa en mente?"
+
+#~ msgid "Register to the Event"
+#~ msgstr "Regístrate al Evento"
+
+#~ msgid "You don't need to wait until the schedule is published."
+#~ msgstr "No necesitas esperar hasta que el calendario este publicado."
+
+#~ msgid "Send Proposal"
+#~ msgstr "Enviar propuesta"
 
 #~ msgid " October 10, 2012"
 #~ msgstr " 10 de octubre, 2012"
@@ -1222,9 +1294,6 @@ msgstr "Sitio construido y alojado por"
 #~ msgstr ""
 #~ "El valor '%s' tiene el formato correcto (HH:MM[:ss[.uuuuuu]]) pero no "
 #~ "representa una tiempo válido."
-
-#~ msgid "Time"
-#~ msgstr "Hora"
 
 #~ msgid "URL"
 #~ msgstr "URL"

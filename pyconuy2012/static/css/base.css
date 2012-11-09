@@ -512,7 +512,7 @@ ul.messages li.error{ background: #FF3333; padding: 5px, 0 5px 0; list-style: no
 	position: static;
 }
 
-.button-yellow.proposals {
+.button-yellow.talks {
 	position: absolute;
 	top: 327px;
 	z-index: 9999;

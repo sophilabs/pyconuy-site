@@ -31,9 +31,11 @@
         <div class="row proposal speaker">
             <div class="span3">
                 <div>
+                    {% if proposal.speaker.photo %}
                     <img src="{{ proposal.speaker.photo.url }}" alt="{{ proposal.speaker.name }}" />
+                    {% endif %}
                 </div>
-                <a href="/speakers#{{proposal.speaker.name}}">{{proposal.speaker.name}}</a>
+                <a href="{% url 'main:speakers' %}#{{proposal.speaker.name}}">{{proposal.speaker.name}}</a>
             </div>
             <div class="span9">
                 {{ proposal.description }}
